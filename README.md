@@ -9,7 +9,7 @@ Alice, Cyber Security.
 who share the same passions for informatics and computers and thanks to our different and complementary backgrounds, decided to join their forces in order to found a small consulting company.
 WHERE WE ARE BASED
 We are physically located in Cottbus and Berlin. We are fully equipped for online training or consulting sessions and potentially able to reach our customers all over the world, according to our university and working schedules and of course any restrictions caused by COVID 19. 
-	MISSION
+MISSION
 Our mission is to help small/medium companies and private citizens in understanding and developing digital solutions, offering competitive prices and an effective service.
 VISION
 Our vision is a world without any digital divide. 
@@ -24,7 +24,7 @@ IT resources and infrastructure.
 business and media law.
 database and data analysis.
 any topic related to our studies.
-	For the second category we offer the following services:
+For the second category we offer the following services:
 hardware and software repairing and consultancy
 IT support and maintenance.
 BUYER PERSONA
@@ -49,7 +49,7 @@ CONTENT
 The main content languages for the first version will be German and English. Afterwards according to business requirements it can be expanded to more languages. Content for each section will be provided by pro-student.de. 
 Images should be provided in SVG format where possible. We will also need to integrate video content in our computer repairing section.  
 STRUCTURE
-	Layout should be structured in this way:
+Layout should be structured in this way:
 navbar with brand information and menu items . Should show all items on big screens and collapse to a hamburger menu style for small displays.
 Breadcrumb navigation path.
 One main section above the fold containing a picture, a title, a subtitle and up to two different calls to actions. 
