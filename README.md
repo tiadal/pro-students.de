@@ -8,7 +8,7 @@ Mattia, eBusiness.
 Alice, Cyber Security.
 who share the same passions for informatics and computers and thanks to our different and complementary backgrounds, decided to join their forces in order to found a small consulting company.
 WHERE WE ARE BASED
-We are physically located in Cottbus and Berlin. We are fully equipped for online training or consulting sessions and potentially able to reach our customers all over the world, according to our university and working schedules and of course any restrictions caused by COVID 19. 
+We are physically located in Cottbus. We are fully equipped for online training or consulting sessions and potentially able to reach our customers all over the world, according to our university and working schedules and of course any restrictions caused by COVID 19. 
 MISSION
 Our mission is to help small/medium companies and private citizens in understanding and developing digital solutions, offering competitive prices and an effective service.
 VISION
