@@ -29,16 +29,15 @@ any topic related to our studies.
 For the second category we offer the following services:
 hardware and software repairing and consultancy
 IT support and maintenance.
-#BUYER PERSONA
+### BUYER PERSONA
 We identified 4 different Buyer Persona:
 Tom, 24 years old, a master student of BWL in Münster, who doesn’t fully understand how to program in python. Needs an online tutoring.
 Olga, 70 years old, senior citizen in Berlin, is having problems using digital devices to stay connected to her family. Needs a 1 to 1 course.
 Michael, 45 years old, lives in Cottbus, broke his computer but he hasn’t got much money. Needs his computer to be repaired.
 Pizza Berlin GmbH, a small restaurant who needs help in order to maximize its presence on the web and needs to choose the right software for managing orders and taxes.
-#WHAT DO WE NEED
+### WHAT DO WE NEED
 We need to establish our online presence with a website. This should be one point of contact with all our different clients. We must have a clear description of our services. 
 
-# _________________________________
 
 ## WEBSITE REQUIREMENTS
 
