@@ -3,7 +3,7 @@
 ## Business description
 
 ### WHO WE ARE
-We are pro-students, a group of 4 Students from the BTU. We share the same passions for informatics and computers and thanks to our different and complementary backgrounds, we decided to join our forces in order to found a small consulting company.
+We are pro-students, a group of 4 Students from BTU. We share the same passion for informatics and computers and thanks to our different and complementary backgrounds, we decided to join our forces in order to found a small consulting company.
 - Anna, a Business Law for technology companies student. 
 - Albert an Informatics student. 
 - Mattia, an eBusiness student.
