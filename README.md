@@ -19,14 +19,14 @@ Our vision is a world without any digital divide.
 Our services can be divided in two main categories: 
 - Consulting/Coaching/Tutoring
 - Computer hardware and software 
-For the first category we are expert in following topics: 
+<br>For the first category we are expert in following topics: 
 - Software management.
 - Software development. 
 - IT resources and infrastructure.
 - Business and media law.
 - Database and data analysis.
 - Any topic related to our studies.
-For the second category we offer the following services:
+<br>For the second category we offer the following services:
 - Hardware and software repairing and consultancy
 - IT support and maintenance.
 ### BUYER PERSONA
@@ -46,7 +46,7 @@ The allowed tech stack for this project must contain only the following technlog
 - HTML5
 - CSS3 
 - Plain Javascript
-The website must pass the W3C Markup Validation Service and follow all the general rules and aspects of modern web design. Our pages should render legibly and quickly at any screen resolution even on older devices.
+<br>The website must pass the W3C Markup Validation Service and follow all the general rules and aspects of modern web design. Our pages should render legibly and quickly at any screen resolution even on older devices.
  
  
 ### CONTENT
