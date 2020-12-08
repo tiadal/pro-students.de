@@ -3,12 +3,12 @@
 ## Business description
 
 ### WHO WE ARE
-We are pro-students, a group of 4 Students from the BTU: 
+We are pro-students, a group of 4 Students from the BTU. We share the same passions for informatics and computers and thanks to our different and complementary backgrounds, decided to join their forces in order to found a small consulting company.
 - Anna, a Business Law for technology companies student. 
 - Albert an Informatics student. 
 - Mattia, an eBusiness student.
 - Alice, a Cyber Security student.
-We share the same passions for informatics and computers and thanks to our different and complementary backgrounds, decided to join their forces in order to found a small consulting company.
+
 ### WHERE WE ARE BASED
 We are physically located in Cottbus. We are fully equipped for online training or consulting sessions and potentially able to reach our customers all over the world, according to university and working schedules and of course any restrictions caused by COVID-19. 
 ### MISSION
