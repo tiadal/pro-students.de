@@ -42,7 +42,7 @@ We need to establish our online presence with a website. This should be one poin
 ## WEBSITE REQUIREMENTS
 
 ### TECH STACK AND GENERAL REMARKS
-The allowed tech stack for this project must contain only the following technlogies: 
+The content of website will be static therefore no database is needed and we don't need any login functionalit. The allowed tech stack for this project must contain only the following technlogies: 
 - HTML5
 - CSS3 
 - Plain Javascript
@@ -71,4 +71,6 @@ Dark text and elements: 231F20
 Light text and elements: F9F9FF
 Sections with darker background:  7EBDC2
 Main call to actions: BB4430
+### XML Service page
+We need an XMl page whit a list of all our courses that we provide, the list of courses will be provided from us such as the element name such as: title, tutor, area, description.
 
