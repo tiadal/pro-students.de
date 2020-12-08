@@ -1,19 +1,21 @@
-Business description
+#Assignment 2 12316 Web Documents (WebDoc) | WS 2020/21
 
-WHO WE ARE
+##Business description
+
+###WHO WE ARE
 We are pro-students, a group of 4 Students from the BTU: 
 Anna, Business Law for technology companies, 
 Albert, Informatics. 
 Mattia, eBusiness.
 Alice, Cyber Security.
 who share the same passions for informatics and computers and thanks to our different and complementary backgrounds, decided to join their forces in order to found a small consulting company.
-WHERE WE ARE BASED
+###WHERE WE ARE BASED
 We are physically located in Cottbus. We are fully equipped for online training or consulting sessions and potentially able to reach our customers all over the world, according to our university and working schedules and of course any restrictions caused by COVID 19. 
-MISSION
+###MISSION
 Our mission is to help small/medium companies and private citizens in understanding and developing digital solutions, offering competitive prices and an effective service.
-VISION
+###VISION
 Our vision is a world without any digital divide. 
-SERVICES
+###SERVICES
 Our services can be divided in two main categories: 
 Consulting/Coaching/Tutoring
 Computer hardware and software 
@@ -27,28 +29,28 @@ any topic related to our studies.
 For the second category we offer the following services:
 hardware and software repairing and consultancy
 IT support and maintenance.
-BUYER PERSONA
+#BUYER PERSONA
 We identified 4 different Buyer Persona:
 Tom, 24 years old, a master student of BWL in Münster, who doesn’t fully understand how to program in python. Needs an online tutoring.
 Olga, 70 years old, senior citizen in Berlin, is having problems using digital devices to stay connected to her family. Needs a 1 to 1 course.
 Michael, 45 years old, lives in Cottbus, broke his computer but he hasn’t got much money. Needs his computer to be repaired.
 Pizza Berlin GmbH, a small restaurant who needs help in order to maximize its presence on the web and needs to choose the right software for managing orders and taxes.
-WHAT DO WE NEED
+#WHAT DO WE NEED
 We need to establish our online presence with a website. This should be one point of contact with all our different clients. We must have a clear description of our services. 
 
-_________________________________
+#_________________________________
 
-Website requirements
+##WEBSITE REQUIREMENTS
 
-TECH STACK AND GENERAL REMARKS
+###TECH STACK AND GENERAL REMARKS
 The allowed tech stack for this project must contain: html 5, css, plain Javascript, XML and no other technologies.
 The website must pass the W3C Markup Validation Service and follow all the general rules and aspects of modern web design. Our pages should render legibly and quickly at any screen resolution even on older devices.
  
  
-CONTENT
+###CONTENT
 The main content languages for the first version will be German and English. Afterwards according to business requirements it can be expanded to more languages. Content for each section will be provided by pro-student.de. 
 Images should be provided in SVG format where possible. We will also need to integrate video content in our computer repairing section.  
-STRUCTURE
+###STRUCTURE
 Layout should be structured in this way:
 navbar with brand information and menu items . Should show all items on big screens and collapse to a hamburger menu style for small displays.
 Breadcrumb navigation path.
