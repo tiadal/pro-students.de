@@ -1,0 +1,54 @@
+:root {
+    --primary: #BB4430;
+    --primary-light: #F2D4CE;
+    --dark: #231F20;
+    --light: #F9F9FF;
+    --secondary: #7EBDC2;
+    --secondary-light: #F1F8F8;
+    --secondary-dark: #214245;
+}
+
+html, body {
+    width: 100%;
+    min-height: 100%;
+    color: var(--dark);
+    background-color: var(--light);
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    max-width: 1280px;
+    padding: 0 1rem;
+    margin: 0 auto;
+}
+
+.navbar .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navbar .navbar-links {
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar .navbar-links a {
+    display: block;
+    margin-left: 2rem;
+}
+
+.navbar .navbar-links a:first {
+    margin-left: 0;
+}
+
+.breadcrumb .container {
+    display: flex;
+    flex-direction: row;
+}
