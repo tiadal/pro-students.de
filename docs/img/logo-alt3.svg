@@ -6,11 +6,36 @@
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
-   width="29.1136mm"
-   height="5.7227077mm"
-   viewBox="0 0 29.1136 5.7227077"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="30.191265mm"
+   height="6.7096157mm"
+   viewBox="0 0 30.191265 6.7096157"
    version="1.1"
-   id="svg8">
+   id="svg8"
+   sodipodi:docname="logo-alt1.svg"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1058"
+     id="namedview31"
+     showgrid="false"
+     inkscape:zoom="3.3749936"
+     inkscape:cx="14.468465"
+     inkscape:cy="-35.531328"
+     inkscape:window-x="0"
+     inkscape:window-y="22"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg8"
+     inkscape:document-rotation="0" />
   <defs
      id="defs2" />
   <metadata
@@ -21,13 +46,13 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <g
      id="layer1"
-     transform="translate(-40.715092,-167.96867)"
+     transform="translate(-39.637425,-167.47521)"
      style="display:none">
     <image
        width="52.916668"
@@ -40,7 +65,7 @@
   </g>
   <g
      id="g922"
-     transform="matrix(0.55374478,0,0,0.55374478,-1.5058132,-0.21742589)">
+     transform="matrix(0.77678224,0,0,0.77678224,-2.112325,-0.96404374)">
     <g
        id="g872">
       <circle
@@ -132,7 +157,7 @@
   </g>
   <g
      id="g898"
-     transform="matrix(0.63027875,0,0,0.63027875,-1.6942011,-0.47346259)">
+     transform="matrix(0.63027875,0,0,0.63027875,-0.61653448,0.01999126)">
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23333px;line-height:1.25;font-family:Michroma;-inkscape-font-specification:'Michroma, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;fill:#bb4430;fill-opacity:1;stroke-width:0.330416"
@@ -164,7 +189,4 @@
          y="9.7316227"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.35px;font-family:Michroma;-inkscape-font-specification:'Michroma, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#bb4430;fill-opacity:1;stroke-width:0.474851">Cottbus</tspan></text>
   </g>
-  <g
-     id="layer2"
-     transform="translate(0.67933408)" />
 </svg>
