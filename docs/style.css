@@ -115,6 +115,10 @@ nav.breadcrumb {
      content: '>';
  }
 
+#home-icon {
+    width: 1.5rem;
+}
+
 /*
 ############################
     PAGE HEADING (Header)
