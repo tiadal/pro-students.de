@@ -156,10 +156,10 @@ nav.breadcrumb {
     display: block;
     color: var(--light);
     background-color: var(--primary);
-    border-radius: 3px;
+    border-radius: 5px;
     padding: 25px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 35px;
+    padding-right: 35px;
     margin-right: 25px;
 }
 
@@ -167,10 +167,10 @@ nav.breadcrumb {
     display: block;
     color: var(--primary);
     background-color: var(--primary-light);
-    border-radius: 3px;
+    border-radius: 5px;
     padding: 25px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 35px;
+    padding-right: 35px;
     margin-right: 25px;
 }
 
