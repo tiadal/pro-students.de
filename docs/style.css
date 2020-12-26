@@ -26,9 +26,9 @@ html, body {
     margin: 0 0 0 0;
 }
 
-header > *, main > *, footer > * {
-    padding-left: 4%;
-    padding-right: 4%;
+header > *, footer > * {
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 a {
@@ -121,13 +121,14 @@ nav.breadcrumb {
 ############################
 */
 .page-heading {
-    display: block;
-    width: 100%;
-    padding-bottom: 25%;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 15vh;
 }
 
 .page-heading-text {
-    display: inline-flex;
+    display: flex;
+    width: 50%;
     flex-direction: column;
     float: left;
 }
@@ -135,7 +136,7 @@ nav.breadcrumb {
 .page-heading-text .main-title {
     display: block;
     color: var(--primary);
-    font-size: 3.2rem;
+    font-size: 4rem;
 }
 
 .page-heading-text .sub-title {
@@ -148,33 +149,41 @@ nav.breadcrumb {
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .page-heading .actions .action-primary {
     display: block;
     color: var(--light);
     background-color: var(--primary);
-    padding: 15px;
     border-radius: 3px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-right: 25px;
 }
 
 .page-heading .actions .action-secondary {
     display: block;
     color: var(--primary);
     background-color: var(--primary-light);
-    padding: 15px;
     border-radius: 3px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-right: 25px;
 }
 
 .page-heading-illustration {
-    display: inline-block;
-    max-width: 30vw;
-    float: right;
+    display: block;
+    text-align: right;
+    width: 50%;
+}
+
+.page-heading-illustration > img {
+    max-width: 90%;
+    max-height: 50vh;
+    margin: auto;
 }
 
 /*
@@ -186,14 +195,9 @@ main {
     clear: both;
 }
 
-.course-list {
-    width: 100%;
-}
-
 .course {
     display: flex;
     flex-direction: row;
-    width: 100%;
     padding: 5%;
 }
 
@@ -237,4 +241,43 @@ main {
 
 .course-information > h3 {
     font-weight: bold;
+}
+
+.course-information > h3:after {
+    content: " ";
+    display: block;
+    margin-top: .5em;
+    margin-bottom: 1em;
+    height: 4px;
+    width: 2em;
+    background: var(--primary);
+    border: none;
+}
+
+.course-information .actions {
+    margin-top: 25px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.course-information .actions .action-primary {
+    display: block;
+    color: var(--light);
+    background-color: var(--primary);
+    padding: 15px;
+    border-radius: 3px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: 20px;
+}
+
+.course-information .actions .action-secondary {
+    display: block;
+    color: var(--primary);
+    background-color: var(--primary-light);
+    padding: 15px;
+    border-radius: 3px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
