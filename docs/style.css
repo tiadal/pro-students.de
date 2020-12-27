@@ -115,7 +115,8 @@ nav.breadcrumb {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding-top: 2%;
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
     color: var(--dark);
 }
     
@@ -144,7 +145,6 @@ nav.breadcrumb {
     display: flex;
     width: 50%;
     flex-direction: column;
-    float: left;
 }
 
 .page-heading-text .main-title {
@@ -190,7 +190,7 @@ nav.breadcrumb {
 
 .page-heading-illustration {
     display: block;
-    text-align: right;
+    text-align: left;
     width: 50%;
 }
 
