@@ -69,13 +69,13 @@ a {
     flex-direction: row;
 }
 
-.navbar .navbar-links a {
+.navbar .navbar-links > a, .navbar .navbar-links > .dropdown-link {
     display: block;
     margin-right: 2rem;
 }
 
-.navbar .navbar-links a:last {
-    margin-left: 0;
+.navbar .navbar-links a:last-child, .navbar .navbar-links .dropdown-link:last-child {
+    margin-right: 0;
 }
 
 .dropdown-link {
