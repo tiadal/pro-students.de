@@ -42,17 +42,26 @@ a {
     NAVBAR (Header)
 ############################
 */
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
 .navbar {
-    min-height: 11vh;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    padding: 1rem 0;
     background-color: var(--light-dark-accent);
     box-shadow: 0px 0px 5px 1px grey;
 }
 
+.navbar .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 .navbar-logo {
-    height: 7vh;
+    height: 3rem;
 }
 
 .navbar .navbar-links {
@@ -199,7 +208,7 @@ main {
     clear: both;
 }
 
-.course {
+.course .container {
     display: flex;
     flex-direction: row;
     padding: 5%;
@@ -209,11 +218,11 @@ main {
     background-color: var(--light-light-accent);
 }
 
-.course:nth-child(odd) > .course-illustration {
+.course:nth-child(odd) .course-illustration {
     order: 1;
 }
 
-.course:nth-child(odd) > .course-information {
+.course:nth-child(odd) .course-information {
     order: 2;
 }
 
@@ -221,11 +230,11 @@ main {
     background-color: var(--light);
 }
 
-.course:nth-child(even) > .course-information {
+.course:nth-child(even) .course-information {
     order: 1;
 }
 
-.course:nth-child(even) > .course-illustration {
+.course:nth-child(even) .course-illustration {
     order: 2;
 }
 
@@ -295,6 +304,9 @@ main {
 .faq {
     background-color: var(--light-light-accent); /* TODO: might look bad with odd number of courses */
     padding: 5%;
+}
+
+.faq .container {
     display: flex;
     flex-direction: row;
 }
