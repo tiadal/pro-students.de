@@ -109,7 +109,7 @@ a {
     BREADCRUMB (Header)
 ############################
 */
-nav.breadcrumb {
+nav.breadcrumb > .container {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -133,7 +133,7 @@ nav.breadcrumb {
     PAGE HEADING (Header)
 ############################
 */
-.page-heading {
+.page-heading > .container {
     display: flex;
     flex-direction: row;
     padding-bottom: 15vh;
@@ -145,7 +145,7 @@ nav.breadcrumb {
     flex-direction: column;
 }
 
-.page-heading-text .main-title {
+.page-heading-text .main-title {;
     display: block;
     color: var(--primary);
     font-size: 4rem;
