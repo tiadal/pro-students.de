@@ -15,6 +15,7 @@
     --secondary-dark: #214245;
     --golden-ratio-small: 38,2%;
     --golden-ratio-big: 61,8%;
+    --rounded-edges: 4px;
 }
 
 html, body {
@@ -169,7 +170,7 @@ nav.breadcrumb {
     display: block;
     color: var(--light);
     background-color: var(--primary);
-    border-radius: 5px;
+    border-radius: var(--rounded-edges);
     padding: 25px;
     padding-left: 35px;
     padding-right: 35px;
@@ -180,7 +181,7 @@ nav.breadcrumb {
     display: block;
     color: var(--primary);
     background-color: var(--primary-light);
-    border-radius: 5px;
+    border-radius: var(--rounded-edges);
     padding: 25px;
     padding-left: 35px;
     padding-right: 35px;
@@ -279,7 +280,7 @@ main {
     color: var(--light);
     background-color: var(--primary);
     padding: 15px;
-    border-radius: 3px;
+    border-radius: var(--rounded-edges);
     padding-left: 20px;
     padding-right: 20px;
     margin-right: 20px;
@@ -290,7 +291,7 @@ main {
     color: var(--primary);
     background-color: var(--primary-light);
     padding: 15px;
-    border-radius: 3px;
+    border-radius: var(--rounded-edges);
     padding-left: 20px;
     padding-right: 20px;
 }
