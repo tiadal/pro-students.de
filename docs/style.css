@@ -17,6 +17,7 @@
     
     --golden-ratio-small: 38,2%;
     --golden-ratio-big: 61,8%;
+    --golden-ratio-illustration-margin: 2rem;
     
     --rounded-edges: 4px;
 }
@@ -39,7 +40,7 @@ a {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 3rem;
+    padding: 0 5rem;
 }
 
 /*
@@ -152,7 +153,7 @@ nav.breadcrumb > .container {
 .page-heading > .container {
     display: flex;
     flex-direction: row;
-    padding-bottom: 15vh;
+    margin-bottom: 5rem;
 }
 
 .page-heading-text {
@@ -164,12 +165,13 @@ nav.breadcrumb > .container {
 .page-heading-text .main-title {;
     display: block;
     color: var(--primary);
-    font-size: 4rem;
+    font-size: 3.5rem;
 }
 
 .page-heading-text .sub-title {
     display: block;
     color:var(--dark);
+    font-size: 1.5rem;
 }
 
 .page-heading .actions {
@@ -219,58 +221,36 @@ nav.breadcrumb > .container {
     CONTENTS (Courses)
 ############################
 */
-main {
-    clear: both;
+main .container {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
 }
 
 .course .container {
     display: flex;
     flex-direction: row;
-    padding: 5%;
-}
-
-.course:nth-child(odd) {
-    background-color: var(--light-light-accent);
-}
-
-.course:nth-child(odd) .course-illustration {
-    order: 1;
-}
-
-.course:nth-child(odd) .course-information {
-    order: 2;
-}
-
-.course:nth-child(even) {
-    background-color: var(--light);
-}
-
-.course:nth-child(even) .course-information {
-    order: 1;
-    text-align: left;
-}
-
-.course:nth-child(even) .course-illustration {
-    order: 2;
-    text-align: right;
 }
 
 .course-illustration {
-    display: block;
-    width: 38%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: var(--golden-ratio-small);
 }
 
 .course-illustration > img {
-    width: 80%;
+    width: 90%;
 }
 
 .course-information {
     display: block;
-    width: 62%;
+    width: var(--golden-ratio-big);
 }
 
 .course-information > h3 {
     font-weight: bold;
+    font-size: 1.5rem;
+    margin-top: 0;
 }
 
 .course-information > h3:after {
@@ -279,7 +259,7 @@ main {
     margin-top: .5em;
     margin-bottom: 1em;
     height: 4px;
-    width: 2em;
+    width: 1.2em;
     background: var(--primary);
     border: none;
 }
@@ -312,6 +292,35 @@ main {
     padding-right: 20px;
 }
 
+.course:nth-child(odd) {
+    background-color: var(--light-light-accent);
+}
+
+.course:nth-child(odd) .course-illustration {
+    order: 1;
+    margin-right: var(--golden-ratio-illustration-margin);
+}
+
+.course:nth-child(odd) .course-information {
+    order: 2;
+    justify-content: left;
+}
+
+.course:nth-child(even) {
+    background-color: var(--light);
+}
+
+.course:nth-child(even) .course-information {
+    order: 1;
+    text-align: left;
+}
+
+.course:nth-child(even) .course-illustration {
+    order: 2;
+    justify-content: right;
+    margin-left: var(--golden-ratio-illustration-margin);
+}
+
 
 /*
 ############################
@@ -320,7 +329,6 @@ main {
 */
 .faq {
     background-color: var(--light-light-accent); /* TODO: might look bad with odd number of courses */
-    padding: 5%;
 }
 
 .faq .container {
@@ -331,11 +339,16 @@ main {
 .faq-heading-container {
     display: block;
     width: var(--golden-ratio-small);
+    margin-right: var(--golden-ratio-illustration-margin);
+}
+
+.faq-heading-container > h3 {
+    margin-top: 0;
+    font-size: 1.5em;
 }
 
 .faq-heading-container > img {
-    max-width: 80%;
-    max-height: 50vh;
+    width: 80%;
 }
 
 .faq-questions-container {
@@ -360,7 +373,7 @@ main {
 ############################
 */
 .contact {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     background-color: var(--secondary);
     color: var(--light);
 }
