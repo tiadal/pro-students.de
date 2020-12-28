@@ -33,30 +33,30 @@ function assembleFiles(err, fileList) {
             partial.outerHTML = partialFramework;
         })
 
-        const DOMParser = dom.window.DOMParser;
-        const xmlParser = new DOMParser;
+        // const DOMParser = dom.window.DOMParser;
+        // const xmlParser = new DOMParser;
         
-        var courselists = dom.window.document.querySelectorAll("[data-courses]"); // Find elements that are partial markers
-        courselists.forEach(courselist => {
+        // var courselists = dom.window.document.querySelectorAll("[data-courses]"); // Find elements that are partial markers
+        // courselists.forEach(courselist => {
 
-            var xmlFile = courselist.getAttribute("data-courses");
-            var xmlString = fs.readFileSync("src/data/" + xmlFile + ".xml").toString();
-            const xmlDoc = xmlParser.parseFromString(xmlString, "text/xml")
+        //     var xmlFile = courselist.getAttribute("data-courses");
+        //     var xmlString = fs.readFileSync("src/data/" + xmlFile + ".xml").toString();
+        //     const xmlDoc = xmlParser.parseFromString(xmlString, "text/xml")
 
-            var template = courselist.firstElementChild;
-            courselist.innerHTML = "";
+        //     var template = courselist.firstElementChild;
+        //     courselist.innerHTML = "";
 
-            Array.from(xmlDoc.documentElement.children).forEach(course => {
+        //     Array.from(xmlDoc.documentElement.children).forEach(course => {
 
-                var child = template.content.cloneNode(true)
+        //         var child = template.content.cloneNode(true)
 
-                child.querySelector("[data-course='illustration']").src = course.getAttribute("illustration")
-                child.querySelector("[data-course='title']").innerHTML = course.getElementsByTagName("title")[0].innerHTML
-                child.querySelector("[data-course='description']").innerHTML = course.getElementsByTagName("description")[0].innerHTML
+        //         child.querySelector("[data-course='illustration']").src = course.getAttribute("illustration")
+        //         child.querySelector("[data-course='title']").innerHTML = course.getElementsByTagName("title")[0].innerHTML
+        //         child.querySelector("[data-course='description']").innerHTML = course.getElementsByTagName("description")[0].innerHTML
 
-                courselist.appendChild(child);
-            })
-        })
+        //         courselist.appendChild(child);
+        //     })
+        // })
         
         // Save the assembled file
         fs.writeFile('docs/' + htmlDoc, dom.serialize(), err => { if (err) { console.log("Couldn't write " + htmlDoc + " because of " + err) } })
