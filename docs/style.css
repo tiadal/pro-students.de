@@ -403,6 +403,7 @@ main .container {
     color: var(--dark);
 }
 .contact-action > a {
+    font-size: 1rem;
     display: flex;
     justify-content: center;
     color: var(--secondary-dark);
