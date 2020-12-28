@@ -1,9 +1,10 @@
 {
   "dependencies": {
-    "browser-sync": "^2.26.13"
+    "browser-sync": "^2.26.13",
+    "jsdom": "^16.4.0"
   },
   "scripts": {
-      "watch": "node_modules/.bin/browser-sync start -s docs",
-      "build": "node ./build.js"
+    "watch": "node_modules/.bin/browser-sync start -s docs",
+    "build": "node ./build.js"
   }
 }
