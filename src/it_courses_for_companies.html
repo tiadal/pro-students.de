@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>IT Courses - Pro Students Cottbus</title>
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+
+            <nav class="navbar" data-partial="navbar"></nav>
+            
+            <nav class="breadcrumb">
+                <div class="container">
+                    <a href="#">
+                        <img id="home-icon" src="img/home.svg" />
+                    </a>
+                    <span class="breadcrumb-sep"></span>
+                    <a href="#">For Companies</a>
+                    <span class="breadcrumb-sep"></span>
+                    <a href="#">IT Courses</a>
+                </div>
+            </nav>
+
+            <section class="page-heading" data-partial="header">
+
+                <div data-name="illustration">img/computer-desktop.svg</div>
+                <div data-name="title">IT Courses</div>
+                <div data-name="subtitle">For Companies</div>
+
+            </section>
+        </header>
+        
+        <main class="content">
+            <div class="course-list" data-courses="it_courses_for_companies">
+            
+                <template>
+                    <section class="course">
+                        <div class="container">
+                            <div class="course-illustration">
+                                <img src="" alt="" data-course="illustration" />
+                            </div>
+
+                            <div class="course-information">
+                                <h3 data-course="title"></h3>
+
+                                <p data-course="description"></p>
+
+                                <div class="actions">
+                                    <a href="#" class="action-primary" onclick="alert('Not implemented')">Make Appointment</a>
+                                    <a href="#" class="action-secondary" onclick="alert('Not implemented')">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </template>
+
+            </div>
+            
+            <section class="faq" data-partial="faq"></section>
+            
+            <section class="contact" data-partial="cta">
+                <div data-name="question">Couldn't find the right course for you?</div>
+                <div data-name="answer">Make a request and we will find a solution for you!</div>
+            </section>
+        </main>
+
+        <footer class="footer" data-partial="footer"></footer>
+
+        <script src="app.js"></script>
+    </body>
+</html>
