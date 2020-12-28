@@ -4,7 +4,7 @@
     "jsdom": "^16.4.0"
   },
   "scripts": {
-     "watch": "node ./watchBefore.js; node_modules/.bin/browser-sync start -s docs",
+     "watch": "node ./build.js; node_modules/.bin/browser-sync start -s docs",
     "build": "node ./build.js"
   }
 }
