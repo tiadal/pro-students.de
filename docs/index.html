@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
-    <head>
+<!DOCTYPE html><html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Homepage - Pro Students Cottbus</title>
@@ -10,15 +8,53 @@
     <body>
         <header>
 
-            <nav class="navbar" data-partial="navbar"></nav>
+            <nav class="navbar">
+    <div class="container">
+        <a href="index.html">
+            <img class="navbar-logo" src="img/logo.svg" alt="Pro Students Cottbus">
+        </a>
+        
+        <div class="navbar-links">
+            <a href="computer_repairing.html">Repair work</a>
+            <div class="dropdown-link">
+                <a href="courses_for_private.html">For Private</a>
+                <div class="dropdown-link-content">
+                     <a href="courses_for_children.html">For Children</a>
+                     <a href="courses_for_students.html">For Students</a>
+                     <a href="courses_for_seniors.html">For Seniors</a>
+                </div>
+            </div>
+            <div class="dropdown-link">
+                <a href="for_companies.html">For Companies</a>
+                <div class="dropdown-link-content">
+                    <a href="it_courses_for_companies.html">IT Courses</a>
+                    <a href="consulting_for_companies.html">Consulting</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
 
-            <section class="page-heading" data-partial="header">
 
-                <div data-name="illustration">img/business-decisions.svg</div>
-                <div data-name="title">Pro Students Cottbus</div>
-                <div data-name="subtitle">Homepage TODO</div>
+            <section class="page-heading">
+    <div class="container">
+        <div class="page-heading-illustration">
+            <img src="img/business-decisions.svg" alt="">
+        </div>
 
-            </section>
+        <div class="page-heading-text">
+            <h1>
+                <span class="main-title">Pro Students Cottbus</span>
+                <span class="sub-title">Homepage TODO</span>
+            </h1>
+
+            <div class="actions">
+                <a href="#" class="action-primary" onclick="alert('Not implemented')">Contact us</a>
+                <a href="#" class="action-secondary" onclick="alert('Not implemented')">Read more</a>
+            </div>
+        </div>
+    </div>
+</section>
         </header>
         
         <main class="content">
@@ -29,16 +65,47 @@
                 </div>
             </section>
             
-            <section class="faq" data-partial="faq"></section>
+            <section class="faq">
+    <div class="container">
+        <div class="faq-heading-container">
+            <h3>Frequently asked questions</h3>
+            <img src="img/question-mark.svg" alt="">
+        </div>
+        
+        <div class="faq-questions-container">
+            <div class="question-answer">
+                <span class="question">How do you make holy water?</span>
+                <span class="answer">You boil the hell out of it. Lorem ipsum dolor sit amet consctetur adipisicing elit. Quas cupiditate laboriosam fugiat.</span>
+            </div>
+            <div class="question-answer">
+                <span class="question">What do you call someone with no body and no nose?</span>
+                <span class="answer">Nobody knows. Lorem ipsum dolor sit amet consctetur adipisicing elit. Quas cupiditate laboriosam fugiat.</span>
+            </div>
+            <div class="question-answer">
+                <span class="question">Why do you never see elephants hiding in trees?</span>
+                <span class="answer">Because they're so good at it. Lorem ipsum dolor sit amet consctetur adipisicing elit. Quas cupiditate laboriosam fugiat.</span>
+            </div>
+        </div>
+    </div>
+</section>
             
-            <section class="contact" data-partial="cta">
-                <div data-name="question">Couldn't find the right course for you?</div>
-                <div data-name="answer">Make a request and we will find a solution for you!</div>
-            </section>
+            <section class="contact">
+    <div class="container">
+        <div class="contact-question-answer">
+            <span class="contact-question">Couldn't find the right course for you?</span>
+            <span class="contact-answer">Make a request and we will find a solution for you!</span>
+        </div>
+        <div class="contact-action">
+            <a href="#" onclick="alert('Not implemented')">Contact us</a>
+        </div>
+    </div>
+</section>
         </main>
 
-        <footer class="footer" data-partial="footer"></footer>
+        <footer class="footer">
+    <!-- TODO -->
+</footer>
 
         <script src="app.js"></script>
-    </body>
-</html>
+    
+</body></html>
