@@ -11,8 +11,9 @@
     --secondary-dark: #214245;     /* Darker variant of secondary color (e.g. for corresponding button text) */
     --dark: #231F20;               /* Main text color */
     --light: #F9F9FF;              /* Main page color and text on dark backgrounds */
-    --light-dark-accent: #E5E5E5;  /* For clear separation of the header */
     --light-light-accent: #F5F5F5; /* For separation of sections */
+    --light-dark-accent: #E5E5E5;  /* For clear separation of the header */
+    --light-darker-accent: #929292;/* For breadcrumb */
     
     --golden-ratio-small: 38,2%;
     --golden-ratio-big: 61,8%;
@@ -130,7 +131,7 @@ nav.breadcrumb > .container {
     align-items: center;
     padding-top: 1.5rem;
     padding-bottom: 2rem;
-    color: var(--dark);
+    color: var(--light-darker-accent);
 }
     
  .breadcrumb-sep::before {
