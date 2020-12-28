@@ -393,7 +393,6 @@ main .container {
 .contact > .container {
     display: flex;
     justify-content: space-between;
-    padding: 5%;
     align-items: center;
 }
 
