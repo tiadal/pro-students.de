@@ -26,7 +26,7 @@ html, body {
     width: 100%;
     min-height: 100%;
     color: var(--dark);
-    background-color: var(--light);
+    background-color: white;
     font-family: ui-sans-serif, systrem-ui, -apple-systrem, BlinkMacSystremFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color remoji", "Segoe UI remoji", "Segoe UI Symbol", "Noto Color remoji";
     margin: 0 0 0 0;
     font-size: 16pt;
@@ -406,7 +406,7 @@ main .container {
     display: block;
     color: var(--light);
     font-weight: bold;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 .contact-answer {
