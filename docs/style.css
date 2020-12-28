@@ -4,18 +4,19 @@
 ############################
 */
 :root {
-    --primary: #BB4430;
-    --primary-light: #F2D4CE;
-    --dark: #231F20;
-    --light: #F9F9FF;
-    --light-dark-accent: #E5E5E5;
-    --light-light-accent: #F5F5F5;
-    --secondary: #7EBDC2;
-    --secondary-light: #F1F8F8;
-    --secondary-dark: #214245;
+    --primary: #BB4430;            /* Color for calls to action (dark red) */
+    --primary-light: #F2D4CE;      /* Lighter variant of primary color for non-focused calls to action */
+    --secondary: #7EBDC2;          /* Secondary color for contact form (light blue / indigo) */
+    --secondary-light: #F1F8F8;    /* TODO: Unused. Remove? */
+    --secondary-dark: #214245;     /* Darker variant of secondary color (e.g. for corresponding button text) */
+    --dark: #231F20;               /* Main text color */
+    --light: #F9F9FF;              /* Main page color and text on dark backgrounds */
+    --light-dark-accent: #E5E5E5;  /* For clear separation of the header */
+    --light-light-accent: #F5F5F5; /* For separation of sections */
     
     --golden-ratio-small: 38,2%;
     --golden-ratio-big: 61,8%;
+    
     --rounded-edges: 4px;
 }
 
@@ -357,6 +358,40 @@ main {
 ############################
 */
 .contact {
+    font-size: 1.6rem;
     background-color: var(--secondary);
     color: var(--light);
+}
+
+.contact > .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 5%;
+    align-items: center;
+}
+
+.contact-question-answer {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-question {
+    display: block;
+    color: var(--light);
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.contact-answer {
+    display: block;
+    color: var(--dark);
+}
+.contact-action > a {
+    display: flex;
+    justify-content: center;
+    color: var(--secondary-dark);
+    background-color: var(--light);
+    border-radius: var(--rounded-edges);
+    align-items: center;
+    padding: 1.5rem;
 }
