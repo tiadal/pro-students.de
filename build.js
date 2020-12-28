@@ -3,7 +3,7 @@ const jsdom = require("jsdom");
 const { JSDOM } = jsdom;
 
 
-fs.readdir(__dirname, assembleFiles);
+fs.readdir(__dirname + "/src", assembleFiles);
 
 function assembleFiles(err, fileList) {
     if (err) {
@@ -15,13 +15,13 @@ function assembleFiles(err, fileList) {
             return; // This isn't an html document
         }
 
-        var dom = new JSDOM(fs.readFileSync(htmlDoc).toString());
+        var dom = new JSDOM(fs.readFileSync("src/" + htmlDoc).toString());
         
         var partials = dom.window.document.querySelectorAll("[data-partial]"); // Find elements that are partial markers
         partials.forEach(partial => {
             var partialName = partial.getAttribute("data-partial");
         
-            var partialFramework = fs.readFileSync("partials/" + partialName + ".html").toString();
+            var partialFramework = fs.readFileSync("src/partials/" + partialName + ".html").toString();
         
             Array.from(partial.children).forEach(child => {
                 // For each child of the original document's partial marker, look for parameters. If found, replace them into
@@ -34,7 +34,7 @@ function assembleFiles(err, fileList) {
         })
         
         // Save the assembled file
-        fs.writeFile('out/' + htmlDoc, dom.serialize(), err => { if (err) { console.log("Couldn't write " + htmlDoc + " because of " + err) } })
+        fs.writeFile('docs/' + htmlDoc, dom.serialize(), err => { if (err) { console.log("Couldn't write " + htmlDoc + " because of " + err) } })
     })
 }
 
