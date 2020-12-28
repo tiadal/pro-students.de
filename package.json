@@ -3,6 +3,7 @@
     "browser-sync": "^2.26.13"
   },
   "scripts": {
-      "dev": "node_modules/.bin/browser-sync start -s docs"
+      "watch": "node_modules/.bin/browser-sync start -s docs",
+      "build": "node ./build.js"
   }
 }
