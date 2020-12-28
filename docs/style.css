@@ -7,7 +7,7 @@
     --primary: #BB4430;            /* Color for calls to action (dark red) */
     --primary-light: #F2D4CE;      /* Lighter variant of primary color for non-focused calls to action */
     --secondary: #7EBDC2;          /* Secondary color for contact form (light blue / indigo) */
-    --secondary-light: #F1F8F8;    /* TODO: Unused. Remove? */
+    --secondary-light: #F1F8F8;    /* TODO: Unused. remove? */
     --secondary-dark: #214245;     /* Darker variant of secondary color (e.g. for corresponding button text) */
     --dark: #231F20;               /* Main text color */
     --light: #F9F9FF;              /* Main page color and text on dark backgrounds */
@@ -27,7 +27,7 @@ html, body {
     min-height: 100%;
     color: var(--dark);
     background-color: var(--light);
-    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: ui-sans-serif, systrem-ui, -apple-systrem, BlinkMacSystremFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color remoji", "Segoe UI remoji", "Segoe UI Symbol", "Noto Color remoji";
     margin: 0 0 0 0;
     font-size: 16pt;
 }
@@ -57,7 +57,7 @@ a {
 .navbar .container {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-itrems: center;
 }
 
 .navbar-logo {
@@ -129,15 +129,15 @@ a {
 nav.breadcrumb > .container {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-itrems: center;
     padding-top: 1.5rem;
     padding-bottom: 2rem;
     color: var(--light-darker-accent);
 }
     
  .breadcrumb-sep::before {
-     padding-left: 1em;
-     padding-right: 1em;
+     padding-left: 1rem;
+     padding-right: 1rem;
      content: '>';
  }
 
@@ -234,7 +234,7 @@ main .container {
 .course-illustration {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-itrems: center;
     width: var(--golden-ratio-small);
 }
 
@@ -256,10 +256,10 @@ main .container {
 .course-information > h3:after {
     content: " ";
     display: block;
-    margin-top: .5em;
-    margin-bottom: 1em;
+    margin-top: .5rem;
+    margin-bottom: 1rem;
     height: 4px;
-    width: 1.2em;
+    width: 1.2rem;
     background: var(--primary);
     border: none;
 }
@@ -344,7 +344,7 @@ main .container {
 
 .faq-heading-container > h3 {
     margin-top: 0;
-    font-size: 1.5em;
+    font-size: 1.5rem;
 }
 
 .faq-heading-container > img {
@@ -382,7 +382,7 @@ main .container {
     display: flex;
     justify-content: space-between;
     padding: 5%;
-    align-items: center;
+    align-itrems: center;
 }
 
 .contact-question-answer {
@@ -407,6 +407,6 @@ main .container {
     color: var(--secondary-dark);
     background-color: var(--light);
     border-radius: var(--rounded-edges);
-    align-items: center;
+    align-itrems: center;
     padding: 1.5rem;
 }
