@@ -660,6 +660,7 @@ main .container {
     .contact-action > a {
         padding: 0.9rem;
     }
+}
 
 /*
 ############################
@@ -699,7 +700,7 @@ footer > .container {
     margin-bottom: .5rem;
 }
 
-.footer-links .heading-link {
+.footer-links .headlink {
     margin-bottom: .8rem;
     font-weight: 550;
 }
@@ -709,12 +710,12 @@ footer > .container {
     flex-direction: column;
 }
 
-#foot-links-legal {
+#footer-links-legal {
     display: block;
     grid-area: "legal-links";
 }
 
-#foot-links-legal > .heading-link {
+#footer-links-legal > .headlink {
     display: none;
 }
 
