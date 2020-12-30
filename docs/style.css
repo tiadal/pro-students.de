@@ -166,6 +166,7 @@ a {
     }
 
     .navbar .navbar-left button {
+        display: block;
         padding: 0.5rem;
         margin: 1rem 0 1rem auto;
         background-color: transparent;
@@ -258,10 +259,6 @@ nav.breadcrumb > .container {
 
 #home-icon {
     width: 1.5rem;
-}
-
-@media (max-width: 1024px) {
-
 }
 
 /*
