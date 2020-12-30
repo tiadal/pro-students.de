@@ -660,4 +660,65 @@ main .container {
     .contact-action > a {
         padding: 0.9rem;
     }
+
+/*
+############################
+    FOOTER
+############################
+*/
+footer > .container {
+    padding-top: 3.5rem;
+    color: var(--light-darker-accent);
+    display: grid;
+    grid-template-areas:
+        "footer-logo   foot-nav foot-nav foot-nav"
+        "footer-vision foot-nav foot-nav foot-nav"
+        "copyright-notice copyright-notice legal-links legal-links";
+}
+
+.footer-logo {
+    grid-area: "footer-logo";
+    height: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.footer-vision {
+    display: block;
+    grid-area: "footer-vision";
+    margin-bottom: 1rem;
+}
+
+.footer-links {
+    grid-area: "foot-nav";
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+
+.footer-links a {
+    margin-bottom: .5rem;
+}
+
+.footer-links .heading-link {
+    margin-bottom: .8rem;
+    font-weight: 550;
+}
+
+.footer-links > div {
+    display: flex;
+    flex-direction: column;
+}
+
+#foot-links-legal {
+    display: block;
+    grid-area: "legal-links";
+}
+
+#foot-links-legal > .heading-link {
+    display: none;
+}
+
+.copyright-notice {
+    display: block;
+    grid-area: "copyright-notice";
 }
