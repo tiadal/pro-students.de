@@ -23,7 +23,8 @@
 }
 
 html, body {
-    width: 100%;
+    width: 100vw;
+    max-width: 100vw;
     min-height: 100%;
     color: var(--dark);
     background-color: white;
@@ -67,6 +68,7 @@ a {
     margin-left: auto;
     display: flex;
     flex-direction: row;
+    position: relative;
 }
 
 .navbar .navbar-links > a, .navbar .navbar-links > .dropdown-link {
@@ -131,6 +133,90 @@ a {
     display: flex;
 }
 
+@media (max-width: 500px) {
+
+    .container {
+        padding: 0 1rem;
+    }
+    .navbar .container {
+        flex-direction: column;
+    }
+    .navbar .navbar-left {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .navbar .navbar-left button {
+        padding: 0.5rem;
+        margin: 1rem 1em 1rem auto;
+        background-color: transparent;
+        border-radius: var(--rounded-edges);
+        box-shadow: none;
+        border: none;
+    }
+
+    .navbar .navbar-left button:hover {
+        background-color: var(--light);
+    }
+
+    .navbar .navbar-left button svg {
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+
+    .navbar .navbar-left button svg:first-child {
+        display: block;
+    }
+
+    .navbar.show .navbar-left button svg:first-child {
+        display: none;
+    }
+
+    .navbar .navbar-left button svg:last-child {
+        display: none;
+    }
+
+    .navbar.show .navbar-left button svg:last-child {
+        display: block;
+    }
+
+    .navbar .navbar-links {
+        display: none;
+        width: 100%;
+        margin-left: 0;
+        flex-direction: column;
+        padding-bottom: 1rem;
+    }
+
+    .navbar.show .navbar-links {
+        display: flex;
+    }
+    
+    .navbar .navbar-links > a, .navbar .navbar-links > .dropdown-link > a {
+        padding: 1rem;
+    }
+    
+    .dropdown-link-content {
+        display: flex;
+        position: static;
+        background-color: inherit;
+        box-shadow: none;
+        flex-direction: column;
+    }
+    
+    .navbar .navbar-links .dropdown-link .dropdown-link-content a {
+        display: block;
+        text-align: left;
+        padding-right: auto;
+        padding: 0.5rem 3rem;
+    }
+    
+    .navbar .navbar-links .dropdown-link .dropdown-link-content a:hover {
+        color: var(--primary)
+    }
+}
 
 /*
 ############################
@@ -144,6 +230,7 @@ nav.breadcrumb > .container {
     padding-top: 1.5rem;
     padding-bottom: 2rem;
     color: var(--light-darker-accent);
+    overflow-x: hidden;
 }
     
  .breadcrumb-sep::before {
@@ -225,6 +312,39 @@ nav.breadcrumb > .container {
     max-width: 90%;
     max-height: 50vh;
     margin: auto;
+}
+
+@media (max-width: 500px) {
+    .page-heading > .container {
+        flex-direction: column;
+    }
+
+    .page-heading-text {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .page-heading-text .main-title {
+        font-size: 2.5rem;
+    }
+
+    .page-heading-text .sub-title {
+        font-size: 1.5rem;
+    }
+
+    .page-heading .actions {
+        flex-direction: column;
+    }
+
+    .page-heading .actions .action-primary, .page-heading .actions .action-secondary {
+        padding: 18px;
+        text-align: center;
+    }
+
+    .page-heading .actions .action-secondary {
+        margin-top: 0.5rem;
+    }
 }
 
 /*
@@ -333,6 +453,39 @@ main .container {
     margin-left: var(--golden-ratio-illustration-margin);
 }
 
+@media (max-width: 500px) {
+
+    .course .container {
+        flex-direction: column;
+    }
+
+    .course-illustration {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: var(--golden-ratio-small);
+    }
+
+    .course-illustration > img {
+        width: 50%;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+
+    .course:nth-child(even) {
+        background-color: var(--light);
+    }
+
+    .course:nth-child(even) .course-information {
+        order: 2;
+    }
+
+    .course:nth-child(even) .course-illustration {
+        order: 1;
+        margin-left: 0;
+    }
+}
+
 
 /*
 ############################
@@ -379,6 +532,35 @@ main .container {
     font-weight: bold;
 }
 
+@media (max-width: 500px) {
+    
+    .faq .container {
+        flex-direction: column;
+    }
+    
+    .faq-heading-container {
+        display: flex;
+        flex-direction: column-reverse;
+        width: var(--golden-ratio-small);
+        margin-right: var(--golden-ratio-illustration-margin);
+    }
+    
+    .faq-heading-container > h3 {
+        margin-top: 1rem;
+        font-size: 1.3rem;
+    }
+    
+    .faq-heading-container > img {
+        width: 50%;
+        margin-top: 0;
+    }
+    
+    .question-answer {
+        margin-bottom: 25px;
+    }
+
+}
+
 /*
 ############################
     CONTENTS (Contact)
@@ -421,4 +603,21 @@ main .container {
     border-radius: var(--rounded-edges);
     align-items: center;
     padding: 1.5rem;
+}
+
+@media (max-width: 500px) {
+    
+    .contact > .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .contact-action {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 0.5rem 1.5rem;
+    }
 }

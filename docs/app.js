@@ -1,3 +1,10 @@
+
+const navbar = document.querySelector(".navbar")
+const navbarButton = document.querySelector(".navbar .navbar-left button")
+navbarButton.onclick = function() {
+    navbar.classList.toggle("show")
+}
+
 const xmlParser = new DOMParser;
 
 var courselists = document.querySelectorAll("[data-courses]"); // Find elements that are partial markers
