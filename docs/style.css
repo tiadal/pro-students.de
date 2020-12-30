@@ -143,6 +143,13 @@ a {
     display: flex;
 }
 
+@media (max-width: 1024px) {
+
+    .container {
+        padding: 0 3rem;
+    }
+}
+
 @media (max-width: 768px) {
 
     .container {
