@@ -5,7 +5,7 @@
     "prettier": "^2.2.1"
   },
   "scripts": {
-    "watch": "node ./build.js; npx prettier --write docs --tab-width 4; node_modules/.bin/browser-sync start -s docs",
+    "watch": "node_modules/.bin/browser-sync start -s docs",
     "build": "node ./build.js; npx prettier --write docs --tab-width 4"
   }
 }
