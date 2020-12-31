@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE courses SYSTEM "courses.dtd">
+<courses>
+
+    <course illustration="img/python-logo.svg">
+        <title>Introduction to programming in Python</title>
+        <description>TODO: Contains a list</description>
+    </course>
+
+    <course illustration="img/photoshop-illustration.svg">
+        <title>Introduction to Photoshop</title>
+        <description>This course will teach your children how to edit photos with Photoshop.</description>
+    </course>
+
+</courses>
