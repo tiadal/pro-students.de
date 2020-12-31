@@ -257,8 +257,48 @@ nav.breadcrumb > .container {
      content: '>';
  }
 
+.breadcrumb-dots {
+    display: none;
+}
+
 #home-icon {
     width: 1.5rem;
+}
+
+@media (max-width: 640px) {
+    /*
+     * Only show home icon, last location link and, if there were any
+     * more links in the breadcrumb, a ... in between them. This is achieved by 
+     * hiding all links and separators except the first and last ones, and then showing the given
+     * .breadcrumb-dots classed element as a unicode ellipsis
+     *
+     * This approach also works for breadcrumbs with only the home and location link. The .breadrcumb-
+     * dots element shouldn't be given there.
+     */
+    
+    nav.breadcrumb a {
+        display: none;
+    }
+    
+    .breadcrumb-sep {
+        display: none;
+    }
+    
+    nav.breadcrumb a:first-child, nav.breadcrumb a:last-child {
+        display: inline;
+    }
+    
+    .breadcrumb-sep:first-of-type, .breadcrumb-sep:last-of-type {
+        display: inline;
+    }
+    
+    .breadcrumb-dots {
+        display: inline;
+    }
+    
+    .breadcrumb-dots::after {
+        content: "…";
+    }
 }
 
 /*
