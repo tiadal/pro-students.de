@@ -669,12 +669,15 @@ main .container {
 */
 footer > .container {
     padding-top: 3.5rem;
+    padding-bottom: 1.5rem;
     color: var(--light-darker-accent);
     display: grid;
+    grid-template-columns: 45fr 55fr;
     grid-template-areas:
-        "footer-logo   foot-nav foot-nav foot-nav"
-        "footer-vision foot-nav foot-nav foot-nav"
-        "copyright-notice copyright-notice legal-links legal-links";
+        "footer-logo       foot-nav"
+        "footer-vision     foot-nav"
+        "foot-sep         foot-sep"
+        "copyright-notice  legal-links";
 }
 
 .footer-logo {
@@ -686,14 +689,16 @@ footer > .container {
 .footer-vision {
     display: block;
     grid-area: "footer-vision";
-    margin-bottom: 1rem;
+    max-width: 16rem;
+    margin-bottom: 2rem;
 }
 
 .footer-links {
     grid-area: "foot-nav";
     display: flex;
     flex-direction: row;
-    justify-content: space-between
+    justify-content: space-between;
+    margin-bottom: 2rem;
 }
 
 .footer-links a {
@@ -711,15 +716,30 @@ footer > .container {
 }
 
 #footer-links-legal {
-    display: block;
-    grid-area: "legal-links";
+    display: none;
 }
 
 #footer-links-legal > .headlink {
     display: none;
 }
 
-.copyright-notice {
+#foot-legal-links {
+    border-top: 1px solid;
+    padding-top: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    grid-area: "legal-links";
+}
+
+#foot-legal-links > a {
+    margin-left: 3rem;
+}
+
+
+#copyright-notice {
+    border-top: 1px solid;
+    padding-top: 1.5rem;
     display: block;
     grid-area: "copyright-notice";
 }
