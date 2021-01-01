@@ -714,21 +714,22 @@ footer > .container {
     display: grid;
     grid-template-columns: 45fr 55fr;
     grid-template-areas:
-        "footer-logo       foot-nav"
-        "footer-vision     foot-nav"
-        "foot-sep         foot-sep"
+        "footer-branding   foot-nav"
+        "footer-branding   foot-nav"
         "copyright-notice  legal-links";
 }
 
+.footer-branding {
+    grid-area: "footer-branding";
+}
+
 .footer-logo {
-    grid-area: "footer-logo";
     height: 2.5rem;
     margin-bottom: 1rem;
 }
 
 .footer-vision {
     display: block;
-    grid-area: "footer-vision";
     max-width: 16rem;
     margin-bottom: 2rem;
 }
@@ -782,4 +783,54 @@ footer > .container {
     padding-top: 1.5rem;
     display: block;
     grid-area: "copyright-notice";
+}
+
+
+@media (max-width: 640px) {    
+    footer > .container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .footer-links {
+        flex-wrap: wrap;
+    }
+    
+    .footer-links > * {
+        width: 50%;
+        margin-top: 1rem;
+    }
+    
+    #foot-legal-links {
+        display: none;
+    }
+    
+    #footer-links-legal {
+        display: flex;
+    }
+    
+    .footer-branding {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    #footer-links-legal > .headlink {
+        display: block;
+    }
+    
+    #footer-links-for-companies {
+        order: 1;
+    }
+    #footer-links-other {
+        order: 2;
+        padding-left: 2rem;
+    }
+    #footer-links-for-private {
+        order: 3;
+    }
+    #footer-links-legal {
+        order: 4;
+        padding-left: 2rem;
+    }
 }
