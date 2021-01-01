@@ -38,26 +38,7 @@
         
         <main class="content">
             <div class="course-list" data-courses="courses_for_seniors">
-                <template>
-                    <section class="course">
-                        <div class="container">
-                            <div class="course-illustration">
-                                <img src="" alt="" data-course="illustration" />
-                            </div>
-
-                            <div class="course-information">
-                                <h3 data-course="title"></h3>
-
-                                <p data-course="description"></p>
-
-                                <div class="actions">
-                                    <a href="#" class="action-primary" onclick="alert('Not implemented')">Make Appointment</a>
-                                    <a href="#" class="action-secondary" onclick="alert('Not implemented')">Read more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                </template>
+                <template data-partial="course"></template>
             </div>
             
             <section class="faq" data-partial="faq"></section>
