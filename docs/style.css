@@ -760,10 +760,6 @@ footer > .container {
     display: none;
 }
 
-#footer-links-legal > .headlink {
-    display: none;
-}
-
 #foot-legal-links {
     border-top: 1px solid;
     padding-top: 1.5rem;
@@ -786,11 +782,54 @@ footer > .container {
 }
 
 .copyright-belonging::after {
-    content: ", ";
+    content: ",";
 }
 
 .copyright-type::after {
     content: '.';
+}
+
+@media (max-width: 1200px) {
+    footer > .container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .footer-branding {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .footer-logo {
+        margin-bottom: 0;
+    }
+    
+    .footer-vision {
+        margin-left: 2rem;
+    }
+    
+    #foot-legal-links {
+        display: none;
+    }
+    #footer-links-legal {
+        display: flex;
+    }
+    
+    #copyright-notice {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .copyright-belonging::after {
+        content: ",\00a0"; 
+        /*
+         * Inserts non-breaking space (normal space would get removed). There's also alternative, nicer
+         * solutions (see https://stackoverflow.com/a/40963855), but Microsoft might not be able to 
+         * deal with that one.
+         */
+    }
 }
 
 
@@ -822,6 +861,14 @@ footer > .container {
         flex-direction: column;
         align-items: flex-start;
         margin-bottom: 1rem;
+    }
+    
+    .footer-logo {
+        margin-bottom: 1rem;
+    }
+    
+    .footer-vision {
+        margin-left: 0;
     }
     
     #footer-links-legal > .headlink {
