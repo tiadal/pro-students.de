@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE courses SYSTEM "courses.dtd">
+<courses>
+
+    <course illustration="img/basic-computer-usage-illustration.svg">
+        <title>How to use a Computer</title>
+        <description>This course will help you to start using your computer.</description>
+        <lessons>
+            <lesson>Basics of using a Computer</lesson>
+            <lesson>How to use a Web Browser</lesson>
+            <lesson>How to be safe from Computer Viruses and Hackers</lesson>
+            <lesson>Using Skype and WhatsApp</lesson>
+        </lessons>
+    </course>
+
+    <course illustration="img/advanced-computer-usage-illustration.svg">
+        <title>Advanced Computer Usage</title>
+        <description>This course will teach you how to work with Photoshop as well as the Microsoft Office Suite.</description>
+    </course>
+
+</courses>

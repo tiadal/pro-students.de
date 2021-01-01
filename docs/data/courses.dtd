@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!ELEMENT courses (course*)>
 
-<!ELEMENT course (title, description)>
+<!ELEMENT course (title, description, contents?, lessons?)>
 <!ATTLIST course illustration CDATA #REQUIRED>
 <!ELEMENT title (#PCDATA)>
 <!ELEMENT description (#PCDATA)>
+
+<!ELEMENT contents (content+)>
+<!ELEMENT content (#PCDATA)>
+
+<!ELEMENT lessons (lesson+)>
+<!ELEMENT lesson (#PCDATA)>

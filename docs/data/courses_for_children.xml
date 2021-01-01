@@ -4,7 +4,14 @@
 
     <course illustration="img/python-logo.svg">
         <title>Introduction to programming in Python</title>
-        <description>TODO: Contains a list</description>
+        <description>This course will teach your children how to program in Python</description>
+        <contents>
+            <content>Installing Python</content>
+            <content>Input/Output operations</content>
+            <content>Using lists and dictionaries</content>
+            <content>Sorting algorithms</content>
+            <content>Work with strings</content>
+        </contents>
     </course>
 
     <course illustration="img/photoshop-illustration.svg">
