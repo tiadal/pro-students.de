@@ -726,7 +726,8 @@ main .container {
 }
 
 .about-location .map-image {
-    width: calc(100% - 15rem);
+    width: calc(100%);
+    margin-left: -15rem;
     box-shadow: 0px 0px 3px 0px grey;
 }
 
