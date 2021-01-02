@@ -672,6 +672,63 @@ main .container {
     }
 }
 
+/*
+############################
+    CONTENTS (About us)
+############################
+*/
+.about-team {
+    display: flex;
+}
+
+.team-members {
+    margin-left: 2rem;
+    flex-shrink: 0;
+}
+
+.team-members .team-member {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.team-text p {
+    margin-bottom: 1rem;
+}
+
+.team-member img {
+    margin-right: 1rem;
+}
+
+.team-member h3 {
+    font-size: inherit;
+    margin: 0;
+    margin-bottom: 0.1rem;
+}
+
+.about-location {
+    margin-top: 4rem;
+    position: relative;
+}
+
+.about-location .map-overlay {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25rem;
+    padding: 2.5rem;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    background: white;
+    box-shadow: 0px 1px 5px 1px grey;
+}
+
+.about-location .map-image {
+    width: calc(100% - 15rem);
+    box-shadow: 0px 0px 3px 0px grey;
+}
 
 /*
 ############################
