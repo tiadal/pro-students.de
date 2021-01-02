@@ -1015,7 +1015,7 @@ footer > .container {
     }
     #footer-links-other {
         order: 2;
-        padding-left: 2rem;
+        padding-left: 1rem;
         width: 48%;
     }
     #footer-links-for-private {
@@ -1024,7 +1024,7 @@ footer > .container {
     }
     #footer-links-legal {
         order: 4;
-        padding-left: 2rem;
+        padding-left: 1rem;
         width: 48%;
     }
     
