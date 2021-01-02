@@ -48,6 +48,12 @@ a {
     color: inherit;
 }
 
+p, dt, dl, dd {
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
 .container {
     max-width: 1280px;
     margin: 0 auto;
@@ -672,9 +678,6 @@ main .container {
     CONTENTS (Legal)
 ############################
 */
-p {
-    line-height: 1.5;
-}
 address {
     font-style: normal;
     display: flex;
@@ -733,12 +736,13 @@ h4 {
 }
 
 .question-answer {
-    margin-bottom: 15px;
+    margin-bottom: 40px;
 }
 
 .question-answer > .question {
     display: block;
     font-weight: bold;
+    margin-bottom: 5px;
 }
 
 @media (max-width: 640px) {
