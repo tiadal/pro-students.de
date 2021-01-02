@@ -21,8 +21,6 @@
     --light-dark-accent: #E5E5E5;  /* For clear separation of the header */
     --light-darker-accent: #929292;/* For breadcrumb */
     
-    --golden-ratio-small: 38,2%;
-    --golden-ratio-big: 61,8%;
     --golden-ratio-illustration-margin: 2rem;
     
     --rounded-edges: 4px;
@@ -450,7 +448,7 @@ main .container {
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: var(--golden-ratio-small);
+    max-width: 38,2;
 }
 
 .course-illustration > img {
@@ -460,7 +458,7 @@ main .container {
 
 .course-information {
     display: block;
-    width: var(--golden-ratio-big);
+    max-width: 60%;
 }
 
 .course-information > h3 {
@@ -560,7 +558,7 @@ main .container {
         display: flex;
         flex-direction: row;
         align-items: center;
-        height: var(--golden-ratio-small);
+        height: 38,2%;
     }
 
     .course-illustration > img {
@@ -640,7 +638,7 @@ h4 {
 
 .faq-heading-container {
     display: block;
-    width: var(--golden-ratio-small);
+    width: 38,2%;
     margin-right: var(--golden-ratio-illustration-margin);
 }
 
@@ -657,7 +655,7 @@ h4 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: var(--golden-ratio-big);
+    width: 61,8%;
 }
 
 .question-answer {
@@ -678,7 +676,7 @@ h4 {
     .faq-heading-container {
         display: flex;
         flex-direction: column-reverse;
-        width: var(--golden-ratio-small);
+        width: 38,2;
         margin-right: var(--golden-ratio-illustration-margin);
     }
     
