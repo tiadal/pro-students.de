@@ -78,7 +78,7 @@ courselists.forEach(courselist => {
                     Array.from(data.children).forEach(lesson => {
 
                         var li = lessonTemplate.cloneNode(true);
-                        li.innerHTML = lesson.innerHTML
+                        li.firstElementChild.innerHTML = lesson.innerHTML
                         lessons.appendChild(li)
 
                     })
@@ -101,7 +101,7 @@ courselists.forEach(courselist => {
                     Array.from(data.children).forEach(content => {
 
                         var li = contentTemplate.cloneNode(true);
-                        li.innerHTML = content.innerHTML
+                        li.firstElementChild.innerHTML = content.innerHTML
                         contents.appendChild(li)
 
                     })

@@ -450,6 +450,19 @@ main .container {
     margin-top: 0;
 }
 
+.course-information > ol.lessons, .course-information > ul.contents{
+    margin-top: -.8rem;
+}
+
+.lessons-entry, .contents-entry {
+    color: var(--primary);
+}
+
+.lessons-entry-content, .contents-entry-content {
+    color: var(--dark);
+    font-weight: normal;
+}
+
 .course-information > h3:after {
     content: " ";
     display: block;
