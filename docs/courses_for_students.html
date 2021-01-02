@@ -126,9 +126,56 @@
         </header>
 
         <main class="content">
-            <section>
-                <div class="container">TODO MAIN CONTENT</div>
-            </section>
+            <div class="course-list" data-courses="courses_for_students">
+                <template>
+                    <section class="course">
+                        <div class="container">
+                            <div class="course-illustration">
+                                <img src="" alt="" data-course="illustration" />
+                            </div>
+
+                            <div class="course-information">
+                                <h3 data-course="title"></h3>
+
+                                <p data-course="description"></p>
+
+                                <h4 class="contents-heading">Contents</h4>
+                                <ul class="contents" data-course="contents">
+                                    <li class="contents-entry">
+                                        <span
+                                            class="contents-entry-content"
+                                        ></span>
+                                    </li>
+                                </ul>
+
+                                <h4 class="lessons-heading">Lessons</h4>
+                                <ol class="lessons" data-course="lessons">
+                                    <li class="lessons-entry">
+                                        <span
+                                            class="lessons-entry-content"
+                                        ></span>
+                                    </li>
+                                </ol>
+
+                                <div class="actions">
+                                    <a
+                                        href="#"
+                                        class="action-primary"
+                                        onclick="alert('Not implemented')"
+                                        >Make Appointment</a
+                                    >
+                                    <a
+                                        href="#"
+                                        class="action-secondary"
+                                        onclick="alert('Not implemented')"
+                                        >Read more</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </template>
+            </div>
 
             <section class="faq">
                 <div class="container">
