@@ -23,7 +23,7 @@ function assembleFiles(err, fileList) {
             var partialName = partial.getAttribute("data-partial");
         
             var partialFramework = fs.readFileSync("src/partials/" + partialName + ".html").toString();
-        
+
             termsPrivacyImprintActive = [false, false, false];
             Array.from(partial.children).forEach(child => {
                 // For each child of the original document's partial marker, look for parameters. If found, replace them into
@@ -60,8 +60,10 @@ function assembleFiles(err, fileList) {
             partial.outerHTML = partialFramework;
         })
         
+        var out = dom.serialize().replace("<body></body>", "");
+
         // Save the assembled file
-        fs.writeFile('docs/' + htmlDoc, dom.serialize(), err => { if (err) { console.log("Couldn't write " + htmlDoc + " because of " + err) } })
+        fs.writeFile('docs/' + htmlDoc, out, err => { if (err) { console.log("Couldn't write " + htmlDoc + " because of " + err) } })
     })
 }
 

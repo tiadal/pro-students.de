@@ -1,11 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>About us - Pro Students Cottbus</title>
-
-        <link rel="stylesheet" href="style.css">
+    <head data-partial="head">
+        <template data-name="title">About us</template>
     </head>
     <body>
         <header>
@@ -24,9 +20,9 @@
 
             <section class="page-heading" data-partial="header">
 
-                <div data-name="illustration">img/team.svg</div>
-                <div data-name="title">About us</div>
-                <div data-name="subtitle">A group of 4 BTU Students</div>
+                <template data-name="illustration">img/team.svg</template>
+                <template data-name="title">About us</template>
+                <template data-name="subtitle">A group of 4 BTU Students</template>
 
             </section>
         </header>
@@ -42,8 +38,8 @@
             <section class="faq" data-partial="faq"></section>
             
             <section class="contact" data-partial="cta">
-                <div data-name="question">Do you want to know more about us?</div>
-                <div data-name="answer">Send us a message to get to know us!</div>
+                <template data-name="question">Do you want to know more about us?</template>
+                <template data-name="answer">Send us a message to get to know us!</template>
             </section>
         </main>
 

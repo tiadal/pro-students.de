@@ -1,11 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Terms - Pro Students Cottbus</title>
-
-        <link rel="stylesheet" href="style.css">
+    <head data-partial="head">
+        <template data-name="title">Terms</template>
     </head>
     <body>
         <header>
@@ -27,10 +23,10 @@
 
             <section class="page-heading" data-partial="header-legal">
 
-                <div data-name="illustration">img/contract.svg</div>
-                <div data-name="title">Terms</div>
-                <div data-name="subtitle">Pro Students Cottbus</div>
-                <div data-name="terms-active">true</div>
+                <template data-name="illustration">img/contract.svg</template>
+                <template data-name="title">Terms</template>
+                <template data-name="subtitle">Pro Students Cottbus</template>
+                <template data-name="terms-active">true</template>
 
             </section>
         </header>
@@ -52,8 +48,8 @@
             </section>
             
             <section class="contact" data-partial="cta">
-                <div data-name="question">Do you need more information?</div>
-                <div data-name="answer">Make a request and we will find a solution for you!</div>
+                <template data-name="question">Do you need more information?</template>
+                <template data-name="answer">Make a request and we will find a solution for you!</template>
             </section>
         </main>
 

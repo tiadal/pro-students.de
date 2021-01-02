@@ -1,11 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>For Companies - Pro Students Cottbus</title>
-
-        <link rel="stylesheet" href="style.css">
+    <head data-partial="head">
+        <template data-name="title">For Companies</template>
     </head>
     <body>
         <header>
@@ -24,9 +20,9 @@
 
             <section class="page-heading" data-partial="header">
 
-                <div data-name="illustration">img/business-decisions.svg</div>
-                <div data-name="title">Our Services</div>
-                <div data-name="subtitle">For Companies</div>
+                <template data-name="illustration">img/business-decisions.svg</template>
+                <template data-name="title">Our Services</template>
+                <template data-name="subtitle">For Companies</template>
 
             </section>
         </header>
@@ -55,8 +51,8 @@
             <section class="faq" data-partial="faq"></section>
             
             <section class="contact" data-partial="cta">
-                <div data-name="question">Your required service is not listed here?</div>
-                <div data-name="answer">Make a request and we will find a solution for you!</div>
+                <template data-name="question">Your required service is not listed here?</template>
+                <template data-name="answer">Make a request and we will find a solution for you!</template>
             </section>
         </main>
 
