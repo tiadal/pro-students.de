@@ -451,17 +451,19 @@ nav.breadcrumb > .container {
 .service-listing > .container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .service {
-    width: 40%;
+    width: 45%;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 1rem;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 60ms ease-in-out;
+    margin-bottom: 3rem;
 }
 
 .service:hover {
@@ -490,7 +492,6 @@ nav.breadcrumb > .container {
     
     .service {
         width: 100%;
-        margin-bottom: 3rem;
     }
     
     .service:last-of-type {
