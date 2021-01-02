@@ -1,0 +1,1047 @@
+/*
+############################
+    GLOBAL SETUP
+############################
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+    --primary: #BB4430;            /* Color for calls to action (dark red) */
+    --primary-light: #F2D4CE;      /* Lighter variant of primary color for non-focused calls to action */
+    --secondary: #7EBDC2;          /* Secondary color for contact form (light blue / indigo) */
+    --secondary-light: #F1F8F8;    /* TODO: Unused. remove? */
+    --secondary-dark: #214245;     /* Darker variant of secondary color (e.g. for corresponding button text) */
+    --dark: #231F20;               /* Main text color */
+    --light: #F9F9FF;              /* Main page color and text on dark backgrounds */
+    --light-light-accent: #F5F5F5; /* For separation of sections */
+    --light-dark-accent: #E5E5E5;  /* For clear separation of the header */
+    --light-darker-accent: #929292;/* For breadcrumb */
+    
+    --golden-ratio-small: 38,2%;
+    --golden-ratio-big: 61,8%;
+    --golden-ratio-illustration-margin: 2rem;
+    
+    --rounded-edges: 4px;
+}
+
+html, body {
+    min-height: 100%;
+    color: var(--dark);
+    background-color: white;
+    font-family: ui-sans-serif, systrem-ui, -apple-systrem, BlinkMacSystremFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color remoji", "Segoe UI remoji", "Segoe UI Symbol", "Noto Color remoji";
+    margin: 0;
+    padding: 0;
+    font-size: 16pt;
+    line-height: 1.15;
+}
+
+main {
+    background-color: var(--light-light-accent);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 5rem;
+}
+
+.hidden {
+    display: none !important;
+}
+
+@media (max-width: 768px) {
+    /*
+     * Disabling a elements taken from https://stackoverflow.com/a/4416239
+     */
+    .mobile-inactive-link {
+      pointer-events: none;
+      cursor: default;
+      text-decoration: none;
+      color: black;
+    }
+}
+
+/*
+############################
+    NAVBAR (Header)
+############################
+*/
+.navbar {
+    background-color: var(--light-dark-accent);
+    box-shadow: 0px 0px 5px 1px grey;
+}
+
+.navbar .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navbar .navbar-left button {
+    display: none;
+}
+
+.navbar-logo {
+    height: 2rem;
+}
+
+.navbar .navbar-links {
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.navbar .navbar-links > a, .navbar .navbar-links > .dropdown-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.navbar .navbar-links > a, .navbar .navbar-links > .dropdown-link > a {
+    padding: 1.5rem 1rem;
+}
+
+.navbar .navbar-links > a:hover, .navbar .navbar-links > .dropdown-link:hover > a {
+    color: var(--primary);
+}
+
+.navbar .navbar-links a:last-child, .navbar .navbar-links .dropdown-link:last-child {
+    margin-right: 0;
+}
+
+.dropdown-link {
+    float: left;
+}
+
+.dropdown-link > a::after {
+    content: url('img/dropdown-arrow.svg');
+}
+
+.dropdown-link-content {
+    display: none;
+    position: absolute;
+    background-color: var(--light);
+    box-shadow: 0px 0px 5px 1px grey;
+    top: 3.8rem;
+    flex-direction: column;
+    border-radius: var(--rounded-edges);
+}
+
+.navbar .navbar-links .dropdown-link .dropdown-link-content a {
+    display: block;
+    text-align: left;
+    padding-right: auto;
+    padding: 0.5rem 3rem 0.5rem 1.5rem;
+}
+
+.navbar .navbar-links .dropdown-link .dropdown-link-content a:hover {
+    background-color: var(--light-dark-accent);
+}
+
+.navbar .navbar-links .dropdown-link .dropdown-link-content a:first-child {
+    border-radius: var(--rounded-edges) var(--rounded-edges) 0 0;
+}
+
+.navbar .navbar-links .dropdown-link .dropdown-link-content a:last-child {
+    border-radius: 0 0 var(--rounded-edges) var(--rounded-edges);
+}
+
+.navbar .navbar-links .dropdown-link .dropdown-link-content a:last-child {
+    margin-bottom: 0;
+}
+
+.dropdown-link:hover .dropdown-link-content, .dropdown-link-content:hover {
+    display: flex;
+}
+
+@media (max-width: 1024px) {
+
+    .container {
+        padding: 0 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .container {
+        padding: 0 1rem;
+    }
+    .navbar .container {
+        flex-direction: column;
+    }
+    .navbar .navbar-left {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .navbar .navbar-left button {
+        display: block;
+        padding: 0.5rem;
+        margin: 1rem 0 1rem auto;
+        background-color: transparent;
+        border-radius: var(--rounded-edges);
+        box-shadow: none;
+        border: none;
+    }
+
+    .navbar .navbar-left button:hover {
+        background-color: var(--light);
+    }
+
+    .navbar .navbar-left button svg {
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+
+    .navbar .navbar-left button svg:first-child {
+        display: block;
+    }
+
+    .navbar.show .navbar-left button svg:first-child {
+        display: none;
+    }
+
+    .navbar .navbar-left button svg:last-child {
+        display: none;
+    }
+
+    .navbar.show .navbar-left button svg:last-child {
+        display: block;
+    }
+
+    .navbar .navbar-links {
+        display: none;
+        width: 100%;
+        margin-left: 0;
+        flex-direction: column;
+        padding-bottom: 1rem;
+    }
+
+    .navbar.show .navbar-links {
+        display: flex;
+    }
+    
+    .navbar .navbar-links > a, .navbar .navbar-links > .dropdown-link > a {
+        padding: 1rem;
+    }
+    
+    .dropdown-link-content {
+        display: flex;
+        position: static;
+        background-color: inherit;
+        box-shadow: none;
+        flex-direction: column;
+    }
+    
+    .navbar .navbar-links .dropdown-link .dropdown-link-content a {
+        display: block;
+        text-align: left;
+        padding-right: auto;
+        padding: 0.5rem 3rem;
+    }
+    
+    .navbar .navbar-links .dropdown-link .dropdown-link-content a:hover {
+        color: var(--primary)
+    }
+}
+
+/*
+############################
+    BREADCRUMB (Header)
+############################
+*/
+nav.breadcrumb > .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+    color: var(--light-darker-accent);
+    overflow-x: auto;
+}
+    
+.breadcrumb-sep::before {
+     padding-left: 1rem;
+     padding-right: 1rem;
+     content: '>';
+ }
+
+.breadcrumb-dots {
+    display: none;
+}
+
+#home-icon {
+    width: 1.5rem;
+}
+
+@media (max-width: 640px) {
+    /*
+     * Only show home icon, last location link and, if there were any
+     * more links in the breadcrumb, a ... in between them. This is achieved by 
+     * hiding all links and separators except the first and last ones, and then showing the given
+     * .breadcrumb-dots classed element as a unicode ellipsis
+     *
+     * This approach also works for breadcrumbs with only the home and location link. The .breadrcumb-
+     * dots element shouldn't be given there.
+     */
+    
+    nav.breadcrumb a {
+        display: none;
+    }
+    
+    .breadcrumb-sep {
+        display: none;
+    }
+    
+    nav.breadcrumb a:first-child, nav.breadcrumb a:last-child {
+        display: inline;
+    }
+    
+    .breadcrumb-sep:first-of-type, .breadcrumb-sep:last-of-type {
+        display: inline;
+    }
+    
+    .breadcrumb-dots {
+        display: inline;
+    }
+    
+    .breadcrumb-dots::after {
+        content: "…";
+    }
+}
+
+/*
+############################
+    PAGE HEADING (Header)
+############################
+*/
+.page-heading > .container {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5rem;
+}
+
+.page-heading-text {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+}
+
+.page-heading-text .main-title {
+    display: block;
+    color: var(--primary);
+    font-size: 3.5rem;
+}
+
+.page-heading-text .sub-title {
+    display: block;
+    color:var(--dark);
+    font-size: 1.5rem;
+}
+
+.page-heading .actions {
+    margin-top: 25px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.page-heading .actions .action-primary {
+    display: block;
+    color: var(--light);
+    background-color: var(--primary);
+    border-radius: var(--rounded-edges);
+    padding: 25px;
+    padding-left: 35px;
+    padding-right: 35px;
+    margin-right: 25px;
+}
+
+.page-heading .actions .action-secondary {
+    display: block;
+    color: var(--primary);
+    background-color: var(--primary-light);
+    border-radius: var(--rounded-edges);
+    padding: 25px;
+    padding-left: 35px;
+    padding-right: 35px;
+    margin-right: 25px;
+}
+
+.page-heading-illustration {
+    display: block;
+    text-align: left;
+    width: 50%;
+}
+
+.page-heading-illustration > img {
+    max-width: 90%;
+    max-height: 50vh;
+    margin: auto;
+}
+
+/* Different header for legal pages needs styling, too */
+.page-heading-legal-links {
+    display: flex;
+    flex-direction: row;
+}
+
+.page-heading-legal-links > a {
+    margin-right: 1.5rem;
+    color: var(--light-darker-accent);
+}
+
+.page-heading-legal-links > .active {
+    font-weight: bold;
+}
+
+@media (max-width: 640px) {
+    .page-heading > .container {
+        flex-direction: column;
+    }
+
+    .page-heading-text {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .page-heading-text .main-title {
+        font-size: 2.5rem;
+    }
+
+    .page-heading-text .sub-title {
+        font-size: 1.5rem;
+    }
+
+    .page-heading .actions {
+        flex-direction: column;
+    }
+    .page-heading .actions .action-primary, .page-heading .actions .action-secondary {
+        margin-right: 0;
+    }
+
+    .page-heading .actions .action-primary, .page-heading .actions .action-secondary {
+        padding: 18px;
+        text-align: center;
+    }
+
+    .page-heading .actions .action-secondary {
+        margin-top: 0.5rem;
+    }
+}
+
+/*
+############################
+    CONTENTS (Service listings)
+############################
+*/
+.service-listing > .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 60ms ease-in-out;
+    margin-bottom: 3rem;
+}
+
+.service:hover {
+    transform: scale(1.1);
+}
+
+.service > img {
+    max-width: 90%;
+    max-height: 12rem;
+}
+
+.service > h3 {
+    margin-bottom: .5rem;
+}
+
+.service > p {
+    text-align: center;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+}
+
+@media (max-width: 730px) {
+    .service-listing > .container {
+        flex-direction: column;
+    }
+    
+    .service {
+        width: 100%;
+    }
+    
+    .service:last-of-type {
+        margin-bottom: 0rem;
+    }
+}
+
+
+/*
+############################
+    CONTENTS (Courses)
+############################
+*/
+main .container {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+}
+
+.course .container {
+    display: flex;
+    flex-direction: row;
+}
+
+.course-illustration {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 40%;
+}
+
+.course-illustration > img {
+    max-width: 90%;
+    max-height: 18rem;
+}
+
+.course-information {
+    display: block;
+    width: 60%;
+}
+
+.course-information > h3 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-top: 0;
+}
+
+.course-information > ol.lessons, .course-information > ul.contents{
+    margin-top: -.2rem;
+}
+
+.lessons-entry, .contents-entry {
+    color: var(--primary);
+}
+
+.lessons-entry-content, .contents-entry-content {
+    color: var(--dark);
+    font-weight: normal;
+}
+
+.course-information > h3:after {
+    content: " ";
+    display: block;
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+    height: 4px;
+    width: 1.2rem;
+    background: var(--primary);
+    border: none;
+}
+
+.course-information .actions {
+    margin-top: 25px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.course-information .actions .action-primary {
+    display: block;
+    color: var(--light);
+    background-color: var(--primary);
+    padding: 15px;
+    border-radius: var(--rounded-edges);
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: 20px;
+}
+
+.course-information .actions .action-secondary {
+    display: block;
+    color: var(--primary);
+    background-color: var(--primary-light);
+    padding: 15px;
+    border-radius: var(--rounded-edges);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.course:nth-child(odd) {
+    background-color: var(--light-light-accent);
+}
+
+.course:nth-child(odd) .course-illustration {
+    order: 1;
+    margin-right: var(--golden-ratio-illustration-margin);
+}
+
+.course:nth-child(odd) .course-information {
+    order: 2;
+    justify-content: left;
+}
+
+.course:nth-child(even) {
+    background-color: var(--light);
+}
+
+.course:nth-child(even) .course-information {
+    order: 1;
+    text-align: left;
+}
+
+.course:nth-child(even) .course-illustration {
+    order: 2;
+    justify-content: right;
+    margin-left: var(--golden-ratio-illustration-margin);
+}
+
+@media (max-width: 640px) {
+
+    .course .container {
+        flex-direction: column;
+    }
+
+    .course-illustration {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: var(--golden-ratio-small);
+    }
+
+    .course-illustration > img {
+        width: 50%;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+
+    .course-information .actions {
+        flex-direction: column;
+    }
+
+    .course-information .actions .action-primary {
+        margin-right: 0;
+        text-align: center;
+    }
+    
+    .course-information .actions .action-secondary {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .course:nth-child(even) {
+        background-color: var(--light);
+    }
+
+    .course:nth-child(even) .course-information {
+        order: 2;
+    }
+
+    .course:nth-child(even) .course-illustration {
+        order: 1;
+        margin-left: 0;
+    }
+}
+
+
+/*
+############################
+    CONTENTS (Legal)
+############################
+*/
+address {
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+}
+
+address > * {
+    display: block;
+}
+
+h4 {
+    margin-bottom: .5rem;
+}
+
+.legal-notice {
+    display: block;
+    font-style: italic;
+    margin-bottom: 2rem;
+}
+
+
+/*
+############################
+    CONTENTS (FAQ)
+############################
+*/
+.faq {
+    background-color: var(--light-light-accent); /* TODO: might look bad with odd number of courses */
+}
+
+.faq .container {
+    display: flex;
+    flex-direction: row;
+}
+
+.faq-heading-container {
+    display: block;
+    width: 40%;
+    margin-right: var(--golden-ratio-illustration-margin);
+}
+
+.faq-heading-container > h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+.faq-heading-container > img {
+    width: 80%;
+}
+
+.faq-questions-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.question-answer {
+    margin-bottom: 15px;
+}
+
+.question-answer > .question {
+    display: block;
+    font-weight: bold;
+}
+
+@media (max-width: 640px) {
+    
+    .faq .container {
+        flex-direction: column;
+    }
+    
+    .faq-heading-container {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        margin-right: var(--golden-ratio-illustration-margin);
+    }
+    
+    .faq-heading-container > h3 {
+        margin-top: 1rem;
+        font-size: 1.3rem;
+    }
+    
+    .faq-heading-container > img {
+        width: 50%;
+        margin-top: 0;
+    }
+    
+    .faq-questions-container {
+        width: 100%;
+    }
+    
+    .question-answer {
+        margin-bottom: 25px;
+    }
+
+}
+
+/*
+############################
+    CONTENTS (Contact)
+############################
+*/
+.contact {
+    font-size: 1.5rem;
+    background-color: var(--secondary);
+    color: var(--light);
+}
+
+.contact > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-question-answer {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-question {
+    display: block;
+    color: var(--light);
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.contact-answer {
+    display: block;
+    color: var(--dark);
+}
+.contact-action > a {
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    color: var(--secondary-dark);
+    background-color: var(--light);
+    border-radius: var(--rounded-edges);
+    align-items: center;
+    padding: 1.5rem;
+}
+
+@media (max-width: 640px) {
+    
+    .contact > .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .contact-action {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        margin-top: 25px;
+    }
+
+    .contact-action > a {
+        padding: 0.9rem;
+    }
+}
+
+/*
+############################
+    FOOTER
+############################
+*/
+footer > .container {
+    padding-top: 3.5rem;
+    padding-bottom: 1.5rem;
+    color: var(--light-darker-accent);
+    display: grid;
+    grid-template-columns: 45fr 55fr;
+    grid-template-areas:
+        "footer-branding   foot-nav"
+        "footer-branding   foot-nav"
+        "copyright-notice  legal-links";
+}
+
+.footer-branding {
+    grid-area: "footer-branding";
+    margin-bottom: 2rem;
+}
+
+.footer-logo {
+    height: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.footer-vision {
+    display: block;
+    max-width: 16rem;
+}
+
+.footer-links {
+    grid-area: "foot-nav";
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.footer-links a {
+    margin-bottom: .5rem;
+}
+
+.footer-links .headlink {
+    margin-bottom: .8rem;
+    font-weight: 550;
+}
+
+.footer-links > div {
+    display: flex;
+    flex-direction: column;
+}
+
+#footer-links-legal {
+    display: none;
+}
+
+#foot-legal-links {
+    border-top: 1px solid;
+    padding-top: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    grid-area: "legal-links";
+}
+
+#foot-legal-links > a {
+    margin-left: 3rem;
+}
+
+
+#copyright-notice {
+    border-top: 1px solid;
+    padding-top: 1.5rem;
+    display: block;
+    grid-area: "copyright-notice";
+}
+
+.copyright-belonging::after {
+    content: ",";
+}
+
+.copyright-type::after {
+    content: '.';
+}
+
+@media (max-width: 1200px) {
+    footer > .container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .footer-branding {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .footer-logo {
+        margin-bottom: 0;
+    }
+    
+    .footer-vision {
+        margin-left: 2rem;
+    }
+    
+    #foot-legal-links {
+        display: none;
+    }
+    #footer-links-legal {
+        display: flex;
+    }
+    
+    #copyright-notice {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .copyright-belonging::after {
+        content: ",\00a0"; 
+        /*
+         * Inserts non-breaking space (normal space would get removed). There's also alternative, nicer
+         * solutions (see https://stackoverflow.com/a/40963855), but Microsoft might not be able to 
+         * deal with that one.
+         */
+    }
+}
+
+
+@media (max-width: 640px) {    
+    footer > .container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .footer-links {
+        flex-wrap: wrap;
+    }
+    
+    .footer-links > * {
+        margin-top: 1rem;
+    }
+    
+    #foot-legal-links {
+        display: none;
+    }
+    
+    #footer-links-legal {
+        display: flex;
+    }
+    
+    .footer-branding {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 1rem;
+    }
+    
+    .footer-logo {
+        margin-bottom: 1rem;
+    }
+    
+    .footer-vision {
+        margin-left: 0;
+    }
+    
+    #footer-links-legal > .headlink {
+        display: block;
+    }
+    
+    #footer-links-for-companies {
+        order: 1;
+        width: 52%;
+    }
+    #footer-links-other {
+        order: 2;
+        padding-left: 2rem;
+        width: 48%;
+    }
+    #footer-links-for-private {
+        order: 3;
+        width: 52%;
+    }
+    #footer-links-legal {
+        order: 4;
+        padding-left: 2rem;
+        width: 48%;
+    }
+    
+    #copyright-notice {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .copyright-belonging, .copyright-type {
+        display: block;
+    }
+    .copyright-belonging::after, .copyright-type::after {
+        content: "";
+    }
+    
+    .copyright-belonging {
+        margin-bottom: .25rem;
+    }
+}

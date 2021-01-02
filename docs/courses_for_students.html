@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Homepage - Pro Students Cottbus</title>
+        <title>For Students - Pro Students Cottbus</title>
 
         <link rel="stylesheet" href="style.css" />
     </head>
@@ -79,16 +79,31 @@
                 </div>
             </nav>
 
+            <nav class="breadcrumb">
+                <div class="container">
+                    <a href="#">
+                        <img id="home-icon" src="img/home.svg" />
+                    </a>
+                    <span class="breadcrumb-sep"></span>
+                    <span class="breadcrumb-dots"></span>
+                    <a href="#">For Companies</a>
+                    <span class="breadcrumb-sep"></span>
+                    <a href="#">IT Courses</a>
+                    <span class="breadcrumb-sep"></span>
+                    <a href="#">Students</a>
+                </div>
+            </nav>
+
             <section class="page-heading">
                 <div class="container">
                     <div class="page-heading-illustration">
-                        <img src="img/business-decisions.svg" alt="" />
+                        <img src="img/for-students-illustration.svg" alt="" />
                     </div>
 
                     <div class="page-heading-text">
                         <h1>
-                            <span class="main-title">Pro Students Cottbus</span>
-                            <span class="sub-title">Homepage TODO</span>
+                            <span class="main-title">IT Courses</span>
+                            <span class="sub-title">For Students</span>
                         </h1>
 
                         <div class="actions">
@@ -111,9 +126,56 @@
         </header>
 
         <main class="content">
-            <section>
-                <div class="container">TODO MAIN CONTENT</div>
-            </section>
+            <div class="course-list" data-courses="courses_for_students">
+                <template>
+                    <section class="course">
+                        <div class="container">
+                            <div class="course-illustration">
+                                <img src="" alt="" data-course="illustration" />
+                            </div>
+
+                            <div class="course-information">
+                                <h3 data-course="title"></h3>
+
+                                <p data-course="description"></p>
+
+                                <h4 class="contents-heading">Contents</h4>
+                                <ul class="contents" data-course="contents">
+                                    <li class="contents-entry">
+                                        <span
+                                            class="contents-entry-content"
+                                        ></span>
+                                    </li>
+                                </ul>
+
+                                <h4 class="lessons-heading">Lessons</h4>
+                                <ol class="lessons" data-course="lessons">
+                                    <li class="lessons-entry">
+                                        <span
+                                            class="lessons-entry-content"
+                                        ></span>
+                                    </li>
+                                </ol>
+
+                                <div class="actions">
+                                    <a
+                                        href="#"
+                                        class="action-primary"
+                                        onclick="alert('Not implemented')"
+                                        >Make Appointment</a
+                                    >
+                                    <a
+                                        href="#"
+                                        class="action-secondary"
+                                        onclick="alert('Not implemented')"
+                                        >Read more</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </template>
+            </div>
 
             <section class="faq">
                 <div class="container">
@@ -163,7 +225,7 @@
                 <div class="container">
                     <div class="contact-question-answer">
                         <span class="contact-question"
-                            >NOTE TO SELF: Please adjust this</span
+                            >Couldn't find the right course for you?</span
                         >
                         <span class="contact-answer"
                             >Make a request and we will find a solution for

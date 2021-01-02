@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE courses SYSTEM "courses.dtd">
+<courses>
+
+    <course illustration="img/your-course-here-illustration.svg">
+        <title>Your course here!</title>
+        <description>We support all Bachelor and Master students with any issues related to your courses. We want to help you understand all your subjecs and achieve great results. Simply contact us to arrange a meeting so we can discuss your curriculum!</description>
+    </course>
+
+</courses>

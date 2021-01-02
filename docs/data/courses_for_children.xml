@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE courses SYSTEM "courses.dtd">
+<courses>
+
+    <course illustration="img/python-logo.svg">
+        <title>Introduction to programming in Python</title>
+        <description>This course will teach your children how to program in Python</description>
+        <contents>
+            <content>Installing Python</content>
+            <content>Input/Output operations</content>
+            <content>Using lists and dictionaries</content>
+            <content>Sorting algorithms</content>
+            <content>Work with strings</content>
+        </contents>
+    </course>
+
+    <course illustration="img/photoshop-illustration.svg">
+        <title>Introduction to Photoshop</title>
+        <description>This course will teach your children how to edit photos with Photoshop.</description>
+    </course>
+
+</courses>

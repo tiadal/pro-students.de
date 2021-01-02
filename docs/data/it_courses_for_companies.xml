@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE courses SYSTEM "courses.dtd">
+<courses>
+
+    <course illustration="img/spreadsheet.svg">
+        <title>Introduction to Excel</title>
+        <description>MS Excel is the most popular program for working with tables. In this course we talk about simple data analysis methods, which your employees can use in MS Excel.</description>
+    </course>
+
+    <course illustration="img/diagram.svg">
+        <title>Introduction to PowerPoint</title>
+        <description>MS PowerPoint is an app for creating presentations. We will explain how to work with PowerPoint effectively. This course will show your employees how to create good slides.</description>
+    </course>
+
+    <course illustration="img/spreadsheet.svg">
+        <title>Introduction to Excel</title>
+        <description>MS Excel is the most popular program for working with tables. In this course we talk about simple data analysis methods, which your employees can use in MS Excel.</description>
+    </course>
+
+    <course illustration="img/diagram.svg">
+        <title>Introduction to PowerPoint</title>
+        <description>MS PowerPoint is an app for creating presentations. We will explain how to work with PowerPoint effectively. This course will show your employees how to create good slides.</description>
+    </course>
+
+</courses>
