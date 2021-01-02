@@ -39,6 +39,10 @@ html, body {
     line-height: 1.15;
 }
 
+main {
+    background-color: var(--light-light-accent);
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -451,7 +455,7 @@ main .container {
 }
 
 .course-information > ol.lessons, .course-information > ul.contents{
-    margin-top: -.8rem;
+    margin-top: -.2rem;
 }
 
 .lessons-entry, .contents-entry {
@@ -576,6 +580,32 @@ main .container {
         order: 1;
         margin-left: 0;
     }
+}
+
+
+/*
+############################
+    CONTENTS (Legal)
+############################
+*/
+address {
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+}
+
+address > * {
+    display: block;
+}
+
+h4 {
+    margin-bottom: .5rem;
+}
+
+.legal-notice {
+    display: block;
+    font-style: italic;
+    margin-bottom: 2rem;
 }
 
 
