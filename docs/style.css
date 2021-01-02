@@ -672,6 +672,9 @@ main .container {
     CONTENTS (Legal)
 ############################
 */
+p {
+    line-height: 1.5;
+}
 address {
     font-style: normal;
     display: flex;
