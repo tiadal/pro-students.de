@@ -861,7 +861,6 @@ footer > .container {
     }
     
     .footer-links > * {
-        width: 50%;
         margin-top: 1rem;
     }
     
@@ -894,17 +893,21 @@ footer > .container {
     
     #footer-links-for-companies {
         order: 1;
+        width: 52%;
     }
     #footer-links-other {
         order: 2;
         padding-left: 2rem;
+        width: 48%;
     }
     #footer-links-for-private {
         order: 3;
+        width: 52%;
     }
     #footer-links-legal {
         order: 4;
         padding-left: 2rem;
+        width: 48%;
     }
     
     #copyright-notice {
