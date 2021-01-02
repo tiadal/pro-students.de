@@ -74,3 +74,60 @@ Main call to actions: BB4430
 ### XML Service page
 We need an XMl page whit a list of all our courses that we provide, the list of courses will be provided from us such as the element name such as: title, tutor, area, description.
 
+
+
+# Developer Documentation
+
+## Developers
+
+* Julius Kiekbusch
+* Fabian Mildner
+
+## Division of Work
+
+The following division of work should not be understood as a sign that one person worked entirely on a given task. Much rather, it should be interpreted as the person being the *main person in charge* for fulfilling the given tasks. Many tasks were subject to mutual corrections, adjustments and agreements that were performed by both developers. 
+
+### Julius Kiekbusch
+
+* General Website Design / Common Design for Webpages (MockUp, see the [design on Figma](https://www.figma.com/file/RHo9pFGFubbjlLqGLTjeOa/pro-students.de))
+* Individual Webpage design (MockUp, see the [design on Figma](https://www.figma.com/file/RHo9pFGFubbjlLqGLTjeOa/pro-students.de))
+* Mobile Adaptability of common page elements and the course lists, including navbar burger menu for mobile / tablet
+* HTML generation script and structures based on XML for the course lists
+* Pro Students Logo Design
+
+### Fabian Mildner
+
+* HTML/CSS Implementation of the general website design and the course lists
+* HTML/CSS Implementation of the Footer (Adaptable for Mobile, Tablet and Desktop)
+* HTML/CSS Implementation of the service lists (For Private, For Companies)
+* HTML/CSS Implementation of the legal pages
+* Breadcrumb adaptation for mobile (display with ...)
+* Implementation of the course lists based on the HTML generation script and structures and provision of suitable illustrations
+* Pro Students Logo Creation as SVG
+
+### Both Equally
+
+* Creation of a suitable build script for generation of the web pages based on partial data
+
+
+### --\# TODO \#--
+
+* Home Page design
+* Home Page implementation
+* Tablet Design refinement
+* Implementation of Consulting and PC Problems pages
+* Clean up CSS and HTML
+    * Minimize / optimize class usage
+    * Check HTML tag semantics
+
+
+## Developing and Building the Website
+
+* Images and XML files as well as JavaScripts and Cascading Style Sheets can be saved directly in the docs folder and corresponding subfolders
+* Final HTML files contain elements that repeat across several webpages. As such, those repeating partials have been taken out of the development (source) HTML files and are only inserted through a build step
+* Development HTML files and insertible partials should be saved in the src folder (and corresponding sub-folder)
+
+* To build the website, you need to install NodeJS and the Node Package Manager (npm).
+* To install necessary packages for the build and watch steps, run `npm install` once from within the root of this repository
+* Afterwards, you can build webpages (i.e. assemble development html files with their partials) using `npm run build`
+* In addition, you can start browsersync for easier development and testing using `npm run watch`
