@@ -450,7 +450,7 @@ main .container {
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: var(--golden-ratio-small);
+    width: 40%;
 }
 
 .course-illustration > img {
@@ -460,7 +460,7 @@ main .container {
 
 .course-information {
     display: block;
-    width: var(--golden-ratio-big);
+    width: 60%;
 }
 
 .course-information > h3 {
@@ -640,7 +640,7 @@ h4 {
 
 .faq-heading-container {
     display: block;
-    width: var(--golden-ratio-small);
+    width: 40%;
     margin-right: var(--golden-ratio-illustration-margin);
 }
 
@@ -657,7 +657,7 @@ h4 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: var(--golden-ratio-big);
+    width: 60%;
 }
 
 .question-answer {
@@ -678,7 +678,7 @@ h4 {
     .faq-heading-container {
         display: flex;
         flex-direction: column-reverse;
-        width: var(--golden-ratio-small);
+        width: 40%;
         margin-right: var(--golden-ratio-illustration-margin);
     }
     
