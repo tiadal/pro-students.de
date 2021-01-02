@@ -380,6 +380,21 @@ nav.breadcrumb > .container {
     margin: auto;
 }
 
+/* Different header for legal pages needs styling, too */
+.page-heading-legal-links {
+    display: flex;
+    flex-direction: row;
+}
+
+.page-heading-legal-links > a {
+    margin-right: 1.5rem;
+    color: var(--light-darker-accent);
+}
+
+.page-heading-legal-links > .active {
+    font-weight: bold;
+}
+
 @media (max-width: 640px) {
     .page-heading > .container {
         flex-direction: column;
