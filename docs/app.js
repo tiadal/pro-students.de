@@ -84,7 +84,6 @@ courselists.forEach(courselist => {
                     })
 
                 } else {
-                    console.log(htmlCourse)
                     htmlCourse.querySelector("h4.lessons-heading").classList.add('hidden')
                     lessons.classList.add('hidden')
                 }
