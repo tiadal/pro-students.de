@@ -95,6 +95,8 @@ The following division of work should not be understood as a sign that one perso
 * HTML generation script and structures based on XML for the course lists
 * Pro Students Logo Design
 * HTML/CSS Implementation of the About Us page
+* Design and HTML/CSS Implementation of the PC Problems page
+* Design and HTML/CSS Implementation of a custom 404 page
 
 ### Fabian Mildner
 
@@ -105,15 +107,17 @@ The following division of work should not be understood as a sign that one perso
 * Breadcrumb adaptation for mobile (display with ...)
 * Implementation of the course lists based on the HTML generation script and structures and provision of suitable illustrations
 * Pro Students Logo Creation as SVG
+* HTML/CSS Implementation of the consulting page
+* HTML/CSS Implementation of the homepage
 
 ### Both Equally
 
 * Creation of a suitable build script for generation of the web pages based on partial data
+* Design of the Homepage
 
 
 ### --\# TODO \#--
 
-* Home Page design
 * Home Page implementation
 * Tablet Design refinement
 * Implementation of Consulting and PC Problems pages
@@ -121,6 +125,7 @@ The following division of work should not be understood as a sign that one perso
     * Minimize / optimize class usage
     * Check HTML tag semantics
 * Re-check image sources and necessary credits (Undraw, Unsplash)
+* Optimize SVGs
 
 
 ## Developing and Building the Website
