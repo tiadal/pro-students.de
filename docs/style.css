@@ -145,7 +145,6 @@ p, dt, dl, dd {
 .navbar .navbar-links .dropdown-link .dropdown-link-content a {
     display: block;
     text-align: left;
-    padding-right: auto;
     padding: 0.5rem 3rem 0.5rem 1.5rem;
 }
 
@@ -253,7 +252,6 @@ p, dt, dl, dd {
     .navbar .navbar-links .dropdown-link .dropdown-link-content a {
         display: block;
         text-align: left;
-        padding-right: auto;
         padding: 0.5rem 3rem;
     }
     
@@ -861,7 +859,7 @@ h4 {
 
 .contact-question {
     display: block;
-    color: var(--light);
+    color: var(--secondary-light);
     font-weight: bold;
     margin-bottom: 0.5rem;
 }
@@ -875,7 +873,7 @@ h4 {
     display: flex;
     justify-content: center;
     color: var(--secondary-dark);
-    background-color: var(--light);
+    background-color: var(--secondary-light);
     border-radius: var(--rounded-edges);
     align-items: center;
     padding: 1.5rem;
@@ -919,13 +917,13 @@ footer > .container {
     display: grid;
     grid-template-columns: 45fr 55fr;
     grid-template-areas:
-        "footer-branding   foot-nav"
-        "footer-branding   foot-nav"
-        "copyright-notice  legal-links";
+        "footerBranding footNav"
+        "footerBranding footNav"
+        "copyrightNotice legalLinks";
 }
 
 .footer-branding {
-    grid-area: "footer-branding";
+    grid-area: footerBranding;
     margin-bottom: 2rem;
 }
 
@@ -940,7 +938,7 @@ footer > .container {
 }
 
 .footer-links {
-    grid-area: "foot-nav";
+    grid-area: footNav;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -953,7 +951,7 @@ footer > .container {
 
 .footer-links .headlink {
     margin-bottom: .8rem;
-    font-weight: 550;
+    font-weight: 500;
 }
 
 .footer-links > div {
@@ -971,7 +969,7 @@ footer > .container {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    grid-area: "legal-links";
+    grid-area: legalLinks;
 }
 
 #foot-legal-links > a {
@@ -983,7 +981,7 @@ footer > .container {
     border-top: 1px solid;
     padding-top: 1.5rem;
     display: block;
-    grid-area: "copyright-notice";
+    grid-area: copyrightNotice;
 }
 
 .copyright-belonging::after {
