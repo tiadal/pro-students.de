@@ -94,6 +94,7 @@ The following division of work should not be understood as a sign that one perso
 * Mobile Adaptability of common page elements and the course lists, including navbar burger menu for mobile / tablet
 * HTML generation script and structures based on XML for the course lists
 * Pro Students Logo Design
+* HTML/CSS Implementation of the About Us page
 
 ### Fabian Mildner
 
@@ -119,6 +120,7 @@ The following division of work should not be understood as a sign that one perso
 * Clean up CSS and HTML
     * Minimize / optimize class usage
     * Check HTML tag semantics
+* Re-check image sources and necessary credits (Undraw, Unsplash)
 
 
 ## Developing and Building the Website
