@@ -288,6 +288,7 @@ nav.breadcrumb > .container {
 
 #home-icon {
     width: 1.5rem;
+    height: auto;
 }
 
 @media (max-width: 640px) {
@@ -907,7 +908,7 @@ h4 {
     FOOTER
 ############################
 */
-footer a:hover, .page-heading-legal-links a:hover {
+footer a:hover, .page-heading-legal-links a:hover, nav.breadcrumb a:hover {
     color: var(--dark);
 }
 
