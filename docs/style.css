@@ -75,7 +75,6 @@ p, dt, dl, dd {
       color: black;
     }
 }
-
 /*
 ############################
     NAVBAR (Header)
@@ -84,6 +83,7 @@ p, dt, dl, dd {
 .navbar {
     background-color: var(--light-dark-accent);
     box-shadow: 0px 0px 5px 1px grey;
+    margin-bottom: 2rem;
 }
 
 .navbar .container {
@@ -271,7 +271,6 @@ nav.breadcrumb > .container {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding-top: 1.5rem;
     padding-bottom: 2rem;
     color: var(--light-darker-accent);
     overflow-x: auto;
@@ -339,6 +338,7 @@ nav.breadcrumb > .container {
 }
 
 .page-heading-text {
+    margin-left: 3rem;
     display: flex;
     width: 50%;
     flex-direction: column;
@@ -387,15 +387,15 @@ nav.breadcrumb > .container {
 }
 
 .page-heading-illustration {
-    display: block;
+    display: flex;
     text-align: left;
     width: 50%;
 }
 
 .page-heading-illustration > img {
-    max-width: 90%;
+    width: 100%;
     max-height: 50vh;
-    margin: auto;
+    height: 100%;
 }
 
 /* Different header for legal pages needs styling, too */
