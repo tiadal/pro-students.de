@@ -639,12 +639,17 @@ main .container {
         flex-direction: row;
         align-items: center;
         height: var(--golden-ratio-small);
+        width: 100%;
     }
 
     .course-illustration > img {
         width: 50%;
         height: auto;
         margin-bottom: 1rem;
+    }
+    
+    .course-information {
+        width: 100%;
     }
 
     .course-information .actions {
