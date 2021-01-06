@@ -698,9 +698,12 @@ main .container {
 }
 
 @media (max-width: 640px) {
-
     .course .container {
         flex-direction: column;
+    }
+    
+    .course:nth-child(n) .course-illustration {
+        justify-content: left;
     }
 
     .course-illustration {
