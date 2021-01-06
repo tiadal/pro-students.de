@@ -119,6 +119,7 @@ The following division of work should not be understood as a sign that one perso
 ### --\# TODO \#--
 
 * Tablet Design refinement
+* Fix non-proportional jpg scaling
 * Implementation of Consulting and PC Problems pages
 * Clean up CSS and HTML
     * Minimize / optimize class usage
