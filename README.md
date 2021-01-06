@@ -118,7 +118,6 @@ The following division of work should not be understood as a sign that one perso
 
 ### --\# TODO \#--
 
-* Home Page implementation
 * Tablet Design refinement
 * Implementation of Consulting and PC Problems pages
 * Clean up CSS and HTML
