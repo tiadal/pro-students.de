@@ -141,6 +141,10 @@ The following division of work should not be understood as a sign that one perso
 * Afterwards, you can build webpages (i.e. assemble development html files with their partials) using `npm run build`
 * In addition, you can start browsersync for easier development and testing using `npm run watch`
 
+
 ## Note regarding copyrights
 
-All illustrations, icons and images used on this website are sourced from undraw and unsplash and are licensed as free to use without crediting the author. As such, no credits are necessary on the webpages.
+All illustrations, icons and images used on this website are sourced from undraw.co, unsplash.com and heroicons.com are licensed as free to use without attribution. As such, no credits are necessary on the webpages. See the corresponding licenses for more:
+* https://unsplash.com/license
+* https://undraw.co/license
+* https://github.com/tailwindlabs/heroicons ([MIT-Licensed](https://en.wikipedia.org/wiki/MIT_License))
