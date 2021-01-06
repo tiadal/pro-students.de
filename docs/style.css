@@ -424,6 +424,7 @@ nav.breadcrumb > .container {
         display: flex;
         width: 100%;
         flex-direction: column;
+        margin-left: 0;
     }
 
     .page-heading-text .main-title {
