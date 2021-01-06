@@ -5,15 +5,71 @@
     </head>
     <body>
         <header>
+            <nav class="home-page-navbar">
+                <div class="container">
+                    <div class="navbar-left">
+                        <a href="index.html">
+                            <img class="navbar-logo" src="img/logo-bright.svg" alt="Pro Students Cottbus" />
+                        </a>
 
-            <nav class="home-page-navbar" data-partial="navbar"></nav>
+                        <button>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                <path
+                                    fill-rule="evenodd"
+                                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                                    clip-rule="evenodd"
+                                ></path>
+                            </svg>
+                            
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M6 18L18 6M6 6l12 12"
+                                ></path>
+                            </svg>
+                        </button>
+                    </div>
 
-            <section class="home-page-heading" data-partial="header">
+                    <div class="navbar-links">
+                        <a href="computer_repairing.html">Repair Work</a>
+                        <div class="dropdown-link">
+                            <a href="courses_for_private.html">For Private</a>
+                            <div class="dropdown-link-content">
+                                <a href="courses_for_children.html">For Children</a>
+                                <a href="courses_for_students.html">For Students</a>
+                                <a href="courses_for_seniors.html">For Seniors</a>
+                            </div>
+                        </div>
+                        <div class="dropdown-link">
+                            <a href="for_companies.html">For Companies</a>
+                            <div class="dropdown-link-content">
+                                <a href="it_courses_for_companies.html">IT Courses</a>
+                                <a href="consulting_for_companies.html">Consulting</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
 
-                <template data-name="illustration">img/business-decisions.svg</template>
-                <template data-name="title">Pro Students Cottbus</template>
-                <template data-name="subtitle">Homepage TODO</template>
+            <section class="home-page-heading">
+                <div class="container">
+                    <div class="page-heading-illustration">
+                        <img src="img/homepage-laptop.jpg" alt="" />
+                    </div>
 
+                    <div class="page-heading-text">
+                        <h1>
+                            <span class="main-title">Pro Students Cottbus</span>
+                            <span class="sub-title">The #1 for all of your IT Needs</span>
+                        </h1>
+
+                        <div class="actions">
+                            <a href="#" class="action-primary" onclick="alert('Not implemented')">Get in Contact with us!</a>
+                        </div>
+                    </div>
+                </div>
             </section>
         </header>
         
@@ -58,49 +114,6 @@
                     <div class="actions">
                         <a href="about_us.html" class="action-primary">Read More About Us</a>
                     </div>
-                </div>
-            </section>
-            
-            <section class="faq">
-                <div class="container">
-                    <div class="faq-heading-container">
-                        <h2>Frequently asked questions</h2>
-                        <img src="img/question-mark.svg" alt="" />
-                    </div>
-
-                    <dl class="faq-questions-container">
-                        <div class="question-answer">
-                            <dt class="question">
-                                How do you make holy water?
-                            </dt>
-                            <dd class="answer">
-                                You boil the hell out of it. Lorem ipsum dolor
-                                sit amet consctetur adipisicing elit. Quas
-                                cupiditate laboriosam fugiat.
-                            </dd>
-                        </div>
-                        <div class="question-answer">
-                            <dt class="question">
-                                What do you call someone with no body and no
-                                nose?
-                            </dt>
-                            <dd class="answer">
-                                Nobody knows. Lorem ipsum dolor sit amet
-                                consctetur adipisicing elit. Quas cupiditate
-                                laboriosam fugiat.
-                            </dd>
-                        </div>
-                        <div class="question-answer">
-                            <dt class="question">
-                                Why do you never see elephants hiding in trees?
-                            </dt>
-                            <dd class="answer">
-                                Because they're so good at it. Lorem ipsum dolor
-                                sit amet consctetur adipisicing elit. Quas
-                                cupiditate laboriosam fugiat.
-                            </dd>
-                        </div>
-                    </dl>
                 </div>
             </section>
             
