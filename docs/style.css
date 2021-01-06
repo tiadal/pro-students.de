@@ -20,6 +20,7 @@
     --light-light-accent: #F5F5F5; /* For separation of sections */
     --light-dark-accent: #E5E5E5;  /* For clear separation of the header */
     --light-darker-accent: #929292;/* For breadcrumb */
+    --black-hover: #3A3A3A; /* Hover color on black backgrounds */
     
     --golden-ratio-small: 38,2%;
     --golden-ratio-big: 61,8%;
@@ -101,7 +102,7 @@ h3 {
     align-items: center;
 }
 
-.navbar-left button, .navbar-left button {
+.navbar-left button {
     display: none;
 }
 
@@ -211,9 +212,16 @@ h3 {
         box-shadow: none;
         border: none;
     }
+    
+    .home-page-navbar .navbar-left button {
+        color: var(--light);
+    }
 
-    .navbar-left button:hover {
+    .navbar .navbar-left button:hover {
         background-color: var(--light);
+    }
+    .home-page-navbar .navbar-left button:hover {
+        background-color: var(--black-hover);
     }
 
     .navbar-left button svg {
