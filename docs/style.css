@@ -402,6 +402,7 @@ nav.breadcrumb > .container {
     padding-left: 35px;
     padding-right: 35px;
     margin-right: 25px;
+    text-align: center;
 }
 
 .page-heading .actions .action-secondary {
@@ -447,8 +448,16 @@ nav.breadcrumb > .container {
 }
 
 @media (max-width: 640px) {
-    .page-heading > .container {
+    .page-heading > .container, .home-page-heading > .container {
         flex-direction: column;
+    }
+    
+    .home-page-heading .page-heading-illustration {
+        margin-top: 0;
+    }
+    
+    .home-page-heading h1 {
+        margin-top: 0;
     }
 
     .page-heading-text {
@@ -466,7 +475,7 @@ nav.breadcrumb > .container {
         font-size: 1.5rem;
     }
 
-    .page-heading .actions {
+    .page-heading .actions, .home-page-heading .actions {
         flex-direction: column;
     }
     .page-heading .actions .action-primary, .page-heading .actions .action-secondary {
@@ -1329,4 +1338,20 @@ footer > .container {
     background-color: var(--primary);
     border-radius: var(--rounded-edges);
     padding: 10px 20px;
+}
+
+@media (max-width: 730px) {
+    #main-services h3 { /** Necessary on tablet for some reason */
+        text-align: center;
+    }
+    
+    #main-services .service-listing {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #main-services .service {
+        width: 80%;
+    }
 }
