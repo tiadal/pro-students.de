@@ -119,6 +119,7 @@ The following division of work should not be understood as a sign that one perso
 ### --\# TODO \#--
 
 * About us, PC problems responsive design
+* Hover-effect on buttons
 * Footer links have clickable whitespace (also impacts spacing on mobile version negatively)
 * Fix non-proportional jpg scaling
 * Implementation of PC Problems page
