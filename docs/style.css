@@ -441,9 +441,9 @@ nav.breadcrumb > .container {
 }
 
 .page-heading-illustration > img {
-    width: 100%;
-    max-height: 50vh;
-    height: 100%;
+    max-width: 110%;
+    max-height: 80vh;
+    height: auto;
 }
 
 /* Different header for legal pages needs styling, too */
