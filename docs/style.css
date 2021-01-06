@@ -382,11 +382,17 @@ nav.breadcrumb > .container {
     font-size: 3.5rem;
 }
 
-.page-heading-text .sub-title {
+.page-heading .page-heading-text .sub-title {
+    display: block;
+    color: var(--dark);
+    font-size: 1.5rem;
+}
+.home-page-heading .page-heading-text .sub-title {
     display: block;
     color: var(--light);
     font-size: 1.5rem;
 }
+
 
 .page-heading .actions, .home-page-heading .actions {
     margin-top: 25px;
