@@ -153,7 +153,10 @@ h3 {
     top: 3.8rem;
     flex-direction: column;
     border-radius: var(--rounded-edges);
-    color: var(--dark);
+}
+
+.home-page-navbar .dropdown-link-content {
+    background-color: black;
 }
 
 .navbar-links .dropdown-link .dropdown-link-content a {
@@ -162,8 +165,11 @@ h3 {
     padding: 0.5rem 3rem 0.5rem 1.5rem;
 }
 
-.navbar-links .dropdown-link .dropdown-link-content a:hover {
+.navbar .navbar-links .dropdown-link .dropdown-link-content a:hover {
     background-color: var(--light-dark-accent);
+}
+.home-page-navbar .navbar-links .dropdown-link .dropdown-link-content a:hover {
+    background-color: var(--black-hover);
 }
 
 .navbar-links .dropdown-link .dropdown-link-content a:first-child {
