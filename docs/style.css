@@ -1273,7 +1273,11 @@ footer > .container {
 
 
 
-
+/*
+############################
+    HOMEPAGE-SPECIFIC
+############################
+*/
 .homepage-content h3 {
     text-align: center;
     margin-top: 0;
@@ -1341,10 +1345,6 @@ footer > .container {
 }
 
 @media (max-width: 730px) {
-    #main-services h3 { /** Necessary on tablet for some reason */
-        text-align: center;
-    }
-    
     #main-services .service-listing {
         flex-direction: column;
         justify-content: center;
