@@ -173,7 +173,6 @@ h3 {
 }
 
 @media (max-width: 1024px) {
-
     .container {
         padding: 0 3rem;
     }
@@ -717,6 +716,8 @@ main .container {
 .consulting-side-image > img {
     border-radius: var(--rounded-edges);
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    max-width: 80%;
+    height: auto;
 }
 
 .consulting-service {
@@ -744,9 +745,18 @@ main .container {
     font-weight: bold;
 }
 
-.service-description {
-    
+/*
+@media (max-width: 880) {
+    .consulting-side-image {
+        display: none;
+    }
+    .consulting-services-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 }
+*/
 
 
 /*
