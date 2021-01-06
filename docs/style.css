@@ -194,7 +194,7 @@ h3 {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 880px) {
     .container {
         padding: 0 1rem;
     }
@@ -405,6 +405,7 @@ nav.breadcrumb > .container {
     padding-left: 35px;
     padding-right: 35px;
     margin-right: 25px;
+    text-align: center;
 }
 
 .home-page-heading .actions .action-primary {
@@ -428,6 +429,7 @@ nav.breadcrumb > .container {
     padding-left: 35px;
     padding-right: 35px;
     margin-right: 25px;
+    text-align: center;
 }
 
 .page-heading-illustration {
@@ -443,7 +445,7 @@ nav.breadcrumb > .container {
 .page-heading .page-heading-illustration > img {
     width: 100%;
     max-height: 50vh;
-    height: 100%;
+    height: 100%;Z
 }
 
 .home-page-heading .page-heading-illustration > img {
@@ -1044,6 +1046,11 @@ h4 {
     display: block;
     color: var(--dark);
 }
+
+.contact-action {
+    margin-left: 3rem;
+}
+
 .contact-action > a {
     font-size: 1rem;
     display: flex;
@@ -1053,6 +1060,7 @@ h4 {
     border-radius: var(--rounded-edges);
     align-items: center;
     padding: 1.5rem;
+    text-align: center;
 }
 
 @media (max-width: 640px) {
@@ -1070,6 +1078,7 @@ h4 {
         text-align: center;
         padding: 0;
         margin-top: 25px;
+        margin-left: 0;
     }
 
     .contact-action > a {
@@ -1212,7 +1221,7 @@ footer > .container {
 }
 
 
-@media (max-width: 640px) {    
+@media (max-width: 610px) {    
     footer > .container {
         display: flex;
         flex-direction: column;

@@ -119,8 +119,9 @@ The following division of work should not be understood as a sign that one perso
 ### --\# TODO \#--
 
 * Tablet Design refinement
+* Footer links have clickable whitespace (also impacts spacing on mobile version negatively)
 * Fix non-proportional jpg scaling
-* Implementation of Consulting and PC Problems pages
+* Implementation of PC Problems page
 * Clean up CSS and HTML
     * Minimize / optimize class usage
     * Check HTML tag semantics
