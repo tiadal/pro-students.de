@@ -731,6 +731,7 @@ main .container {
     flex-direction: row;
     align-items: flex-start;
     margin-bottom: 1.5rem;
+    margin-right: 1rem;
 }
 
 #consulting-services h3 {
@@ -751,18 +752,38 @@ main .container {
     font-weight: bold;
 }
 
-/*
-@media (max-width: 880) {
+@media (max-width: 900px) {
+    .page-introductory-text span {
+        margin-bottom: 1rem;
+    }
+    
     .consulting-side-image {
         display: none;
     }
+    
     .consulting-services-list {
+        width: 100%;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .consulting-service {
+        width: 45%;
     }
 }
-*/
+
+@media (max-width: 600px) {
+    .consulting-services-list {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    
+    .consulting-service {
+        width: 100%;
+    }
+}
 
 
 /*
