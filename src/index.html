@@ -5,31 +5,123 @@
     </head>
     <body>
         <header>
+            <nav class="home-page-navbar">
+                <div class="container">
+                    <div class="navbar-left">
+                        <a href="index.html">
+                            <img class="navbar-logo" src="img/logo-bright.svg" alt="Pro Students Cottbus" />
+                        </a>
 
-            <nav class="navbar" data-partial="navbar"></nav>
+                        <button>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                <path
+                                    fill-rule="evenodd"
+                                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                                    clip-rule="evenodd"
+                                ></path>
+                            </svg>
+                            
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M6 18L18 6M6 6l12 12"
+                                ></path>
+                            </svg>
+                        </button>
+                    </div>
 
-            <section class="page-heading" data-partial="header">
+                    <div class="navbar-links">
+                        <a href="computer_repairing.html">Repair Work</a>
+                        <div class="dropdown-link">
+                            <a href="courses_for_private.html">For Private</a>
+                            <div class="dropdown-link-content">
+                                <a href="courses_for_children.html">For Children</a>
+                                <a href="courses_for_students.html">For Students</a>
+                                <a href="courses_for_seniors.html">For Seniors</a>
+                            </div>
+                        </div>
+                        <div class="dropdown-link">
+                            <a href="for_companies.html">For Companies</a>
+                            <div class="dropdown-link-content">
+                                <a href="it_courses_for_companies.html">IT Courses</a>
+                                <a href="consulting_for_companies.html">Consulting</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
 
-                <template data-name="illustration">img/business-decisions.svg</template>
-                <template data-name="title">Pro Students Cottbus</template>
-                <template data-name="subtitle">Homepage TODO</template>
+            <section class="home-page-heading">
+                <div class="container">
+                    <div class="page-heading-illustration">
+                        <img src="img/homepage-laptop.jpg" alt="" />
+                    </div>
 
+                    <div class="page-heading-text">
+                        <h1>
+                            <span class="main-title">Pro Students Cottbus</span>
+                            <span class="sub-title">The #1 for all of your IT Needs</span>
+                        </h1>
+
+                        <div class="actions">
+                            <a href="#" class="action-primary" onclick="alert('Not implemented')">Get in Contact with us!</a>
+                        </div>
+                    </div>
+                </div>
             </section>
         </header>
         
-        <main class="content">
-
-            <section>
+        <main class="homepage-content">
+            <section id="main-services">
                 <div class="container">
-                    TODO MAIN CONTENT
+                    <h3>Our Services</h3>
+
+                    <div class="service-listing">
+                        <a href="computer_repairing.html" class="service">
+                            <img src="img/broken-computer.svg" alt="" />
+                            <h4>IT Support</h4>
+                        </a>
+
+                        <a href="courses_for_private.html" class="service">
+                            <img src="img/computer-desktop.svg" alt="" />
+                            <h4>IT Courses for Private</h4>
+                        </a>
+
+                        <a href="for_companies.html" class="service">
+                            <img src="img/business-decisions.svg" alt="" />
+                            <h4>Services for Companies</h4>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about-us">
+                <div class="container">
+                    <h3>Who are we?</h3>
+
+                    <div class="text">
+                        <p>
+                            We are pro-students, a group of 4 Students from the BTU. We share the same passions for informatics and computers and thanks to our different and complementary backgrounds, we decided to join our forces in order to found a small consulting company.
+                        </p>
+
+                        <p>
+                            Our mission is to help small/medium business and private citizens understanding and developing digital solutions, offering competitive prices and an effective service.
+                        </p>
+                    </div>
+
+                    <div class="actions">
+                        <a href="about_us.html" class="action-primary">Read More About Us</a>
+                    </div>
                 </div>
             </section>
             
             <section class="faq" data-partial="faq"></section>
             
             <section class="contact" data-partial="cta">
-                <template data-name="question">NOTE TO SELF: Please adjust this</template>
-                <template data-name="answer">Make a request and we will find a solution for you!</template>
+                <template data-name="question">Want to learn more about how we can help you?</template>
+                <template data-name="answer">Contact us for an individual consultation!</template>
             </section>
         </main>
 

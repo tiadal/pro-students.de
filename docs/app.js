@@ -1,8 +1,8 @@
 /*
  * Code for responsive navbar Burger-Menu on mobile
  */
-const navbar = document.querySelector(".navbar")
-const navbarButton = document.querySelector(".navbar .navbar-left button")
+const navbar = document.querySelector(".navbar, .home-page-navbar")
+const navbarButton = document.querySelector(".navbar-left button")
 
 if (navbar != null && navbarButton != null) {
     navbarButton.onclick = function() {
