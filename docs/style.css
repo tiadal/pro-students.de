@@ -76,7 +76,7 @@ h3 {
       pointer-events: none;
       cursor: default;
       text-decoration: none;
-      color: black;
+      color: var(--dark);
     }
 }
 /*
@@ -152,6 +152,7 @@ h3 {
     top: 3.8rem;
     flex-direction: column;
     border-radius: var(--rounded-edges);
+    color: var(--dark);
 }
 
 .navbar-links .dropdown-link .dropdown-link-content a {
