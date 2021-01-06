@@ -140,3 +140,7 @@ The following division of work should not be understood as a sign that one perso
 * To install necessary packages for the build and watch steps, run `npm install` once from within the root of this repository
 * Afterwards, you can build webpages (i.e. assemble development html files with their partials) using `npm run build`
 * In addition, you can start browsersync for easier development and testing using `npm run watch`
+
+## Note regarding copyrights
+
+All illustrations, icons and images used on this website are sourced from undraw and unsplash and are licensed as free to use without crediting the author. As such, no credits are necessary on the webpages.
