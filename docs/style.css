@@ -475,7 +475,7 @@ nav.breadcrumb > .container {
     font-weight: bold;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 760px) {
     .page-heading > .container, .home-page-heading > .container {
         flex-direction: column;
     }
