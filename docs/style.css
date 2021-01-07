@@ -446,18 +446,20 @@ nav.breadcrumb > .container {
 
 .home-page-heading .page-heading-illustration {
     margin-top: 3rem;
+    display: block;
 }
 
 .page-heading .page-heading-illustration > img {
     width: 100%;
     max-height: 50vh;
-    height: 100%;Z
+    height: 100%;
 }
 
 .home-page-heading .page-heading-illustration > img {
     max-width: 110%;
     max-height: 80vh;
     height: auto;
+    display: block;
 }
 
 /* Different header for legal pages needs styling, too */
