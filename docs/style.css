@@ -306,7 +306,10 @@ h3 {
     }
     
     .navbar-links .dropdown-link .dropdown-link-content a:hover {
-        color: var(--primary)
+        color: var(--primary);
+    }   
+    .home-page-navbar .navbar-links .dropdown-link .dropdown-link-content a:hover {
+        background-color: inherit;
     }
 }
 
