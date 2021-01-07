@@ -118,13 +118,11 @@ The following division of work should not be understood as a sign that one perso
 
 ### --\# TODO \#--
 
-* About us, PC problems responsive design
-* Hover-effect on buttons
 * Implementation of PC Problems page
+* About us, PC problems responsive design
 * Clean up CSS and HTML
     * Minimize / optimize class usage
     * Check HTML tag semantics
-* Re-check image sources and necessary credits (Undraw, Unsplash)
 * Optimize SVGs
 
 
