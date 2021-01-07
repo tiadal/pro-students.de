@@ -67,6 +67,28 @@ h3 {
     font-size: 1.5rem;
 }
 
+.action-primary {
+    display: inline-block;
+    color: var(--light);
+    background-color: var(--primary);
+    border-radius: var(--rounded-edges);
+    text-align: center;
+}
+.action-primary:hover {
+    background-color: var(--primary-highlighted);
+}
+
+.action-secondary {
+    display: inline-block;
+    color: var(--primary);
+    background-color: var(--primary-light);
+    border-radius: var(--rounded-edges);
+    text-align: center;
+}
+.action-secondary:hover {
+    background-color: var(--primary-light-highlighted);
+}
+
 .hidden {
     display: none !important;
 }
@@ -404,47 +426,20 @@ nav.breadcrumb > .container {
     justify-content: flex-start;
 }
 
-.page-heading .actions .action-primary {
+.page-heading .actions .action-primary, .home-page-heading .actions .action-primary {
     display: block;
-    color: var(--light);
-    background-color: var(--primary);
-    border-radius: var(--rounded-edges);
     padding: 25px;
     padding-left: 35px;
     padding-right: 35px;
     margin-right: 25px;
-    text-align: center;
-}
-
-.home-page-heading .actions .action-primary {
-    display: block;
-    color: var(--light);
-    background-color: var(--primary);
-    border-radius: var(--rounded-edges);
-    padding: 25px;
-    padding-left: 35px;
-    padding-right: 35px;
-    margin-right: 25px;
-    text-align: center;
-}
-
-.page-heading .action-primary:hover {
-    background-color: var(--primary-highlighted);
-}
-.page-heading .actions .action-secondary:hover {
-    background-color: var(--primary-light-highlighted);
 }
 
 .page-heading .actions .action-secondary {
     display: block;
-    color: var(--primary);
-    background-color: var(--primary-light);
-    border-radius: var(--rounded-edges);
     padding: 25px;
     padding-left: 35px;
     padding-right: 35px;
     margin-right: 25px;
-    text-align: center;
 }
 
 .page-heading-illustration {
@@ -523,7 +518,6 @@ nav.breadcrumb > .container {
 
     .page-heading .actions .action-primary, .page-heading .actions .action-secondary {
         padding: 18px;
-        text-align: center;
     }
 
     .page-heading .actions .action-secondary {
@@ -660,10 +654,7 @@ main .container {
 
 .course-information .actions .action-primary {
     display: block;
-    color: var(--light);
-    background-color: var(--primary);
     padding: 15px;
-    border-radius: var(--rounded-edges);
     padding-left: 20px;
     padding-right: 20px;
     margin-right: 20px;
@@ -671,10 +662,7 @@ main .container {
 
 .course-information .actions .action-secondary {
     display: block;
-    color: var(--primary);
-    background-color: var(--primary-light);
     padding: 15px;
-    border-radius: var(--rounded-edges);
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -741,12 +729,10 @@ main .container {
 
     .course-information .actions .action-primary {
         margin-right: 0;
-        text-align: center;
     }
     
     .course-information .actions .action-secondary {
         margin-top: 10px;
-        text-align: center;
     }
 
     .course:nth-child(even) {
