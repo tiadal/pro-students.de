@@ -10,10 +10,12 @@
 }
 
 :root {
-    --primary: #BB4430;            /* Color for calls to action (dark red) */
-    --primary-light: #F2D4CE;      /* Lighter variant of primary color for non-focused calls to action */
+    --primary: #BB4430;             /* Color for calls to action (dark red) */
+    --primary-light: #F2D4CE;       /* Lighter variant of primary color for non-focused calls to action */
+    --primary-highlighted: #CD5642; /* Added 0x12 = 18 to every color value. */
+    --primary-light-highlighted: #FEE0DB;      /* Added 0xC = 12 to every color value */
     --secondary: #7EBDC2;          /* Secondary color for contact form (light blue / indigo) */
-    --secondary-light: #F1F8F8;    /* TODO: Unused. remove? */
+    --secondary-light: #F1F8F8;
     --secondary-dark: #214245;     /* Darker variant of secondary color (e.g. for corresponding button text) */
     --dark: #231F20;               /* Main text color */
     --light: #F9F9FF;              /* Main page color and text on dark backgrounds */
@@ -424,6 +426,13 @@ nav.breadcrumb > .container {
     padding-right: 35px;
     margin-right: 25px;
     text-align: center;
+}
+
+.page-heading .action-primary:hover {
+    background-color: var(--primary-highlighted);
+}
+.page-heading .actions .action-secondary:hover {
+    background-color: var(--primary-light-highlighted);
 }
 
 .page-heading .actions .action-secondary {
