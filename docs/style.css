@@ -3,6 +3,8 @@
     GLOBAL SETUP
 ############################
 */
+
+/* TODO: Why? */
 *,
 *::before,
 *::after {
@@ -57,10 +59,16 @@ p, dt, dl, dd {
     padding: 0;
 }
 
+/*
+ * Container class that specifies which area of an element
+ * can actually be filled with content. Max-width ensures that elements
+ * don't spread across width indefinitely (thus, layout remains consistent even
+ * across bigger screens or zoom-factors, content of block always center of page with variable padding around it)
+ */
 .container {
     max-width: 1280px;
     margin: 0 auto;
-    padding: 0 5rem;
+    padding: 0 5rem; /* Considered minimum padding */
 }
 
 h3 {
@@ -89,13 +97,13 @@ h3 {
     background-color: var(--primary-light-highlighted);
 }
 
-.hidden {
+.hidden { /* JavaScript-usable class to hide elemnt */
     display: none !important;
 }
 
 @media (max-width: 768px) {
     /*
-     * Disabling a elements taken from https://stackoverflow.com/a/4416239
+     * Disabling of elements taken from https://stackoverflow.com/a/4416239
      */
     .mobile-inactive-link {
       pointer-events: none;
@@ -104,6 +112,8 @@ h3 {
       color: var(--dark);
     }
 }
+
+
 /*
 ############################
     NAVBAR (Header)
@@ -112,7 +122,6 @@ h3 {
 .navbar {
     background-color: var(--light-dark-accent);
     box-shadow: 0px 0px 5px 1px grey;
-    margin-bottom: 2rem;
 }
 
 .home-page-navbar {
@@ -322,6 +331,7 @@ nav.breadcrumb > .container {
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding-top: 2rem;
     padding-bottom: 2rem;
     color: var(--light-darker-accent);
     overflow-x: auto;
@@ -620,7 +630,6 @@ main .container {
 
 .course-information > h3 {
     font-weight: bold;
-    font-size: 1.5rem;
     margin-top: 0;
 }
 
@@ -886,7 +895,6 @@ main .container {
 }
 
 .team-member h3 {
-    font-size: inherit;
     margin: 0;
     margin-bottom: 0.1rem;
 }
@@ -964,7 +972,6 @@ h4 {
 
 .faq-heading-container > h3 {
     margin-top: 0;
-    font-size: 1.5rem;
 }
 
 .faq-heading-container > img {
@@ -1003,7 +1010,6 @@ h4 {
     
     .faq-heading-container > h3 {
         margin-top: 1rem;
-        font-size: 1.3rem;
     }
     
     .faq-heading-container > img {
