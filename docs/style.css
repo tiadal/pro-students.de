@@ -993,6 +993,7 @@ main .container {
     background-color: transparent;
     border-radius: var(--rounded-edges);
     cursor: pointer;
+    transition: var(--transition);
 }
 
 .videos .video:hover {
@@ -1019,12 +1020,7 @@ main .container {
 }
 
 .videos .video .video-preview svg {
-    display: none;
-}
-
-.videos .video:hover .video-preview svg {
     color: var(--primary);
-    display: block;
     width: 3rem;
     height: auto;
     position: absolute;
@@ -1033,6 +1029,13 @@ main .container {
     right: 0;
     bottom: 0;
     margin: auto;
+    display: block;
+    opacity: 0;
+    transition: var(--transition);
+}
+
+.videos .video:hover .video-preview svg {
+    opacity: 1;
 }
 
 #video-modal {
