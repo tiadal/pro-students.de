@@ -977,14 +977,12 @@ main .container {
     align-items: center;
     border: none;
     background-color: transparent;
-    color: var(--primary);
     border-radius: var(--rounded-edges);
     cursor: pointer;
 }
 
 .videos .video:hover {
     background-color: rgba(255,255,255,0.9);
-    color: var(--primary-highlighted);
 }
 
 .videos .video p {
@@ -1007,6 +1005,12 @@ main .container {
 }
 
 .videos .video .video-preview svg {
+    display: none;
+}
+
+.videos .video:hover .video-preview svg {
+    color: var(--primary);
+    display: block;
     width: 3rem;
     height: auto;
     position: absolute;
@@ -1030,10 +1034,11 @@ main .container {
     left: 0;
     bottom: 0;
     right: 0;
-    background: rgba(255,255,255,0.5);
+    background: rgba(200,200,200,0.5);
 }
 
-#video-content {
+#video-card {
+    position: relative;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     display: flex;
     align-items: center;
@@ -1045,6 +1050,12 @@ main .container {
     background: white;
 }
 
+#video-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #video-content iframe {
     display: block;
     height: auto;
@@ -1054,7 +1065,24 @@ main .container {
 }
 
 #video-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    border: none;
+    background-color: transparent;
+    padding: 1rem;
+    cursor: pointer;
+}
 
+#video-close svg {
+    color: 
+    var(--light-darker-accent);
+    height: 2rem;
+    width: 2rem;
+}
+
+#video-close:hover svg {
+    color: var(--primary);
 }
 
 @media (max-width: 670px) {
