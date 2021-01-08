@@ -931,6 +931,7 @@ main .container {
 .team-member h3 {
     margin: 0;
     margin-bottom: 0.1rem;
+    font-size: inherit;
 }
 
 .about-location {
