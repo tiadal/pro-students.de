@@ -120,6 +120,7 @@ The following division of work should not be understood as a sign that one perso
 
 * Implementation of PC Problems page
 * About us, PC problems responsive design
+* Use noscript tag in course pages to inform about lack of javascript and thus lack of courses
 
 
 ## Developing and Building the Website
