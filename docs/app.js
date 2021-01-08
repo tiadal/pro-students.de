@@ -10,6 +10,31 @@ if (navbar != null && navbarButton != null) {
     }
 }
 
+const videoModal = document.querySelector("#video-modal")
+
+if(videoModal) {
+    const videos = document.querySelectorAll("button[data-video]")
+    const videoContent = videoModal.querySelector("#video-content");
+    const videoClose = videoModal.querySelector("#video-close")
+    videoClose.onclick = () => {
+        videoModal.classList.remove("show")
+        videoContent.innerHTML = ""
+    }
+
+    videos.forEach(video => {
+
+        video.onclick = () => {
+    
+            const videoId = video.getAttribute("data-video");
+            const videoIframe = '<iframe width="1680" height="945" src="https://www.youtube-nocookie.com/embed/%videoid%" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+        
+            videoContent.innerHTML = videoIframe.replace("%videoid%", videoId)
+            videoModal.classList.add("show")
+            
+        }
+    
+    })
+}
 
 /*
  * XML Parsing for Course List Pages
