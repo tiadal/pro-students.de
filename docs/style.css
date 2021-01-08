@@ -103,7 +103,7 @@ h3 {
     font-weight: 600;
 }
 
-.hidden { /* JavaScript-usable class to hide elemnt */
+.hidden { /* JavaScript-usable class to hide element */
     display: none !important;
 }
 
