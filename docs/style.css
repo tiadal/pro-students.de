@@ -806,8 +806,9 @@ main .container {
     align-items: center;
 }
 
-.page-introductory-text span {
+.page-introductory-text span, .page-introductory-text p {
     display: block;
+    text-align: center;
     margin-bottom: .5rem;
 }
 
