@@ -626,6 +626,10 @@ nav.breadcrumb > .container {
     margin-bottom: 0rem;
 }
 
+.service > h4 {
+    text-align: center;
+}
+
 @media (max-width: 730px) {
     .service-listing > .container {
         flex-direction: column;
