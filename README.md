@@ -118,16 +118,8 @@ The following division of work should not be understood as a sign that one perso
 
 ### --\# TODO \#--
 
-* About us, PC problems responsive design
-* Hover-effect on buttons
-* Footer links have clickable whitespace (also impacts spacing on mobile version negatively)
-* Fix non-proportional jpg scaling
 * Implementation of PC Problems page
-* Clean up CSS and HTML
-    * Minimize / optimize class usage
-    * Check HTML tag semantics
-* Re-check image sources and necessary credits (Undraw, Unsplash)
-* Optimize SVGs
+* About us, PC problems responsive design
 
 
 ## Developing and Building the Website
@@ -140,3 +132,11 @@ The following division of work should not be understood as a sign that one perso
 * To install necessary packages for the build and watch steps, run `npm install` once from within the root of this repository
 * Afterwards, you can build webpages (i.e. assemble development html files with their partials) using `npm run build`
 * In addition, you can start browsersync for easier development and testing using `npm run watch`
+
+
+## Note regarding copyrights
+
+All illustrations, icons and images used on this website are sourced from undraw.co, unsplash.com and heroicons.com are licensed as free to use without attribution. As such, no credits are necessary on the webpages. See the corresponding licenses for more:
+* https://unsplash.com/license
+* https://undraw.co/license
+* https://github.com/tailwindlabs/heroicons ([MIT-Licensed](https://en.wikipedia.org/wiki/MIT_License))

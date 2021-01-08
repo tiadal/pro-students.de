@@ -3,6 +3,7 @@
     GLOBAL SETUP
 ############################
 */
+
 *,
 *::before,
 *::after {
@@ -10,10 +11,12 @@
 }
 
 :root {
-    --primary: #BB4430;            /* Color for calls to action (dark red) */
-    --primary-light: #F2D4CE;      /* Lighter variant of primary color for non-focused calls to action */
+    --primary: #BB4430;             /* Color for calls to action (dark red) */
+    --primary-light: #F2D4CE;       /* Lighter variant of primary color for non-focused calls to action */
+    --primary-highlighted: #CD5642; /* Added 0x12 = 18 to every color value. */
+    --primary-light-highlighted: #FEE0DB;      /* Added 0xC = 12 to every color value */
     --secondary: #7EBDC2;          /* Secondary color for contact form (light blue / indigo) */
-    --secondary-light: #F1F8F8;    /* TODO: Unused. remove? */
+    --secondary-light: #F1F8F8;
     --secondary-dark: #214245;     /* Darker variant of secondary color (e.g. for corresponding button text) */
     --dark: #231F20;               /* Main text color */
     --light: #F9F9FF;              /* Main page color and text on dark backgrounds */
@@ -55,23 +58,55 @@ p, dt, dl, dd {
     padding: 0;
 }
 
+/*
+ * Container class that specifies which area of an element
+ * can actually be filled with content. Max-width ensures that elements
+ * don't spread across width indefinitely (thus, layout remains consistent even
+ * across bigger screens or zoom-factors, content of block always center of page with variable padding around it)
+ */
 .container {
     max-width: 1280px;
     margin: 0 auto;
-    padding: 0 5rem;
+    padding: 0 5rem; /* Considered minimum padding */
 }
 
 h3 {
     font-size: 1.5rem;
 }
 
-.hidden {
+.action-primary {
+    display: inline-block;
+    color: var(--light);
+    background-color: var(--primary);
+    border-radius: var(--rounded-edges);
+    text-align: center;
+}
+.action-primary:hover {
+    background-color: var(--primary-highlighted);
+}
+
+.action-secondary {
+    display: inline-block;
+    color: var(--primary);
+    background-color: var(--primary-light);
+    border-radius: var(--rounded-edges);
+    text-align: center;
+}
+.action-secondary:hover {
+    background-color: var(--primary-light-highlighted);
+}
+
+.inline-link {
+    font-weight: 600;
+}
+
+.hidden { /* JavaScript-usable class to hide elemnt */
     display: none !important;
 }
 
 @media (max-width: 768px) {
     /*
-     * Disabling a elements taken from https://stackoverflow.com/a/4416239
+     * Disabling of elements taken from https://stackoverflow.com/a/4416239
      */
     .mobile-inactive-link {
       pointer-events: none;
@@ -80,6 +115,36 @@ h3 {
       color: var(--dark);
     }
 }
+
+
+/*
+############################
+    NO SCRIPT WARNING
+############################
+*/
+.warning > .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.warning img {
+    max-width: 40%;
+}
+
+@media (max-width: 640px) {
+    .warning > .container {
+        align-items: flex-start;
+        text-align: left;
+    }
+    
+    .warning img {
+        max-width: 50%;
+    }
+}
+
+
 /*
 ############################
     NAVBAR (Header)
@@ -88,7 +153,6 @@ h3 {
 .navbar {
     background-color: var(--light-dark-accent);
     box-shadow: 0px 0px 5px 1px grey;
-    margin-bottom: 2rem;
 }
 
 .home-page-navbar {
@@ -282,7 +346,10 @@ h3 {
     }
     
     .navbar-links .dropdown-link .dropdown-link-content a:hover {
-        color: var(--primary)
+        color: var(--primary);
+    }   
+    .home-page-navbar .navbar-links .dropdown-link .dropdown-link-content a:hover {
+        background-color: inherit;
     }
 }
 
@@ -295,7 +362,8 @@ nav.breadcrumb > .container {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding-bottom: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 0rem;
     color: var(--light-darker-accent);
     overflow-x: auto;
 }
@@ -359,12 +427,13 @@ nav.breadcrumb > .container {
 .page-heading > .container, .home-page-heading > .container {
     display: flex;
     flex-direction: row;
+    padding-top: 2rem;
     margin-bottom: 5rem;
 }
 
 .home-page-heading {
     color: var(--light);
-    background-color: #030303;
+    background-color: black;
     padding-top: 2rem;
     padding-bottom: 1rem;
 }
@@ -386,6 +455,7 @@ nav.breadcrumb > .container {
     display: block;
     color: var(--dark);
     font-size: 1.5rem;
+    max-width: 400px;
 }
 .home-page-heading .page-heading-text .sub-title {
     display: block;
@@ -402,40 +472,20 @@ nav.breadcrumb > .container {
     justify-content: flex-start;
 }
 
-.page-heading .actions .action-primary {
+.page-heading .actions .action-primary, .home-page-heading .actions .action-primary {
     display: block;
-    color: var(--light);
-    background-color: var(--primary);
-    border-radius: var(--rounded-edges);
     padding: 25px;
     padding-left: 35px;
     padding-right: 35px;
     margin-right: 25px;
-    text-align: center;
-}
-
-.home-page-heading .actions .action-primary {
-    display: block;
-    color: var(--light);
-    background-color: var(--primary);
-    border-radius: var(--rounded-edges);
-    padding: 25px;
-    padding-left: 35px;
-    padding-right: 35px;
-    margin-right: 25px;
-    text-align: center;
 }
 
 .page-heading .actions .action-secondary {
     display: block;
-    color: var(--primary);
-    background-color: var(--primary-light);
-    border-radius: var(--rounded-edges);
     padding: 25px;
     padding-left: 35px;
     padding-right: 35px;
     margin-right: 25px;
-    text-align: center;
 }
 
 .page-heading-illustration {
@@ -446,18 +496,20 @@ nav.breadcrumb > .container {
 
 .home-page-heading .page-heading-illustration {
     margin-top: 3rem;
+    display: block;
 }
 
 .page-heading .page-heading-illustration > img {
     width: 100%;
     max-height: 50vh;
-    height: 100%;Z
+    height: 100%;
 }
 
 .home-page-heading .page-heading-illustration > img {
     max-width: 110%;
     max-height: 80vh;
     height: auto;
+    display: block;
 }
 
 /* Different header for legal pages needs styling, too */
@@ -512,7 +564,6 @@ nav.breadcrumb > .container {
 
     .page-heading .actions .action-primary, .page-heading .actions .action-secondary {
         padding: 18px;
-        text-align: center;
     }
 
     .page-heading .actions .action-secondary {
@@ -612,7 +663,6 @@ main .container {
 
 .course-information > h3 {
     font-weight: bold;
-    font-size: 1.5rem;
     margin-top: 0;
 }
 
@@ -649,10 +699,7 @@ main .container {
 
 .course-information .actions .action-primary {
     display: block;
-    color: var(--light);
-    background-color: var(--primary);
     padding: 15px;
-    border-radius: var(--rounded-edges);
     padding-left: 20px;
     padding-right: 20px;
     margin-right: 20px;
@@ -660,10 +707,7 @@ main .container {
 
 .course-information .actions .action-secondary {
     display: block;
-    color: var(--primary);
-    background-color: var(--primary-light);
     padding: 15px;
-    border-radius: var(--rounded-edges);
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -730,12 +774,10 @@ main .container {
 
     .course-information .actions .action-primary {
         margin-right: 0;
-        text-align: center;
     }
     
     .course-information .actions .action-secondary {
         margin-top: 10px;
-        text-align: center;
     }
 
     .course:nth-child(even) {
@@ -764,8 +806,9 @@ main .container {
     align-items: center;
 }
 
-.page-introductory-text span {
+.page-introductory-text span, .page-introductory-text p {
     display: block;
+    text-align: center;
     margin-bottom: .5rem;
 }
 
@@ -886,7 +929,6 @@ main .container {
 }
 
 .team-member h3 {
-    font-size: inherit;
     margin: 0;
     margin-bottom: 0.1rem;
 }
@@ -914,6 +956,140 @@ main .container {
     width: calc(100%);
     margin-left: -15rem;
     box-shadow: 0px 0px 3px 0px grey;
+}
+
+
+/*
+############################
+    CONTENTS (PC Problems)
+############################
+*/
+
+.videos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.videos .video {
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+    border-radius: var(--rounded-edges);
+    cursor: pointer;
+}
+
+.videos .video:hover {
+    background-color: rgba(255,255,255,0.9);
+}
+
+.videos .video p {
+    font-size: 1rem;
+    color: var(--dark);
+    text-align: left;
+}
+
+.videos .video .video-preview {
+    position: relative;
+    margin-right: 1rem;
+    border-radius: var(--rounded-edges);
+}
+
+.videos .video .video-preview img {
+    display: block;
+    width: 8rem;
+    height: auto;
+    border-radius: var(--rounded-edges);
+}
+
+.videos .video .video-preview svg {
+    display: none;
+}
+
+.videos .video:hover .video-preview svg {
+    color: var(--primary);
+    display: block;
+    width: 3rem;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+#video-modal {
+    display: none;
+}
+
+#video-modal.show {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(200,200,200,0.5);
+}
+
+#video-card {
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 50rem;
+    max-height: 30rem;
+    height: 100vh;
+    width: 100vw;
+    background: white;
+}
+
+#video-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#video-content iframe {
+    display: block;
+    height: auto;
+    width: auto;
+    max-width: 80%;
+    max-height: 80%;
+}
+
+#video-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    border: none;
+    background-color: transparent;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+#video-close svg {
+    color: 
+    var(--light-darker-accent);
+    height: 2rem;
+    width: 2rem;
+}
+
+#video-close:hover svg {
+    color: var(--primary);
+}
+
+@media (max-width: 670px) {
+    .videos {
+        grid-template-columns: 1fr;
+    }
 }
 
 /*
@@ -964,7 +1140,6 @@ h4 {
 
 .faq-heading-container > h3 {
     margin-top: 0;
-    font-size: 1.5rem;
 }
 
 .faq-heading-container > img {
@@ -1003,7 +1178,6 @@ h4 {
     
     .faq-heading-container > h3 {
         margin-top: 1rem;
-        font-size: 1.3rem;
     }
     
     .faq-heading-container > img {
@@ -1104,6 +1278,10 @@ footer a:hover, .page-heading-legal-links a:hover, nav.breadcrumb a:hover {
     color: var(--dark);
 }
 
+.unclickable:hover {
+    color: inherit;
+}
+
 footer > .container {
     padding-top: 3.5rem;
     padding-bottom: 1.5rem;
@@ -1151,6 +1329,7 @@ footer > .container {
 .footer-links > div {
     display: flex;
     flex-direction: column;
+    align-items: start;
 }
 
 #footer-links-legal {

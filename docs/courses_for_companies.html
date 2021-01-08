@@ -7,7 +7,7 @@
         <meta name="theme-color" content="#BB4430" />
 
         <!-- Title-->
-        <title>For Private - Pro Students Cottbus</title>
+        <title>IT Courses for Companies - Pro Students Cottbus</title>
 
         <!-- Stylesheet-->
         <link rel="stylesheet" href="style.css" />
@@ -62,9 +62,11 @@
                     </div>
 
                     <div class="navbar-links">
-                        <a href="computer_repairing.html">IT Support</a>
+                        <a href="it_support.html">IT Support</a>
                         <div class="dropdown-link">
-                            <a href="courses_for_private.html">For Private</a>
+                            <a href="it_courses_for_private.html"
+                                >For Private</a
+                            >
                             <div class="dropdown-link-content">
                                 <a href="courses_for_children.html"
                                     >For Children</a
@@ -78,9 +80,11 @@
                             </div>
                         </div>
                         <div class="dropdown-link">
-                            <a href="for_companies.html">For Companies</a>
+                            <a href="services_for_companies.html"
+                                >For Companies</a
+                            >
                             <div class="dropdown-link-content">
-                                <a href="it_courses_for_companies.html"
+                                <a href="courses_for_companies.html"
                                     >IT Courses</a
                                 >
                                 <a href="consulting_for_companies.html"
@@ -108,7 +112,10 @@
                         </svg>
                     </a>
                     <span class="breadcrumb-sep"></span>
-                    <a href="#">IT Courses For Private</a>
+                    <span class="breadcrumb-dots"></span>
+                    <a href="for_companies.html">For Companies</a>
+                    <span class="breadcrumb-sep"></span>
+                    <a href="#">IT Courses</a>
                 </div>
             </nav>
 
@@ -121,7 +128,7 @@
                     <div class="page-heading-text">
                         <h1>
                             <span class="main-title">IT Courses</span>
-                            <span class="sub-title">For Private Persons</span>
+                            <span class="sub-title">For Companies</span>
                         </h1>
 
                         <div class="actions">
@@ -144,40 +151,80 @@
         </header>
 
         <main class="content">
-            <section class="service-listing">
-                <div class="container">
-                    <a href="courses_for_children.html" class="service">
-                        <img src="img/for-children-illustration.svg" alt="" />
-                        <h3>IT Courses for Children</h3>
-                        <p class="description">
-                            We can teach children the basics of programming,
-                            Photoshop and other interesting things. Your child
-                            will be excited!
-                        </p>
-                    </a>
+            <div class="course-list" data-courses="it_courses_for_companies">
+                <template>
+                    <section class="course">
+                        <div class="container">
+                            <div class="course-illustration">
+                                <img src="" alt="" data-course="illustration" />
+                            </div>
 
-                    <a href="courses_for_students.html" class="service">
-                        <img src="img/for-students-illustration.svg" alt="" />
-                        <h3>IT Courses for Students</h3>
-                        <p class="description">
-                            We support all bachelor and master students with any
-                            issue related to your courses. We want to help you
-                            understand all your subjects and achieve great
-                            results!
-                        </p>
-                    </a>
+                            <div class="course-information">
+                                <h3 data-course="title"></h3>
 
-                    <a href="courses_for_seniors.html" class="service">
-                        <img src="img/for-seniors-illustration.svg" alt="" />
-                        <h3>IT Courses for Seniors</h3>
-                        <p class="description">
-                            We provide basic and advanced courses of how to use
-                            a computer for senior citizens. With our course you
-                            will start to use computers for your own goals!
+                                <p data-course="description"></p>
+
+                                <h4 class="contents-heading">Contents</h4>
+                                <ul class="contents" data-course="contents">
+                                    <li class="contents-entry">
+                                        <span
+                                            class="contents-entry-content"
+                                        ></span>
+                                    </li>
+                                </ul>
+
+                                <h4 class="lessons-heading">Lessons</h4>
+                                <ol class="lessons" data-course="lessons">
+                                    <li class="lessons-entry">
+                                        <span
+                                            class="lessons-entry-content"
+                                        ></span>
+                                    </li>
+                                </ol>
+
+                                <div class="actions">
+                                    <a
+                                        href="#"
+                                        class="action-primary"
+                                        onclick="alert('Not implemented')"
+                                        >Make Appointment</a
+                                    >
+                                    <a
+                                        href="#"
+                                        class="action-secondary"
+                                        onclick="alert('Not implemented')"
+                                        >Read more</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </template>
+            </div>
+
+            <noscript>
+                <section class="warning">
+                    <div class="container">
+                        <img
+                            src="img/no-script-warning-illustration.svg"
+                            alt=""
+                        />
+                        <h3>Whoops!</h3>
+                        <p>
+                            It seems like you do not have JavaScript enabled.
+                            This is required to load our currently available
+                            courses. Please
+                            <a
+                                class="inline-link"
+                                href="https://enable-javascript.com/"
+                                title="How to enable JavaScript in your browser and why"
+                                >enable JavaScript</a
+                            >
+                            in your browser's settings and reload this page.
                         </p>
-                    </a>
-                </div>
-            </section>
+                    </div>
+                </section>
+            </noscript>
 
             <section class="faq">
                 <div class="container">
@@ -261,7 +308,7 @@
                             >For Companies</a
                         >
                         <a href="consulting_for_companies.html">Consulting</a>
-                        <a href="it_courses_for_companies.html">IT Courses</a>
+                        <a href="courses_for_companies.html">IT Courses</a>
                     </div>
 
                     <div id="footer-links-for-private">
@@ -275,7 +322,7 @@
 
                     <div id="footer-links-other">
                         <a class="headlink unclickable">Other</a>
-                        <a href="computer_repairing.html">IT Support</a>
+                        <a href="it_support.html">IT Support</a>
                         <a href="about_us.html">About Us</a>
                     </div>
 

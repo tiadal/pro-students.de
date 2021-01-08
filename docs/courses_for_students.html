@@ -7,7 +7,7 @@
         <meta name="theme-color" content="#BB4430" />
 
         <!-- Title-->
-        <title>For Students - Pro Students Cottbus</title>
+        <title>IT Courses For Students - Pro Students Cottbus</title>
 
         <!-- Stylesheet-->
         <link rel="stylesheet" href="style.css" />
@@ -15,7 +15,11 @@
         <!-- Favicon -->
         <link rel="icon" href="img/logo-favicon.svg" />
         <link rel="mask-icon" href="img/logo-mask-icon.svg" color="#BB4430" />
+
+        <!-- Scripts -->
+        <script src="app.js" defer="defer"></script>
     </head>
+
     <body>
         <header>
             <nav class="navbar">
@@ -58,9 +62,11 @@
                     </div>
 
                     <div class="navbar-links">
-                        <a href="computer_repairing.html">Repair Work</a>
+                        <a href="it_support.html">IT Support</a>
                         <div class="dropdown-link">
-                            <a href="courses_for_private.html">For Private</a>
+                            <a href="it_courses_for_private.html"
+                                >For Private</a
+                            >
                             <div class="dropdown-link-content">
                                 <a href="courses_for_children.html"
                                     >For Children</a
@@ -74,9 +80,11 @@
                             </div>
                         </div>
                         <div class="dropdown-link">
-                            <a href="for_companies.html">For Companies</a>
+                            <a href="services_for_companies.html"
+                                >For Companies</a
+                            >
                             <div class="dropdown-link-content">
-                                <a href="it_courses_for_companies.html"
+                                <a href="courses_for_companies.html"
                                     >IT Courses</a
                                 >
                                 <a href="consulting_for_companies.html"
@@ -105,11 +113,9 @@
                     </a>
                     <span class="breadcrumb-sep"></span>
                     <span class="breadcrumb-dots"></span>
-                    <a href="courses_for_private.html"
-                        >IT Courses For Private</a
-                    >
+                    <a href="courses_for_private.html">Courses For Private</a>
                     <span class="breadcrumb-sep"></span>
-                    <a href="#">Students</a>
+                    <a href="#">For Students</a>
                 </div>
             </nav>
 
@@ -196,6 +202,30 @@
                 </template>
             </div>
 
+            <noscript>
+                <section class="warning">
+                    <div class="container">
+                        <img
+                            src="img/no-script-warning-illustration.svg"
+                            alt=""
+                        />
+                        <h3>Whoops!</h3>
+                        <p>
+                            It seems like you do not have JavaScript enabled.
+                            This is required to load our currently available
+                            courses. Please
+                            <a
+                                class="inline-link"
+                                href="https://enable-javascript.com/"
+                                title="How to enable JavaScript in your browser and why"
+                                >enable JavaScript</a
+                            >
+                            in your browser's settings and reload this page.
+                        </p>
+                    </div>
+                </section>
+            </noscript>
+
             <section class="faq">
                 <div class="container">
                     <div class="faq-heading-container">
@@ -278,7 +308,7 @@
                             >For Companies</a
                         >
                         <a href="consulting_for_companies.html">Consulting</a>
-                        <a href="it_courses_for_companies.html">IT Courses</a>
+                        <a href="courses_for_companies.html">IT Courses</a>
                     </div>
 
                     <div id="footer-links-for-private">
@@ -291,13 +321,13 @@
                     </div>
 
                     <div id="footer-links-other">
-                        <a class="headlink">Other</a>
-                        <a href="computer_repairing.html">PC Problems</a>
+                        <a class="headlink unclickable">Other</a>
+                        <a href="it_support.html">IT Support</a>
                         <a href="about_us.html">About Us</a>
                     </div>
 
                     <div id="footer-links-legal">
-                        <a class="headlink">Legal</a>
+                        <a class="headlink unclickable">Legal</a>
                         <a href="imprint.html">Imprint</a>
                         <a href="privacy.html">Privacy</a>
                         <a href="terms.html">Terms</a>
@@ -306,7 +336,7 @@
 
                 <div id="copyright-notice">
                     <span class="copyright-belonging"
-                        >© Pro Students Cottbus</span
+                        >© 2021 Pro Students Cottbus</span
                     >
                     <span class="copyright-type">All rights reserved</span>
                 </div>
@@ -318,7 +348,5 @@
                 </div>
             </div>
         </footer>
-
-        <script src="app.js"></script>
     </body>
 </html>
