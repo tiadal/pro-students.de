@@ -120,9 +120,6 @@ The following division of work should not be understood as a sign that one perso
 
 * Implementation of PC Problems page
 * About us, PC problems responsive design
-* Clean up CSS and HTML
-    * Minimize / optimize class usage
-    * Check HTML tag semantics
 
 
 ## Developing and Building the Website
