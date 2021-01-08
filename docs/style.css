@@ -1031,7 +1031,7 @@ main .container {
     margin: auto;
     display: block;
     opacity: 0;
-    transition: var(--transition);
+    transition: all 250ms ease-in-out;
 }
 
 .videos .video:hover .video-preview svg {
