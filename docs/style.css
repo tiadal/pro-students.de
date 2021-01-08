@@ -916,6 +916,72 @@ main .container {
     box-shadow: 0px 0px 3px 0px grey;
 }
 
+
+/*
+############################
+    CONTENTS (PC Problems)
+############################
+*/
+
+.videos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.videos .video {
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+    color: var(--primary);
+    border-radius: var(--rounded-edges);
+    cursor: pointer;
+}
+
+.videos .video:hover {
+    background-color: rgba(255,255,255,0.9);
+    color: var(--primary-highlighted);
+}
+
+.videos .video p {
+    font-size: 1rem;
+    color: var(--dark);
+    text-align: left;
+}
+
+.videos .video .video-preview {
+    position: relative;
+    margin-right: 1rem;
+    border-radius: var(--rounded-edges);
+}
+
+.videos .video .video-preview img {
+    display: block;
+    width: 8rem;
+    height: auto;
+    border-radius: var(--rounded-edges);
+}
+
+.videos .video .video-preview svg {
+    width: 3rem;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+@media (max-width: 670px) {
+    .videos {
+        grid-template-columns: 1fr;
+    }
+}
+
 /*
 ############################
     CONTENTS (Legal)
