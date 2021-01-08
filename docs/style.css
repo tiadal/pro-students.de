@@ -869,7 +869,11 @@ main .container {
     margin-top: 0;
 }
 
-.consulting-service-icon {
+.consulting-serice-icon {
+    display: block;
+}
+
+.consulting-service-icon > img {
     margin-top: .5rem;
     margin-right: 1rem;
 }
