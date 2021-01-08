@@ -113,6 +113,11 @@ h3 {
 }
 
 
+/*
+############################
+    NO SCRIPT WARNING
+############################
+*/
 .warning > .container {
     display: flex;
     flex-direction: column;
@@ -122,6 +127,17 @@ h3 {
 
 .warning img {
     max-width: 40%;
+}
+
+@media (max-width: 640px) {
+    .warning > .container {
+        align-items: flex-start;
+        text-align: left;
+    }
+    
+    .warning img {
+        max-width: 50%;
+    }
 }
 
 
