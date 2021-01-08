@@ -366,12 +366,17 @@ nav.breadcrumb > .container {
     padding-bottom: 0rem;
     color: var(--light-darker-accent);
     overflow-x: auto;
+    line-height: 0;
 }
     
-.breadcrumb-sep::before {
+.breadcrumb-sep {
      padding-left: 1rem;
      padding-right: 1rem;
-     content: '>';
+ }
+
+ .breadcrumb-sep svg {
+     height: 1rem;
+     width: auto;
  }
 
 .breadcrumb-dots {
@@ -381,6 +386,7 @@ nav.breadcrumb > .container {
 #home-icon {
     width: 1.5rem;
     height: auto;
+    color: #B2B2B2;
 }
 
 @media (max-width: 640px) {
@@ -1275,7 +1281,7 @@ h4 {
     FOOTER
 ############################
 */
-footer a:hover, .page-heading-legal-links a:hover, nav.breadcrumb a:hover {
+footer a:hover, .page-heading-legal-links a:hover, nav.breadcrumb a:hover, a:hover #home-icon {
     color: var(--dark);
 }
 
