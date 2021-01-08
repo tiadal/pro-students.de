@@ -30,6 +30,7 @@
     --golden-ratio-illustration-margin: 2rem;
     
     --rounded-edges: 4px;
+    --transition: all 150ms ease-in-out;
 }
 
 html, body {
@@ -80,6 +81,7 @@ h3 {
     background-color: var(--primary);
     border-radius: var(--rounded-edges);
     text-align: center;
+    transition: var(--transition);
 }
 .action-primary:hover {
     background-color: var(--primary-highlighted);
@@ -91,6 +93,7 @@ h3 {
     background-color: var(--primary-light);
     border-radius: var(--rounded-edges);
     text-align: center;
+    transition: var(--transition);
 }
 .action-secondary:hover {
     background-color: var(--primary-light-highlighted);
@@ -192,6 +195,7 @@ h3 {
 
 .navbar-links > a:hover, .navbar-links > .dropdown-link:hover > a {
     color: var(--primary);
+    transition: var(--transition);
 }
 
 .navbar-links a:last-child, .navbar-links .dropdown-link:last-child {
@@ -216,6 +220,7 @@ h3 {
     box-shadow: 0px 0px 5px 1px grey;
     top: 3.8rem;
     flex-direction: column;
+    opacity: 0;
     border-radius: var(--rounded-edges);
 }
 
@@ -227,6 +232,7 @@ h3 {
     display: block;
     text-align: left;
     padding: 0.5rem 3rem 0.5rem 1.5rem;
+    transition: var(--transition);
 }
 
 .navbar .navbar-links .dropdown-link .dropdown-link-content a:hover {
@@ -484,6 +490,7 @@ nav.breadcrumb > .container {
     padding-left: 35px;
     padding-right: 35px;
     margin-right: 25px;
+    transition: var(--transition);
 }
 
 .page-heading .actions .action-secondary {
@@ -492,6 +499,7 @@ nav.breadcrumb > .container {
     padding-left: 35px;
     padding-right: 35px;
     margin-right: 25px;
+    transition: var(--transition);
 }
 
 .page-heading-illustration {
@@ -1251,6 +1259,7 @@ h4 {
     align-items: center;
     padding: 1.5rem;
     text-align: center;
+    transition: var(--transition);
 }
 .contact-action > a:hover {
     background-color: white;
@@ -1286,6 +1295,7 @@ h4 {
 */
 footer a:hover, .page-heading-legal-links a:hover, nav.breadcrumb a:hover, a:hover #home-icon {
     color: var(--dark);
+    transition: var(--transition);
 }
 
 .unclickable:hover {
@@ -1569,6 +1579,7 @@ footer > .container {
     background-color: var(--primary);
     border-radius: var(--rounded-edges);
     padding: 10px 20px;
+    transition: var(--transition);
 }
 
 @media (max-width: 730px) {
