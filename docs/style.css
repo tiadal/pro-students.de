@@ -331,7 +331,7 @@ nav.breadcrumb > .container {
     flex-direction: row;
     align-items: center;
     padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-bottom: 0rem;
     color: var(--light-darker-accent);
     overflow-x: auto;
 }
@@ -395,6 +395,7 @@ nav.breadcrumb > .container {
 .page-heading > .container, .home-page-heading > .container {
     display: flex;
     flex-direction: row;
+    padding-top: 2rem;
     margin-bottom: 5rem;
 }
 
@@ -422,6 +423,7 @@ nav.breadcrumb > .container {
     display: block;
     color: var(--dark);
     font-size: 1.5rem;
+    max-width: 400px;
 }
 .home-page-heading .page-heading-text .sub-title {
     display: block;
