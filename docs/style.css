@@ -370,7 +370,6 @@ nav.breadcrumb > .container {
     padding-top: 2rem;
     padding-bottom: 0rem;
     color: var(--light-darker-accent);
-    overflow-x: auto;
     line-height: 0;
 }
     
