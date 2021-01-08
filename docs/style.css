@@ -96,6 +96,10 @@ h3 {
     background-color: var(--primary-light-highlighted);
 }
 
+.inline-link {
+    font-weight: 600;
+}
+
 .hidden { /* JavaScript-usable class to hide elemnt */
     display: none !important;
 }
