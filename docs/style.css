@@ -433,7 +433,7 @@ nav.breadcrumb > .container {
 
 .home-page-heading {
     color: var(--light);
-    background-color: #030303;
+    background-color: black;
     padding-top: 2rem;
     padding-bottom: 1rem;
 }
