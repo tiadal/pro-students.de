@@ -114,6 +114,7 @@ The following division of work should not be understood as a sign that one perso
 
 * Creation of a suitable build script for generation of the web pages based on partial data
 * Design of the Homepage
+* (X)HTML Validity Testing and Tuning
 
 
 ### --\# TODO \#--
