@@ -16,12 +16,11 @@ function deleteOldFiles(err, fileList) {
             return; // This isn't an html document
         }
 
-        fs.unlink(__dirname + "/docs/" + htmlDoc, (err) => {
-            if (err) {
-              console.error(err)
-              return
-            }
-        })
+        try {
+          fs.unlinkSync(__dirname + "/docs/" + htmlDoc)
+        } catch(err) {
+          console.error(err)
+        }
     })
 }
 
