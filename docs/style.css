@@ -984,7 +984,7 @@ main .container {
     box-shadow: 0px 0px 3px 0px grey;
 }
 
-@media (max-width: 640px) {
+@media (max-width: 800px) {
     .about-team {
         flex-direction: column-reverse;
     }
