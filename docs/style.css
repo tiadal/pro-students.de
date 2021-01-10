@@ -617,6 +617,7 @@ nav.breadcrumb > .container {
 }
 
 .service > h3 {
+    text-align: center;
     margin-bottom: .5rem;
 }
 
