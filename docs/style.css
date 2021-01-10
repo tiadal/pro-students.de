@@ -979,9 +979,42 @@ main .container {
 }
 
 .about-location .map-image {
-    width: calc(100%);
+    width: 100%;
     margin-left: -15rem;
     box-shadow: 0px 0px 3px 0px grey;
+}
+
+@media (max-width: 800px) {
+    .about-team {
+        flex-direction: column-reverse;
+    }
+    .team-members {
+        margin-left: 0;
+    }
+
+    .about-location {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0px 0px 3px 0px grey;
+    }
+    
+    .about-location .map-overlay {
+        position: static;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        width: auto;
+        background: white;
+        transform: none;
+        box-shadow: none;
+    }
+    
+    .about-location .map-image {
+        margin-left: 0;
+        box-shadow: none;
+    }
 }
 
 
@@ -1013,7 +1046,7 @@ main .container {
     background-color: rgba(255,255,255,0.9);
 }
 
-.videos .video p {
+.videos .video span:last-child {
     font-size: 1rem;
     color: var(--dark);
     text-align: left;
@@ -1088,8 +1121,6 @@ main .container {
 
 #video-content iframe {
     display: block;
-    height: auto;
-    width: auto;
     max-width: 80%;
     max-height: 80%;
 }
