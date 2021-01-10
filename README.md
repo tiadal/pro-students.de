@@ -117,12 +117,6 @@ The following division of work should not be understood as a sign that one perso
 * (X)HTML Validity Testing and Tuning
 
 
-### --\# TODO \#--
-
-* Implementation of PC Problems page
-* About us, PC problems responsive design
-
-
 ## Developing and Building the Website
 
 * Images and XML files as well as JavaScripts and Cascading Style Sheets can be saved directly in the docs folder and corresponding subfolders
