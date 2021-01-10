@@ -1046,7 +1046,7 @@ main .container {
     background-color: rgba(255,255,255,0.9);
 }
 
-.videos .video p {
+.videos .video span:last-child {
     font-size: 1rem;
     color: var(--dark);
     text-align: left;
@@ -1121,8 +1121,6 @@ main .container {
 
 #video-content iframe {
     display: block;
-    height: auto;
-    width: auto;
     max-width: 80%;
     max-height: 80%;
 }
