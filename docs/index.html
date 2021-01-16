@@ -24,16 +24,13 @@
         <header>
             <nav class="home-page-navbar">
                 <div class="container">
-                    <div class="navbar-left">
-                        <a href="index.html">
-                            <img
-                                class="navbar-logo"
-                                src="img/logo-bright.svg"
-                                alt="Pro Students Cottbus"
-                            />
-                        </a>
+                    <a href="index.html" class="navbar-logo">
+                        <img src="img/logo.svg" alt="Pro Students Cottbus" />
+                    </a>
 
-                        <button>
+                    <input type="checkbox" hidden="" id="navbar-menu-button" />
+                    <div class="navbar-menu-button-icon">
+                        <label class="hamburger-icon" for="navbar-menu-button">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 20 20"
@@ -45,6 +42,8 @@
                                     clip-rule="evenodd"
                                 ></path>
                             </svg>
+                        </label>
+                        <label class="close-icon" for="navbar-menu-button">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="none"
@@ -58,7 +57,7 @@
                                     d="M6 18L18 6M6 6l12 12"
                                 ></path>
                             </svg>
-                        </button>
+                        </label>
                     </div>
 
                     <div class="navbar-links">
