@@ -114,7 +114,6 @@ The following division of work should not be understood as a sign that one perso
 
 * Fonts aren't scaled correctly on devices (e.g. tablets) with system size increased
 * Separate legal page for image credits
-* Hamburger menu doesn't appear on tablet due to too large screen size
 * Implement buttons (e.g. Contact Button with a popup. Phone number, chat window, E-Mail)
 
 ### Both Equally

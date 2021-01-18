@@ -257,16 +257,7 @@ h3 {
     display: flex;
 }
 
-@media (max-width: 1024px) {
-    .container {
-        padding: 0 3rem;
-    }
-}
-
-@media (max-width: 880px) {
-    .container {
-        padding: 0 1rem;
-    }
+@media (max-width: 880px), (pointer: none), (pointer: coarse), (hover: none) { /* Applies for ALL touch devices */
     .navbar > .container, .home-page-navbar > .container {
         display: grid;
         grid-template-areas: 
@@ -357,6 +348,18 @@ h3 {
     }   
     .home-page-navbar .navbar-links .dropdown-link .dropdown-link-content a:hover {
         background-color: inherit;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 3rem;
+    }
+}
+
+@media (max-width: 840px) {
+    .container {
+        padding: 0 1rem;
     }
 }
 
