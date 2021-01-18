@@ -169,11 +169,11 @@ h3 {
     align-items: center;
 }
 
-.navbar-left button {
+.navbar-menu-button-icon {
     display: none;
 }
 
-.navbar-logo {
+.navbar-logo > img {
     height: 2rem;
 }
 
@@ -268,17 +268,13 @@ h3 {
         padding: 0 1rem;
     }
     .navbar > .container, .home-page-navbar > .container {
-        flex-direction: column;
-    }
-    
-    .navbar-left {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
+        display: grid;
+        grid-template-areas: 
+            "navbar-logo menu-button"
+            "link-menu   link-menu";
     }
 
-    .navbar-left button {
+    .navbar-menu-button-icon {
         display: block;
         padding: 0.5rem;
         margin: 1rem 0 1rem auto;
@@ -286,37 +282,42 @@ h3 {
         border-radius: var(--rounded-edges);
         box-shadow: none;
         border: none;
+        grid-area: menu-button;
     }
     
-    .home-page-navbar .navbar-left button {
+    .navbar-logo {
+        grid-area: navbar-logo;
+    }
+    
+    .home-page-navbar .navbar-menu-button-icon {
         color: var(--light);
     }
 
-    .navbar .navbar-left button:hover {
+    .navbar .navbar-menu-button-icon:hover {
         background-color: var(--light);
     }
-    .home-page-navbar .navbar-left button:hover {
+    .home-page-navbar .navbar-menu-button-icon:hover {
         background-color: var(--black-hover);
     }
 
-    .navbar-left button svg {
+    .navbar-menu-button-icon svg {
         height: 1.5rem;
         width: 1.5rem;
     }
 
-    .navbar-left button svg:first-child {
+    #navbar-menu-button ~ .navbar-menu-button-icon .hamburger-icon {
         display: block;
     }
 
-    .show .navbar-left button svg:first-child {
+    #navbar-menu-button:checked ~ .navbar-menu-button-icon .hamburger-icon {
+        display: none;
+    }
+    
+    #navbar-menu-button ~ .navbar-menu-button-icon .close-icon {
         display: none;
     }
 
-    .navbar-left button svg:last-child {
-        display: none;
-    }
-
-    .show .navbar-left button svg:last-child {
+    #navbar-menu-button:checked ~ .navbar-menu-button-icon .close-icon {
         display: block;
     }
 
@@ -326,9 +327,10 @@ h3 {
         margin-left: 0;
         flex-direction: column;
         padding-bottom: 1rem;
+        grid-area: link-menu;
     }
 
-    .show .navbar-links {
+    #navbar-menu-button:checked ~ .navbar-links {
         display: flex;
     }
     

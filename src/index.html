@@ -7,20 +7,19 @@
         <header>
             <nav class="home-page-navbar">
                 <div class="container">
-                    <div class="navbar-left">
-                        <a href="index.html">
-                            <img class="navbar-logo" src="img/logo-bright.svg" alt="Pro Students Cottbus" />
-                        </a>
-                
-                        <button>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                            </svg>
-                        </button>
-                    </div>
+                    <a href="index.html" class="navbar-logo">
+                        <img src="img/logo.svg" alt="Pro Students Cottbus" />
+                    </a>
+                    
+                    <input type="checkbox" hidden id="navbar-menu-button" />
+                    <label class="navbar-menu-button-icon" for="navbar-menu-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="hamburger-icon" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="close-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </label>
                     
                     <div class="navbar-links">
                         <a href="it_support.html">IT Support</a>
