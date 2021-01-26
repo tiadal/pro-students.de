@@ -1263,7 +1263,8 @@ footer > .container {
     grid-template-areas:
         "footerBranding footNav"
         "footerBranding footNav"
-        "copyrightNotice legalLinks";
+        "copyrightNotice legalLinks"
+        "divisionOfWork divisionOfWork";
 }
 
 .footer-branding {
@@ -1335,6 +1336,14 @@ footer > .container {
 
 .copyright-type::after {
     content: '.';
+}
+
+#division-of-work {
+    display: block;
+    text-align: center;
+    margin-top: 1.5rem;
+    font-style: italic;
+    grid-area: divisionOfWork;
 }
 
 @media (max-width: 1200px) {
