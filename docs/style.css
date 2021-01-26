@@ -1091,7 +1091,7 @@ h4 {
 ############################
 */
 .faq {
-    background-color: var(--light-light-accent); /* TODO: might look bad with odd number of courses */
+    background-color: var(--light-light-accent); /* With odd number of courses, this will have same background as last course. Not a big deal, though, we'll keep it like this */
 }
 
 .faq .container {
