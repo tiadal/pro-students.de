@@ -157,7 +157,7 @@ function assembleXml(dom) {
                         })
     
                     } else {
-                        htmlCourse.querySelector("h4.lessons-heading").classList.add('hidden')
+                        htmlCourse.querySelector("h3.lessons-heading").classList.add('hidden')
                         lessons.classList.add('hidden')
                     }
                 }
@@ -178,7 +178,7 @@ function assembleXml(dom) {
     
                         })
                     } else {
-                        htmlCourse.querySelector("h4.contents-heading").classList.add('hidden')
+                        htmlCourse.querySelector("h3.contents-heading").classList.add('hidden')
                         contents.classList.add('hidden')
                     }
                 }
