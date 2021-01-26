@@ -2,6 +2,50 @@
 <html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
     <head data-partial="head">
         <template data-name="title">Imprint</template>
+        <template data-name="custom">
+            <script type="application/ld+json">
+                [{
+                  "@context" : "http://schema.org",
+                  "@type" : "LocalBusiness",
+                  "name" : "Pro Students Cottbus",
+                  "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "Universitatsstr. 8",
+                    "addressLocality": "Cottbus",
+                    "addressRegion": "Brandenburg",
+                    "postalCode": "03046",
+                    "addressCountry": "DE"
+                  },
+                  "email" : "info@pro-student.de",
+                  "image" : "https://tiadal.github.io/pro-students.de/img/logo.svg",
+                  "url" : "https://tiadal.github.io/pro-students.de/index.html"
+                },
+                {
+                    "@context": "https://schema.org",
+                    "@type": "BreadcrumbList",
+                    "itemListElement": [
+                        {
+                            "@type": "ListItem",
+                            "position": 1,
+                            "name": "Homepage",
+                            "item": "https://tiadal.github.io/pro-students.de/"
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 2,
+                            "name": "Legal",
+                            "item": "https://tiadal.github.io/pro-students.de/imprint.html"
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 3,
+                            "name": "Imprint",
+                            "item": "https://tiadal.github.io/pro-students.de/imprint.html"
+                        }
+                    ]
+                }]
+            </script>
+        </template>
     </head>
     <body>
         <header>
