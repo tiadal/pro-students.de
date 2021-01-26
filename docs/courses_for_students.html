@@ -230,76 +230,58 @@
 
         <main class="content">
             <section class="course-list" data-courses="courses_for_students">
-                <template>
-                    <section class="course">
-                        <div class="container">
-                            <div class="course-illustration">
-                                <img src="" alt="" data-course="illustration" />
-                            </div>
+                <section class="course">
+                    <div class="container">
+                        <div class="course-illustration">
+                            <img
+                                src="img/your-course-here-illustration.svg"
+                                alt=""
+                                data-course="illustration"
+                            />
+                        </div>
 
-                            <div class="course-information">
-                                <h3 data-course="title"></h3>
+                        <div class="course-information">
+                            <h3 data-course="title">Your course here!</h3>
 
-                                <p data-course="description"></p>
+                            <p data-course="description">
+                                We support all Bachelor and Master students with
+                                any issues related to your courses. We want to
+                                help you understand all your subjecs and achieve
+                                great results. Simply contact us to arrange a
+                                meeting so we can discuss your curriculum!
+                            </p>
 
-                                <h4 class="contents-heading">Contents</h4>
-                                <ul class="contents" data-course="contents">
-                                    <li class="contents-entry">
-                                        <span
-                                            class="contents-entry-content"
-                                        ></span>
-                                    </li>
-                                </ul>
+                            <h4 class="contents-heading hidden">Contents</h4>
+                            <ul class="contents hidden" data-course="contents">
+                                <li class="contents-entry">
+                                    <span class="contents-entry-content"></span>
+                                </li>
+                            </ul>
 
-                                <h4 class="lessons-heading">Lessons</h4>
-                                <ol class="lessons" data-course="lessons">
-                                    <li class="lessons-entry">
-                                        <span
-                                            class="lessons-entry-content"
-                                        ></span>
-                                    </li>
-                                </ol>
+                            <h4 class="lessons-heading hidden">Lessons</h4>
+                            <ol class="lessons hidden" data-course="lessons">
+                                <li class="lessons-entry">
+                                    <span class="lessons-entry-content"></span>
+                                </li>
+                            </ol>
 
-                                <div class="actions">
-                                    <a
-                                        href="#"
-                                        class="action-primary"
-                                        onclick="alert('Not implemented')"
-                                        >Make Appointment</a
-                                    >
-                                    <a
-                                        href="#"
-                                        class="action-secondary"
-                                        onclick="alert('Not implemented')"
-                                        >Read more</a
-                                    >
-                                </div>
+                            <div class="actions">
+                                <a
+                                    href="#"
+                                    class="action-primary"
+                                    onclick="alert('Not implemented')"
+                                    >Make Appointment</a
+                                >
+                                <a
+                                    href="#"
+                                    class="action-secondary"
+                                    onclick="alert('Not implemented')"
+                                    >Read more</a
+                                >
                             </div>
                         </div>
-                    </section>
-                </template>
-
-                <div class="warning">
-                    <div class="container">
-                        <img
-                            src="img/no-script-warning-illustration.svg"
-                            alt=""
-                        />
-                        <h3>Whoops!</h3>
-                        <p>
-                            It seems like you do not have JavaScript enabled.
-                            This is required to load our currently available
-                            courses. Please
-                            <a
-                                class="inline-link"
-                                href="https://enable-javascript.com/"
-                                title="How to enable JavaScript in your browser and why"
-                                >enable JavaScript</a
-                            >
-                            in your browser's settings and reload this page.
-                        </p>
                     </div>
-                </div>
+                </section>
             </section>
 
             <section class="faq">
