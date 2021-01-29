@@ -71,8 +71,13 @@ p, dt, dl, dd {
     padding: 0 5rem; /* Considered minimum padding */
 }
 
-h3 {
+h2 {
     font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+h3 {
+    font-size: 1rem;
 }
 
 .action-primary {
@@ -621,7 +626,7 @@ nav.breadcrumb > .container {
     max-height: 12rem;
 }
 
-.service > h3 {
+.service > h2 {
     text-align: center;
     margin-bottom: .5rem;
 }
@@ -630,10 +635,6 @@ nav.breadcrumb > .container {
     text-align: center;
     margin-top: 0rem;
     margin-bottom: 0rem;
-}
-
-.service > h4 {
-    text-align: center;
 }
 
 @media (max-width: 730px) {
@@ -683,7 +684,7 @@ main .container {
     width: 60%;
 }
 
-.course-information > h3 {
+.course-information > h2 {
     font-weight: bold;
     margin-top: 0;
 }
@@ -701,7 +702,7 @@ main .container {
     font-weight: normal;
 }
 
-.course-information > h3:after {
+.course-information > h2:after {
     content: " ";
     display: block;
     margin-top: .5rem;
@@ -761,6 +762,10 @@ main .container {
     order: 2;
     justify-content: right;
     margin-left: var(--golden-ratio-illustration-margin);
+}
+
+.contents-heading, .lessons-heading {
+    margin-bottom: .5rem;
 }
 
 @media (max-width: 640px) {
@@ -862,7 +867,7 @@ main .container {
     height: auto;
 }
 
-#consulting-services h3 {
+#consulting-services h2 {
     margin-bottom: 3rem;
     margin-top: 0;
 }
@@ -959,7 +964,7 @@ main .container {
     margin-right: 1rem;
 }
 
-.team-member h3 {
+.team-member h2 {
     margin: 0;
     margin-bottom: 0.1rem;
     font-size: inherit;
@@ -1074,8 +1079,18 @@ address > * {
     display: block;
 }
 
-h4 {
+h3.legal {
     margin-bottom: .5rem;
+}
+
+h2.legal {
+    font-size: 1.5rem;
+}
+
+h2.legal-compact {
+    font-size: 1rem;
+    margin-bottom: .5rem;
+    margin-top: 1rem;
 }
 
 .legal-notice {
@@ -1091,7 +1106,7 @@ h4 {
 ############################
 */
 .faq {
-    background-color: var(--light-light-accent); /* TODO: might look bad with odd number of courses */
+    background-color: var(--light-light-accent); /* With odd number of courses, this will have same background as last course. Not a big deal, though, we'll keep it like this */
 }
 
 .faq .container {
@@ -1105,7 +1120,8 @@ h4 {
     margin-right: var(--golden-ratio-illustration-margin);
 }
 
-.faq-heading-container > h3 {
+.homepage-content .faq-heading-container > h2, .faq-heading-container > h2 { /* Higher-specificity selector on the left required for home page */
+    text-align: left;
     margin-top: 0;
 }
 
@@ -1143,7 +1159,7 @@ h4 {
         margin-right: var(--golden-ratio-illustration-margin);
     }
     
-    .faq-heading-container > h3 {
+    .faq-heading-container > h2 {
         margin-top: 1rem;
     }
     
@@ -1263,7 +1279,8 @@ footer > .container {
     grid-template-areas:
         "footerBranding footNav"
         "footerBranding footNav"
-        "copyrightNotice legalLinks";
+        "copyrightNotice legalLinks"
+        "divisionOfWork divisionOfWork";
 }
 
 .footer-branding {
@@ -1335,6 +1352,14 @@ footer > .container {
 
 .copyright-type::after {
     content: '.';
+}
+
+#division-of-work {
+    display: block;
+    text-align: center;
+    margin-top: 1.5rem;
+    font-style: italic;
+    grid-area: divisionOfWork;
 }
 
 @media (max-width: 1200px) {
@@ -1467,9 +1492,13 @@ footer > .container {
     HOMEPAGE-SPECIFIC
 ############################
 */
-.homepage-content h3 {
+.homepage-content h2 {
     text-align: center;
     margin-top: 0;
+}
+
+#main-services {
+    text-align: center;
 }
 
 #main-services  .service-listing {

@@ -110,12 +110,6 @@ The following division of work should not be understood as a sign that one perso
 * HTML/CSS Implementation of the consulting page
 * HTML/CSS Implementation of the homepage
 
-## ==TODO==
-
-* Fonts aren't scaled correctly on devices (e.g. tablets) with system size increased
-* Separate legal page for image credits
-* Implement buttons (e.g. Contact Button with a popup. Phone number, chat window, E-Mail)
-
 ### Both Equally
 
 * Creation of a suitable build script for generation of the web pages based on partial data
