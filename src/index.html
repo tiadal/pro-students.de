@@ -2,25 +2,35 @@
 <html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
     <head data-partial="head">
         <template data-name="title">Homepage</template>
+        <template data-name="custom">
+            <meta name="description" content="">
+            <script type="application/ld+json">
+                {
+                    "@context": "https://schema.org",
+                    "@type": "Organization",
+                    "url": "https://pro-students.kiekbjul.de",
+                    "logo": "https://pro-students.kiekbjul.de/img/homepage-laptop.jpg"
+                }
+            </script>
+        </template>
     </head>
     <body>
         <header>
             <nav class="home-page-navbar">
                 <div class="container">
-                    <div class="navbar-left">
-                        <a href="index.html">
-                            <img class="navbar-logo" src="img/logo-bright.svg" alt="Pro Students Cottbus" />
-                        </a>
-                
-                        <button>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
-                            </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-                            </svg>
-                        </button>
-                    </div>
+                    <a href="index.html" class="navbar-logo">
+                        <img src="img/logo.svg" alt="Pro Students Cottbus" />
+                    </a>
+                    
+                    <input type="checkbox" hidden id="navbar-menu-button" />
+                    <label class="navbar-menu-button-icon" for="navbar-menu-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="hamburger-icon" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="close-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </label>
                     
                     <div class="navbar-links">
                         <a href="it_support.html">IT Support</a>
@@ -66,22 +76,22 @@
         <main class="homepage-content">
             <section id="main-services">
                 <div class="container">
-                    <h3>Our Services</h3>
+                    <h2>Our Services</h2>
 
                     <div class="service-listing">
                         <a href="it_support.html" class="service">
                             <img src="img/broken-computer.svg" alt="" />
-                            <h4>IT Support</h4>
+                            <h3>IT Support</h3>
                         </a>
 
                         <a href="it_courses_for_private.html" class="service">
                             <img src="img/computer-desktop.svg" alt="" />
-                            <h4>IT Courses for Private</h4>
+                            <h3>IT Courses for Private</h3>
                         </a>
 
                         <a href="services_for_companies.html" class="service">
                             <img src="img/business-decisions.svg" alt="" />
-                            <h4>Services for Companies</h4>
+                            <h3>Services for Companies</h3>
                         </a>
                     </div>
                 </div>
@@ -89,7 +99,7 @@
 
             <section id="about-us">
                 <div class="container">
-                    <h3>Who are we?</h3>
+                    <h2>Who are we?</h2>
 
                     <div class="text">
                         <p>

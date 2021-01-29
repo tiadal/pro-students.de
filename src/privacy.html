@@ -2,6 +2,34 @@
 <html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
     <head data-partial="head">
         <template data-name="title">Privacy</template>
+        <template data-name="custom">
+            <script type="application/ld+json">
+                {
+                    "@context": "https://schema.org",
+                    "@type": "BreadcrumbList",
+                    "itemListElement": [
+                        {
+                            "@type": "ListItem",
+                            "position": 1,
+                            "name": "Homepage",
+                            "item": "https://pro-students.kiekbjul.de/"
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 2,
+                            "name": "Legal",
+                            "item": "https://pro-students.kiekbjul.de/imprint.html"
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 3,
+                            "name": "Terms",
+                            "item": "https://pro-students.kiekbjul.de/privacy.html"
+                        }
+                    ]
+                }
+            </script>
+        </template>
     </head>
     <body>
         <header>
@@ -11,7 +39,7 @@
             <nav class="breadcrumb">
                 <div class="container">
                     <a href="index.html">
-                        <svg id="home-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" fill="currentColor"/></svg>
+                        <svg id="home-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><title>Home</title><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" fill="currentColor"/></svg>
                     </a>
                     <span class="breadcrumb-sep">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
@@ -38,9 +66,9 @@
         <main class="content">
             <section lang="de" xml:lang="de">
                 <div class="container">
-                    <h2>Haftungsausschluss</h2>
+                    <h2 class="legal">Haftungsausschluss</h2>
 
-                    <h4>Haftung für Inhalte</h4>
+                    <h3 class="legal">Haftung für Inhalte</h3>
                     <p>
                         Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die
                         Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine
@@ -57,7 +85,7 @@
                         entfernen.
                     </p>
                     
-                    <h4>Haftung für Links</h4>
+                    <h3 class="legal">Haftung für Links</h3>
                     <p>
                         Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte
                         wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch
@@ -71,7 +99,7 @@
                         umgehend entfernen.
                     </p>
 
-                    <h4>Urheberrecht</h4>
+                    <h3 class="legal">Urheberrecht</h3>
                     <p>
                         Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten
                         unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung,
@@ -86,7 +114,7 @@
                         Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.
                     </p>
 
-                    <h4>Datenschutz</h4>
+                    <h3 class="legal">Datenschutz</h3>
                     <p>
                         Die Nutzung unserer Webseite ist in der Regel ohne Angabe
                         personenbezogener Daten möglich. Soweit auf unseren Seiten

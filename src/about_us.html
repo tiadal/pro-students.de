@@ -2,6 +2,28 @@
 <html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
     <head data-partial="head">
         <template data-name="title">About us</template>
+        <template data-name="custom">
+            <script type="application/ld+json">
+                {
+                    "@context": "https://schema.org",
+                    "@type": "BreadcrumbList",
+                    "itemListElement": [
+                        {
+                            "@type": "ListItem",
+                            "position": 1,
+                            "name": "Homepage",
+                            "item": "https://pro-students.kiekbjul.de/"
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 2,
+                            "name": "About us",
+                            "item": "https://pro-students.kiekbjul.de/about_us.html"
+                        }
+                    ]
+                }
+            </script>
+        </template>
     </head>
     <body>
         <header>
@@ -10,7 +32,7 @@
             <nav class="breadcrumb">
                 <div class="container">
                     <a href="index.html">
-                        <svg id="home-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" fill="currentColor"/></svg>
+                        <svg id="home-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><title>Home</title><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" fill="currentColor"/></svg>
                     </a>
                     <span class="breadcrumb-sep">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
@@ -44,7 +66,7 @@
                                 <img src="img/avatar-anna.svg" alt="" />
 
                                 <div>
-                                    <h3>Anna</h3>
+                                    <h2>Anna</h2>
                                     <p>Business Law Student</p>
                                 </div>
                             </div>
@@ -53,7 +75,7 @@
                                 <img src="img/avatar-albert.svg" alt="" />
 
                                 <div>
-                                    <h3>Albert</h3>
+                                    <h2>Albert</h2>
                                     <p>Computer Science Student</p>
                                 </div>
                             </div>
@@ -62,7 +84,7 @@
                                 <img src="img/avatar-mattia.svg" alt="" />
 
                                 <div>
-                                    <h3>Mattia</h3>
+                                    <h2>Mattia</h2>
                                     <p>eBusiness Student</p>
                                 </div>
                             </div>
@@ -71,7 +93,7 @@
                                 <img src="img/avatar-alice.svg" alt="" />
 
                                 <div>
-                                    <h3>Alice</h3>
+                                    <h2>Alice</h2>
                                     <p>Cyber Security Student</p>
                                 </div>
                             </div>

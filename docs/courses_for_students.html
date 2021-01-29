@@ -4,62 +4,107 @@
         <!-- Meta -->
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="theme-color" content="#BB4430" />
 
         <!-- Title-->
         <title>IT Courses For Students - Pro Students Cottbus</title>
 
         <!-- Stylesheet-->
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="/style.css" />
 
         <!-- Favicon -->
-        <link rel="icon" href="img/logo-favicon.svg" />
-        <link rel="mask-icon" href="img/logo-mask-icon.svg" color="#BB4430" />
+        <link rel="icon" href="/favicon.svg" />
+        <link rel="mask-icon" href="/mask-icon.svg" color="#BB4430" />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/site.webmanifest" />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#bb4430" />
 
-        <!-- Scripts -->
-        <script src="app.js" defer="defer"></script>
+        <!-- Custom -->
+
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Homepage",
+                        "item": "https://pro-students.kiekbjul.de/"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "For Private",
+                        "item": "https://pro-students.kiekbjul.de/it_courses_for_private.html"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "name": "Student Courses",
+                        "item": "https://pro-students.kiekbjul.de/courses_for_students.html"
+                    }
+                ]
+            }
+        </script>
     </head>
 
     <body>
         <header>
             <nav class="navbar">
                 <div class="container">
-                    <div class="navbar-left">
-                        <a href="index.html">
-                            <img
-                                class="navbar-logo"
-                                src="img/logo.svg"
-                                alt="Pro Students Cottbus"
-                            />
-                        </a>
+                    <a href="/" class="navbar-logo">
+                        <img src="img/logo.svg" alt="Pro Students Cottbus" />
+                    </a>
 
-                        <button>
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 20 20"
-                                fill="currentColor"
-                            >
-                                <path
-                                    fill-rule="evenodd"
-                                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                                    clip-rule="evenodd"
-                                ></path>
-                            </svg>
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke="currentColor"
-                            >
-                                <path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    stroke-width="2"
-                                    d="M6 18L18 6M6 6l12 12"
-                                ></path>
-                            </svg>
-                        </button>
-                    </div>
+                    <input type="checkbox" hidden="" id="navbar-menu-button" />
+                    <label
+                        class="navbar-menu-button-icon"
+                        for="navbar-menu-button"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="hamburger-icon"
+                            viewBox="0 0 20 20"
+                            fill="currentColor"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                                clip-rule="evenodd"
+                            ></path>
+                        </svg>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="close-icon"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12"
+                            ></path>
+                        </svg>
+                    </label>
 
                     <div class="navbar-links">
                         <a href="it_support.html">IT Support</a>
@@ -105,6 +150,7 @@
                             viewBox="0 0 20 20"
                             fill="currentColor"
                         >
+                            <title>Home</title>
                             <path
                                 d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"
                                 fill="currentColor"
@@ -182,76 +228,58 @@
 
         <main class="content">
             <section class="course-list" data-courses="courses_for_students">
-                <template>
-                    <section class="course">
-                        <div class="container">
-                            <div class="course-illustration">
-                                <img src="" alt="" data-course="illustration" />
-                            </div>
+                <section class="course">
+                    <div class="container">
+                        <div class="course-illustration">
+                            <img
+                                src="img/your-course-here-illustration.svg"
+                                alt=""
+                                data-course="illustration"
+                            />
+                        </div>
 
-                            <div class="course-information">
-                                <h3 data-course="title"></h3>
+                        <div class="course-information">
+                            <h2 data-course="title">Your course here!</h2>
 
-                                <p data-course="description"></p>
+                            <p data-course="description">
+                                We support all Bachelor and Master students with
+                                any issues related to your courses. We want to
+                                help you understand all your subjecs and achieve
+                                great results. Simply contact us to arrange a
+                                meeting so we can discuss your curriculum!
+                            </p>
 
-                                <h4 class="contents-heading">Contents</h4>
-                                <ul class="contents" data-course="contents">
-                                    <li class="contents-entry">
-                                        <span
-                                            class="contents-entry-content"
-                                        ></span>
-                                    </li>
-                                </ul>
+                            <h3 class="contents-heading hidden">Contents</h3>
+                            <ul class="contents hidden" data-course="contents">
+                                <li class="contents-entry">
+                                    <span class="contents-entry-content"></span>
+                                </li>
+                            </ul>
 
-                                <h4 class="lessons-heading">Lessons</h4>
-                                <ol class="lessons" data-course="lessons">
-                                    <li class="lessons-entry">
-                                        <span
-                                            class="lessons-entry-content"
-                                        ></span>
-                                    </li>
-                                </ol>
+                            <h3 class="lessons-heading hidden">Lessons</h3>
+                            <ol class="lessons hidden" data-course="lessons">
+                                <li class="lessons-entry">
+                                    <span class="lessons-entry-content"></span>
+                                </li>
+                            </ol>
 
-                                <div class="actions">
-                                    <a
-                                        href="#"
-                                        class="action-primary"
-                                        onclick="alert('Not implemented')"
-                                        >Make Appointment</a
-                                    >
-                                    <a
-                                        href="#"
-                                        class="action-secondary"
-                                        onclick="alert('Not implemented')"
-                                        >Read more</a
-                                    >
-                                </div>
+                            <div class="actions">
+                                <a
+                                    href="#"
+                                    class="action-primary"
+                                    onclick="alert('Not implemented')"
+                                    >Make Appointment</a
+                                >
+                                <a
+                                    href="#"
+                                    class="action-secondary"
+                                    onclick="alert('Not implemented')"
+                                    >Read more</a
+                                >
                             </div>
                         </div>
-                    </section>
-                </template>
-
-                <div class="warning">
-                    <div class="container">
-                        <img
-                            src="img/no-script-warning-illustration.svg"
-                            alt=""
-                        />
-                        <h3>Whoops!</h3>
-                        <p>
-                            It seems like you do not have JavaScript enabled.
-                            This is required to load our currently available
-                            courses. Please
-                            <a
-                                class="inline-link"
-                                href="https://enable-javascript.com/"
-                                title="How to enable JavaScript in your browser and why"
-                                >enable JavaScript</a
-                            >
-                            in your browser's settings and reload this page.
-                        </p>
                     </div>
-                </div>
+                </section>
             </section>
 
             <section class="faq">
@@ -373,6 +401,13 @@
                     <a href="imprint.html">Imprint</a>
                     <a href="privacy.html">Privacy</a>
                     <a href="terms.html">Terms</a>
+                </div>
+
+                <div id="division-of-work">
+                    <span
+                        >Accessibility by Fabian Mildner, SEO by Julius
+                        Kiekbusch</span
+                    >
                 </div>
             </div>
         </footer>
