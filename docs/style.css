@@ -384,8 +384,7 @@ nav.breadcrumb > .container {
 }
     
 .breadcrumb-sep {
-     padding-left: 1rem;
-     padding-right: 1rem;
+    padding: 0 1rem;
  }
 
  .breadcrumb-sep svg {
@@ -414,23 +413,14 @@ nav.breadcrumb > .container {
      * dots element shouldn't be given there.
      */
     
-    nav.breadcrumb a {
+    nav.breadcrumb a, .breadcrumb-sep {
         display: none;
     }
     
-    .breadcrumb-sep {
-        display: none;
-    }
-    
-    nav.breadcrumb a:first-child, nav.breadcrumb a:last-child {
-        display: inline;
-    }
-    
-    .breadcrumb-sep:first-of-type, .breadcrumb-sep:last-of-type {
-        display: inline;
-    }
-    
-    .breadcrumb-dots {
+    nav.breadcrumb a:first-child, nav.breadcrumb a:last-child,
+    .breadcrumb-sep:first-of-type, .breadcrumb-sep:last-of-type,
+    .breadcrumb-dots
+    {
         display: inline;
     }
     
@@ -492,20 +482,11 @@ nav.breadcrumb > .container {
     justify-content: flex-start;
 }
 
-.page-heading .actions .action-primary, .home-page-heading .actions .action-primary {
-    display: block;
-    padding: 25px;
-    padding-left: 35px;
-    padding-right: 35px;
-    margin-right: 25px;
-    transition: var(--transition);
-}
-
+.page-heading .actions .action-primary,
+.home-page-heading .actions .action-primary,
 .page-heading .actions .action-secondary {
     display: block;
-    padding: 25px;
-    padding-left: 35px;
-    padding-right: 35px;
+    padding: 25px 35px;
     margin-right: 25px;
     transition: var(--transition);
 }
@@ -720,19 +701,11 @@ main .container {
     flex-direction: row;
 }
 
-.course-information .actions .action-primary {
-    display: block;
-    padding: 15px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-right: 20px;
-}
-
+.course-information .actions .action-primary,
 .course-information .actions .action-secondary {
     display: block;
-    padding: 15px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 15px 20px;
+    margin-right: 20px;
 }
 
 .course:nth-child(odd) {
