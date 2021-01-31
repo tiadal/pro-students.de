@@ -6,11 +6,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
             name="description"
-            content="For Seniors we have different levels of knowledge. From the computer basics to more advanced topics."
+            content="MS Excel is the most popular program for working with tables. In this course we talk about simple data analysis methods, which your employees can use in MS Excel."
         />
 
         <!-- Title-->
-        <title>IT Courses For Seniors - Pro Students Cottbus</title>
+        <title>Introduction to Excel - IT Courses - Pro Students Cottbus</title>
 
         <!-- Stylesheet-->
         <link rel="stylesheet" href="/style.css" />
@@ -43,7 +43,18 @@
 
         <script type="application/ld+json">
             [
-                {"@context":"http://schema.org","@type":"ItemList","itemListElement":[{"@type":"ListItem","position":1,"url":"/private-it-courses/for-seniors/how-to-use-a-computer.html"}{"@type":"ListItem","position":2,"url":"/private-it-courses/for-seniors/advanced-computer-usage.html"}]}
+                {
+                    "@context": "http://schema.org",
+                    "@type": "Course",
+                    "name": "Introduction to Excel",
+                    "description": "MS Excel is the most popular program for working with tables. In this course we talk about simple data analysis methods, which your employees can use in MS Excel.",
+                    "provider": {
+                        "@type": "Organization",
+                        "name": "Pro Students Cottbus",
+                        "sameAs": "https://pro-students.kiekbjul.de"
+                    }
+                },
+
                 {
                     "@context": "https://schema.org",
                     "@type": "BreadcrumbList",
@@ -57,14 +68,20 @@
                         {
                             "@type": "ListItem",
                             "position": 2,
-                            "name": "Private IT Courses",
-                            "item": "https://pro-students.kiekbjul.de/it-courses-for-private.html"
+                            "name": "Services For Companies",
+                            "item": "https://pro-students.kiekbjul.de/services-for-companies.html"
                         },
                         {
                             "@type": "ListItem",
                             "position": 3,
-                            "name": "For Seniors",
-                            "item": "https://pro-students.kiekbjul.de/private-it-courses/for-seniors.html"
+                            "name": "IT Courses",
+                            "item": "https://pro-students.kiekbjul.de/services-for-companies/it-courses.html"
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 4,
+                            "name": "Introduction to Excel",
+                            "item": "https://pro-students.kiekbjul.de/services-for-companies/it-courses/introduction-to-excel.html"
                         }
                     ]
                 }
@@ -91,7 +108,6 @@
                             viewBox="0 0 20 20"
                             fill="currentColor"
                         >
-                            <title>Menu</title>
                             <path
                                 fill-rule="evenodd"
                                 d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
@@ -105,7 +121,6 @@
                             viewBox="0 0 24 24"
                             stroke="currentColor"
                         >
-                            <title>Close</title>
                             <path
                                 stroke-linecap="round"
                                 stroke-linejoin="round"
@@ -182,8 +197,24 @@
                         </svg>
                     </span>
                     <span class="breadcrumb-dots"></span>
-                    <a href="/it-courses-for-private.html"
-                        >Private IT Courses</a
+                    <a href="/services-for-companies.html">For Companies</a>
+                    <span class="breadcrumb-sep">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M9 5l7 7-7 7"
+                            ></path>
+                        </svg>
+                    </span>
+                    <a href="/services-for-companies/it-courses.html"
+                        >IT Courses</a
                     >
                     <span class="breadcrumb-sep">
                         <svg
@@ -200,185 +231,63 @@
                             ></path>
                         </svg>
                     </span>
-                    <a href="#">For Seniors</a>
+                    <a href="#">Introduction to Excel</a>
                 </div>
             </nav>
 
-            <section class="page-heading">
+            <section class="page-heading-course">
                 <div class="container">
-                    <div class="page-heading-illustration">
-                        <img src="/img/for-seniors-illustration.svg" alt="" />
-                    </div>
+                    <img src="/img/spreadsheet.svg" alt="" />
 
-                    <div class="page-heading-text">
-                        <h1>
-                            <span class="main-title">IT Courses</span>
-                            <span class="sub-title">For Seniors</span>
-                        </h1>
+                    <h1>
+                        <span class="main-title">Introduction to Excel</span>
+                        <span class="sub-title">For Companies</span>
+                    </h1>
 
-                        <div class="actions">
-                            <a
-                                href="#"
-                                class="action-primary"
-                                onclick="alert('Not implemented')"
-                                >Contact us</a
-                            >
-                            <a
-                                href="#"
-                                class="action-secondary"
-                                onclick="alert('Not implemented')"
-                                >Read more</a
-                            >
-                        </div>
+                    <div class="actions">
+                        <a
+                            href="#"
+                            class="action-primary"
+                            onclick="alert('Not implemented')"
+                            >Make appointment</a
+                        >
+                        <a
+                            href="#"
+                            class="action-secondary"
+                            onclick="alert('Not implemented')"
+                            >Contact us</a
+                        >
                     </div>
                 </div>
             </section>
         </header>
 
         <main class="content">
-            <section class="course-list" data-courses="courses_for_seniors">
-                <section class="course">
-                    <div class="container">
-                        <div class="course-illustration">
-                            <img
-                                src="/img/basic-computer-usage-illustration.svg"
-                                alt=""
-                                data-course="illustration"
-                            />
-                        </div>
+            <section>
+                <h2>Description</h2>
+                <p>
+                    MS Excel is the most popular program for working with
+                    tables. In this course we talk about simple data analysis
+                    methods, which your employees can use in MS Excel.
+                </p>
+            </section>
 
-                        <div class="course-information">
-                            <h2 data-course="title">How to use a Computer</h2>
-
-                            <p data-course="description">
-                                This course will help you to start using your
-                                computer.
-                            </p>
-
-                            <div>
-                                <h3 class="contents-heading hidden">
-                                    Contents
-                                </h3>
-                                <ul
-                                    class="contents hidden"
-                                    data-course="contents"
-                                >
-                                    <li class="contents-entry">
-                                        <span
-                                            class="contents-entry-content"
-                                        ></span>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div>
-                                <h3 class="lessons-heading">Lessons</h3>
-                                <ol class="lessons" data-course="lessons">
-                                    <li class="lessons-entry">
-                                        <span class="lessons-entry-content"
-                                            >Basics of using a Computer</span
-                                        >
-                                    </li>
-                                    <li class="lessons-entry">
-                                        <span class="lessons-entry-content"
-                                            >How to use a Web Browser</span
-                                        >
-                                    </li>
-                                    <li class="lessons-entry">
-                                        <span class="lessons-entry-content"
-                                            >How to be safe from Computer
-                                            Viruses and Hackers</span
-                                        >
-                                    </li>
-                                    <li class="lessons-entry">
-                                        <span class="lessons-entry-content"
-                                            >Using Skype and WhatsApp</span
-                                        >
-                                    </li>
-                                </ol>
-                            </div>
-                            <div class="actions">
-                                <a
-                                    href="#"
-                                    class="action-primary"
-                                    onclick="alert('Not implemented')"
-                                    >Make Appointment</a
-                                >
-                                <a
-                                    href="/private-it-courses/for-seniors/how-to-use-a-computer.html"
-                                    class="action-secondary"
-                                    data-course="preview"
-                                    >Read more</a
-                                >
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="course">
-                    <div class="container">
-                        <div class="course-illustration">
-                            <img
-                                src="/img/advanced-computer-usage-illustration.svg"
-                                alt=""
-                                data-course="illustration"
-                            />
-                        </div>
-
-                        <div class="course-information">
-                            <h2 data-course="title">Advanced Computer Usage</h2>
-
-                            <p data-course="description">
-                                This course will teach you how to work with
-                                Photoshop as well as the Microsoft Office Suite.
-                            </p>
-
-                            <div>
-                                <h3 class="contents-heading hidden">
-                                    Contents
-                                </h3>
-                                <ul
-                                    class="contents hidden"
-                                    data-course="contents"
-                                >
-                                    <li class="contents-entry">
-                                        <span
-                                            class="contents-entry-content"
-                                        ></span>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div>
-                                <h3 class="lessons-heading hidden">Lessons</h3>
-                                <ol
-                                    class="lessons hidden"
-                                    data-course="lessons"
-                                >
-                                    <li class="lessons-entry">
-                                        <span
-                                            class="lessons-entry-content"
-                                        ></span>
-                                    </li>
-                                </ol>
-                            </div>
-                            <div class="actions">
-                                <a
-                                    href="#"
-                                    class="action-primary"
-                                    onclick="alert('Not implemented')"
-                                    >Make Appointment</a
-                                >
-                                <a
-                                    href="/private-it-courses/for-seniors/advanced-computer-usage.html"
-                                    class="action-secondary"
-                                    data-course="preview"
-                                    >Read more</a
-                                >
-                            </div>
-                        </div>
-                    </div>
-                </section>
+            <section>
+                <h2>Actions</h2>
+                <div class="actions">
+                    <a
+                        href="#"
+                        class="action-primary"
+                        onclick="alert('Not implemented')"
+                        >Make Appointment</a
+                    >
+                    <a
+                        href="#"
+                        class="action-secondary"
+                        onclick="alert('Not implemented')"
+                        >Contact us</a
+                    >
+                </div>
             </section>
 
             <section class="faq">
@@ -471,7 +380,7 @@
                     </div>
 
                     <div id="footer-links-for-private">
-                        <a href="/private-it-courses.html" class="headlink"
+                        <a href="/it-courses-for-private.html" class="headlink"
                             >For Private</a
                         >
                         <a href="/private-it-courses/for-children.html"
