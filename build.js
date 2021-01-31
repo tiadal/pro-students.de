@@ -134,7 +134,7 @@ function assembleXml(dom, file) {
             htmlDocOut = htmlDocOut.substring(0, htmlDocOut.lastIndexOf('.html')) + "/" + toKebabCase(data) + ".html"
             var htmlDocOutPath = htmlDocOut.substring(0, htmlDocOut.lastIndexOf('/'))
             ldjsonCourse = ldjsonCourse.replace('%title%', data)
-            var ldjsonCourseItem = '{"@type":"ListItem","position":' + pos + ',"url":"' + htmlDocOut.replace("docs/", '/') + '"},'
+            var ldjsonCourseItem = '{"@type":"ListItem","position":' + pos + ',"url":"https://pro-students.kiekbjul.de' + htmlDocOut.replace("docs/", '/') + '"},'
             pos++;
             if(title) {
                 if(data) {
@@ -228,7 +228,7 @@ function assembleXml(dom, file) {
         })
     })
 
-    return ldjsonCourses.substring(0, ldjsonCourses.length - 1) + "]}";
+    return ldjsonCourses.substring(0, ldjsonCourses.length - 1) + "]},";
 }
 
 function toKebabCase(str) {
