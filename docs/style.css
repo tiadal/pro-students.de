@@ -22,7 +22,7 @@
     --light: #F9F9FF;              /* Main page color and text on dark backgrounds */
     --light-light-accent: #F5F5F5; /* For separation of sections */
     --light-dark-accent: #E5E5E5;  /* For clear separation of the header */
-    --light-darker-accent: #929292;/* For breadcrumb */
+    --light-darker-accent: #797676;/* For breadcrumb and footer etc. */
     --black-hover: #3A3A3A; /* Hover color on black backgrounds */
     
     --golden-ratio-small: 38,2%;
