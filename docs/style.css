@@ -281,6 +281,7 @@ h3 {
         box-shadow: none;
         border: none;
         grid-area: menu-button;
+        cursor: pointer;
     }
     
     .navbar-logo {
@@ -291,10 +292,10 @@ h3 {
         color: var(--light);
     }
 
-    .navbar .navbar-menu-button-icon:hover { /* TODO highlight on selected? But enter doesnt do anything */
+    .navbar .navbar-menu-button-icon:hover, .navbar .navbar-menu-button-icon:focus {
         background-color: var(--light);
     }
-    .home-page-navbar .navbar-menu-button-icon:hover {
+    .home-page-navbar .navbar-menu-button-icon:hover, .home-page-navbar .navbar-menu-button-icon:focus {
         background-color: var(--black-hover);
     }
 
