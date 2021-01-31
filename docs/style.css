@@ -258,7 +258,8 @@ h3 {
     margin-bottom: 0;
 }
 
-.dropdown-link:hover .dropdown-link-content, .dropdown-link-content:hover {
+.dropdown-link:hover .dropdown-link-content, .dropdown-link-content:hover, 
+.dropdown-link:focus-within > .dropdown-link-content {
     display: flex;
 }
 
