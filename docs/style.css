@@ -18,6 +18,7 @@
     --secondary: #4C9AA8;          /* Secondary color for contact form (light blue / indigo) */
     --secondary-light: #F1F8F8;
     --secondary-dark: #214245;     /* Darker variant of secondary color (e.g. for corresponding button text) */
+    --secondary-dark-light-variation: #517275;     /* Brighter variant of dark color for hover effect */
     --dark: #231F20;               /* Main text color */
     --light: #F9F9FF;              /* Main page color and text on dark backgrounds */
     --light-light-accent: #F5F5F5; /* For separation of sections */
@@ -1208,6 +1209,7 @@ h2.legal-compact {
     transition: var(--transition);
 }
 .contact-action > a:hover, .contact-action > a:focus {
+    color: var(--secondary-dark-light-variation);
     background-color: white;
 }
 
