@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head data-partial="head">
+        <template data-name="title">%title% - For Seniors</template>
+        <template data-name="description">%description%</template>
+        <template data-name="custom">
+            <script type="application/ld+json">
+                [
+                    %ldjson-course%
+                    {
+                        "@context": "https://schema.org",
+                        "@type": "BreadcrumbList",
+                        "itemListElement": [
+                            {
+                                "@type": "ListItem",
+                                "position": 1,
+                                "name": "Homepage",
+                                "item": "https://pro-students.kiekbjul.de/"
+                            },
+                            {
+                                "@type": "ListItem",
+                                "position": 2,
+                                "name": "Private IT Courses",
+                                "item": "https://pro-students.kiekbjul.de/it-courses-for-private.html"
+                            },
+                            {
+                                "@type": "ListItem",
+                                "position": 3,
+                                "name": "For Seniors",
+                                "item": "https://pro-students.kiekbjul.de/private-it-courses/for-seniors.html"
+                            },
+                            {
+                                "@type": "ListItem",
+                                "position": 4,
+                                "name": "%title%",
+                                "item": "https://pro-students.kiekbjul.de/private-it-courses/for-seniors/%title-kebab%.html"
+                            }
+                        ]
+                    }
+                ]
+            </script>
+        </template>
+    </head>
+    <body>
+        <header>
+
+            <nav class="navbar" data-partial="navbar"></nav>
+            
+            <nav class="breadcrumb">
+                <div class="container">
+                    <a href="/">
+                        <svg id="home-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><title>Home</title><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" fill="currentColor"/></svg>
+                    </a>
+                    <span class="breadcrumb-sep">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
+                    </span>
+                    <span class="breadcrumb-dots"></span>
+                    <a href="/it-courses-for-private.html">Private IT Courses</a>
+                    <span class="breadcrumb-sep">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
+                    </span>
+                    <a href="/it-courses-for-private/for-seniors.html">For Seniors</a>
+                    <span class="breadcrumb-sep">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
+                    </span>
+                    <a href="#">%title%</a>
+                </div>
+            </nav>
+
+            <section class="page-heading" data-partial="header-course">
+
+                <template data-name="illustration">%illustration%</template>
+                <template data-name="title">%title%</template>
+                <template data-name="subtitle">For Seniors</template>
+
+            </section>
+        </header>
+        
+        <main class="content">
+
+            <section>
+                <h2>Description</h2>
+                <p>%description%</p>
+            </section>
+
+            %contents%
+
+            %lessons%
+
+            <section>
+                <h2>Actions</h2>
+                <div class="actions">
+                    <a href="#" class="action-primary" onclick="alert('Not implemented')">Make Appointment</a>
+                    <a href="#" class="action-secondary" onclick="alert('Not implemented')">Contact us</a>
+                </div>
+            </section>
+            
+            <section class="faq" data-partial="faq"></section>
+            
+            <section class="contact" data-partial="cta">
+                <template data-name="question">Couldn't find the right course for you?</template>
+                <template data-name="answer">Make a request and we will find a solution for you!</template>
+            </section>
+        </main>
+
+        <footer class="footer" data-partial="footer"></footer>
+    </body>
+</html>

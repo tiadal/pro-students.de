@@ -43,29 +43,7 @@
 
         <script type="application/ld+json">
             [
-                {
-                    "@context": "http://schema.org",
-                    "@type": "Course",
-                    "name": "Introduction to programming in Python",
-                    "description": "This course will teach your children how to program in Python",
-                    "provider": {
-                        "@type": "Organization",
-                        "name": "Pro Students Cottbus",
-                        "sameAs": "https://pro-students.kiekbjul.de"
-                    }
-                },
-                {
-                    "@context": "http://schema.org",
-                    "@type": "Course",
-                    "name": "Introduction to Photoshop",
-                    "description": "This course will teach your children how to edit photos with Photoshop.",
-                    "provider": {
-                        "@type": "Organization",
-                        "name": "Pro Students Cottbus",
-                        "sameAs": "https://pro-students.kiekbjul.de"
-                    }
-                },
-
+                {"@context":"http://schema.org","@type":"ItemList","itemListElement":[{"@type":"ListItem","position":1,"url":"/private-it-courses/for-children/introduction-to-programming-in-python.html"}{"@type":"ListItem","position":2,"url":"/private-it-courses/for-children/introduction-to-photoshop.html"}]}
                 {
                     "@context": "https://schema.org",
                     "@type": "BreadcrumbList",
@@ -279,42 +257,50 @@
                                 program in Python
                             </p>
 
-                            <h3 class="contents-heading">Contents</h3>
-                            <ul class="contents" data-course="contents">
-                                <li class="contents-entry">
-                                    <span class="contents-entry-content"
-                                        >Installing Python</span
-                                    >
-                                </li>
-                                <li class="contents-entry">
-                                    <span class="contents-entry-content"
-                                        >Input/Output operations</span
-                                    >
-                                </li>
-                                <li class="contents-entry">
-                                    <span class="contents-entry-content"
-                                        >Using lists and dictionaries</span
-                                    >
-                                </li>
-                                <li class="contents-entry">
-                                    <span class="contents-entry-content"
-                                        >Sorting algorithms</span
-                                    >
-                                </li>
-                                <li class="contents-entry">
-                                    <span class="contents-entry-content"
-                                        >Work with strings</span
-                                    >
-                                </li>
-                            </ul>
+                            <div>
+                                <h3 class="contents-heading">Contents</h3>
+                                <ul class="contents" data-course="contents">
+                                    <li class="contents-entry">
+                                        <span class="contents-entry-content"
+                                            >Installing Python</span
+                                        >
+                                    </li>
+                                    <li class="contents-entry">
+                                        <span class="contents-entry-content"
+                                            >Input/Output operations</span
+                                        >
+                                    </li>
+                                    <li class="contents-entry">
+                                        <span class="contents-entry-content"
+                                            >Using lists and dictionaries</span
+                                        >
+                                    </li>
+                                    <li class="contents-entry">
+                                        <span class="contents-entry-content"
+                                            >Sorting algorithms</span
+                                        >
+                                    </li>
+                                    <li class="contents-entry">
+                                        <span class="contents-entry-content"
+                                            >Work with strings</span
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
 
-                            <h3 class="lessons-heading hidden">Lessons</h3>
-                            <ol class="lessons hidden" data-course="lessons">
-                                <li class="lessons-entry">
-                                    <span class="lessons-entry-content"></span>
-                                </li>
-                            </ol>
-
+                            <div>
+                                <h3 class="lessons-heading hidden">Lessons</h3>
+                                <ol
+                                    class="lessons hidden"
+                                    data-course="lessons"
+                                >
+                                    <li class="lessons-entry">
+                                        <span
+                                            class="lessons-entry-content"
+                                        ></span>
+                                    </li>
+                                </ol>
+                            </div>
                             <div class="actions">
                                 <a
                                     href="#"
@@ -323,9 +309,9 @@
                                     >Make Appointment</a
                                 >
                                 <a
-                                    href="#"
+                                    href="/private-it-courses/for-children/introduction-to-programming-in-python.html"
                                     class="action-secondary"
-                                    onclick="alert('Not implemented')"
+                                    data-course="preview"
                                     >Read more</a
                                 >
                             </div>
@@ -353,20 +339,35 @@
                                 photos with Photoshop.
                             </p>
 
-                            <h3 class="contents-heading hidden">Contents</h3>
-                            <ul class="contents hidden" data-course="contents">
-                                <li class="contents-entry">
-                                    <span class="contents-entry-content"></span>
-                                </li>
-                            </ul>
+                            <div>
+                                <h3 class="contents-heading hidden">
+                                    Contents
+                                </h3>
+                                <ul
+                                    class="contents hidden"
+                                    data-course="contents"
+                                >
+                                    <li class="contents-entry">
+                                        <span
+                                            class="contents-entry-content"
+                                        ></span>
+                                    </li>
+                                </ul>
+                            </div>
 
-                            <h3 class="lessons-heading hidden">Lessons</h3>
-                            <ol class="lessons hidden" data-course="lessons">
-                                <li class="lessons-entry">
-                                    <span class="lessons-entry-content"></span>
-                                </li>
-                            </ol>
-
+                            <div>
+                                <h3 class="lessons-heading hidden">Lessons</h3>
+                                <ol
+                                    class="lessons hidden"
+                                    data-course="lessons"
+                                >
+                                    <li class="lessons-entry">
+                                        <span
+                                            class="lessons-entry-content"
+                                        ></span>
+                                    </li>
+                                </ol>
+                            </div>
                             <div class="actions">
                                 <a
                                     href="#"
@@ -375,9 +376,9 @@
                                     >Make Appointment</a
                                 >
                                 <a
-                                    href="#"
+                                    href="/private-it-courses/for-children/introduction-to-photoshop.html"
                                     class="action-secondary"
-                                    onclick="alert('Not implemented')"
+                                    data-course="preview"
                                     >Read more</a
                                 >
                             </div>

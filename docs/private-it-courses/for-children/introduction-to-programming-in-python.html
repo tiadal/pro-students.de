@@ -6,11 +6,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
             name="description"
-            content="Bring your company to a new level with IT Skills for you employees. We introduce you to the Office Suite and enable you to work faster with your computers."
+            content="This course will teach your children how to program in Python"
         />
 
         <!-- Title-->
-        <title>IT Courses for Companies - Pro Students Cottbus</title>
+        <title>
+            Introduction to programming in Python - For Children - Pro Students
+            Cottbus
+        </title>
 
         <!-- Stylesheet-->
         <link rel="stylesheet" href="/style.css" />
@@ -43,7 +46,18 @@
 
         <script type="application/ld+json">
             [
-                {"@context":"http://schema.org","@type":"ItemList","itemListElement":[{"@type":"ListItem","position":1,"url":"/services-for-companies/it-courses/introduction-to-excel.html"}{"@type":"ListItem","position":2,"url":"/services-for-companies/it-courses/introduction-to-power-point.html"}]}
+                {
+                    "@context": "http://schema.org",
+                    "@type": "Course",
+                    "name": "Introduction to programming in Python",
+                    "description": "This course will teach your children how to program in Python",
+                    "provider": {
+                        "@type": "Organization",
+                        "name": "Pro Students Cottbus",
+                        "sameAs": "https://pro-students.kiekbjul.de"
+                    }
+                },
+
                 {
                     "@context": "https://schema.org",
                     "@type": "BreadcrumbList",
@@ -57,14 +71,20 @@
                         {
                             "@type": "ListItem",
                             "position": 2,
-                            "name": "Services For Companies",
-                            "item": "https://pro-students.kiekbjul.de/services-for-companies.html"
+                            "name": "Private IT Courses",
+                            "item": "https://pro-students.kiekbjul.de/it-courses-for-private.html"
                         },
                         {
                             "@type": "ListItem",
                             "position": 3,
-                            "name": "IT Courses",
-                            "item": "https://pro-students.kiekbjul.de/services-for-companies/it-courses.html"
+                            "name": "For Children",
+                            "item": "https://pro-students.kiekbjul.de/private-it-courses/for-children.html"
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 4,
+                            "name": "Introduction to programming in Python",
+                            "item": "https://pro-students.kiekbjul.de/private-it-courses/for-children/introduction-to-programming-in-python.html"
                         }
                     ]
                 }
@@ -182,7 +202,9 @@
                         </svg>
                     </span>
                     <span class="breadcrumb-dots"></span>
-                    <a href="/services-for-companies.html">For Companies</a>
+                    <a href="/it-courses-for-private.html"
+                        >Private IT Courses</a
+                    >
                     <span class="breadcrumb-sep">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -198,181 +220,113 @@
                             ></path>
                         </svg>
                     </span>
-                    <a href="#">IT Courses</a>
+                    <a href="/it-courses-for-private/for-children.html"
+                        >For Children</a
+                    >
+                    <span class="breadcrumb-sep">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M9 5l7 7-7 7"
+                            ></path>
+                        </svg>
+                    </span>
+                    <a href="#">Introduction to programming in Python</a>
                 </div>
             </nav>
 
-            <section class="page-heading">
+            <section class="page-heading-course">
                 <div class="container">
-                    <div class="page-heading-illustration">
-                        <img src="/img/computer-desktop.svg" alt="" />
-                    </div>
+                    <img src="/img/python-logo.svg" alt="" />
 
-                    <div class="page-heading-text">
-                        <h1>
-                            <span class="main-title">IT Courses</span>
-                            <span class="sub-title">For Companies</span>
-                        </h1>
+                    <h1>
+                        <span class="main-title"
+                            >Introduction to programming in Python</span
+                        >
+                        <span class="sub-title">For Children</span>
+                    </h1>
 
-                        <div class="actions">
-                            <a
-                                href="#"
-                                class="action-primary"
-                                onclick="alert('Not implemented')"
-                                >Contact us</a
-                            >
-                            <a
-                                href="#"
-                                class="action-secondary"
-                                onclick="alert('Not implemented')"
-                                >Read more</a
-                            >
-                        </div>
+                    <div class="actions">
+                        <a
+                            href="#"
+                            class="action-primary"
+                            onclick="alert('Not implemented')"
+                            >Make appointment</a
+                        >
+                        <a
+                            href="#"
+                            class="action-secondary"
+                            onclick="alert('Not implemented')"
+                            >Contact us</a
+                        >
                     </div>
                 </div>
             </section>
         </header>
 
         <main class="content">
-            <section
-                class="course-list"
-                data-courses="it_courses_for_companies"
-            >
-                <section class="course">
-                    <div class="container">
-                        <div class="course-illustration">
-                            <img
-                                src="/img/spreadsheet.svg"
-                                alt=""
-                                data-course="illustration"
-                            />
-                        </div>
+            <section>
+                <h2>Description</h2>
+                <p>
+                    This course will teach your children how to program in
+                    Python
+                </p>
+            </section>
 
-                        <div class="course-information">
-                            <h2 data-course="title">Introduction to Excel</h2>
+            <div>
+                <h3 class="contents-heading">Contents</h3>
+                <ul class="contents" data-course="contents">
+                    <li class="contents-entry">
+                        <span class="contents-entry-content"
+                            >Installing Python</span
+                        >
+                    </li>
+                    <li class="contents-entry">
+                        <span class="contents-entry-content"
+                            >Input/Output operations</span
+                        >
+                    </li>
+                    <li class="contents-entry">
+                        <span class="contents-entry-content"
+                            >Using lists and dictionaries</span
+                        >
+                    </li>
+                    <li class="contents-entry">
+                        <span class="contents-entry-content"
+                            >Sorting algorithms</span
+                        >
+                    </li>
+                    <li class="contents-entry">
+                        <span class="contents-entry-content"
+                            >Work with strings</span
+                        >
+                    </li>
+                </ul>
+            </div>
 
-                            <p data-course="description">
-                                MS Excel is the most popular program for working
-                                with tables. In this course we talk about simple
-                                data analysis methods, which your employees can
-                                use in MS Excel.
-                            </p>
-
-                            <div>
-                                <h3 class="contents-heading hidden">
-                                    Contents
-                                </h3>
-                                <ul
-                                    class="contents hidden"
-                                    data-course="contents"
-                                >
-                                    <li class="contents-entry">
-                                        <span
-                                            class="contents-entry-content"
-                                        ></span>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div>
-                                <h3 class="lessons-heading hidden">Lessons</h3>
-                                <ol
-                                    class="lessons hidden"
-                                    data-course="lessons"
-                                >
-                                    <li class="lessons-entry">
-                                        <span
-                                            class="lessons-entry-content"
-                                        ></span>
-                                    </li>
-                                </ol>
-                            </div>
-                            <div class="actions">
-                                <a
-                                    href="#"
-                                    class="action-primary"
-                                    onclick="alert('Not implemented')"
-                                    >Make Appointment</a
-                                >
-                                <a
-                                    href="/services-for-companies/it-courses/introduction-to-excel.html"
-                                    class="action-secondary"
-                                    data-course="preview"
-                                    >Read more</a
-                                >
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="course">
-                    <div class="container">
-                        <div class="course-illustration">
-                            <img
-                                src="/img/diagram.svg"
-                                alt=""
-                                data-course="illustration"
-                            />
-                        </div>
-
-                        <div class="course-information">
-                            <h2 data-course="title">
-                                Introduction to PowerPoint
-                            </h2>
-
-                            <p data-course="description">
-                                MS PowerPoint is an app for creating
-                                presentations. We will explain how to work with
-                                PowerPoint effectively. This course will show
-                                your employees how to create good slides.
-                            </p>
-
-                            <div>
-                                <h3 class="contents-heading hidden">
-                                    Contents
-                                </h3>
-                                <ul
-                                    class="contents hidden"
-                                    data-course="contents"
-                                >
-                                    <li class="contents-entry">
-                                        <span
-                                            class="contents-entry-content"
-                                        ></span>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div>
-                                <h3 class="lessons-heading hidden">Lessons</h3>
-                                <ol
-                                    class="lessons hidden"
-                                    data-course="lessons"
-                                >
-                                    <li class="lessons-entry">
-                                        <span
-                                            class="lessons-entry-content"
-                                        ></span>
-                                    </li>
-                                </ol>
-                            </div>
-                            <div class="actions">
-                                <a
-                                    href="#"
-                                    class="action-primary"
-                                    onclick="alert('Not implemented')"
-                                    >Make Appointment</a
-                                >
-                                <a
-                                    href="/services-for-companies/it-courses/introduction-to-power-point.html"
-                                    class="action-secondary"
-                                    data-course="preview"
-                                    >Read more</a
-                                >
-                            </div>
-                        </div>
-                    </div>
-                </section>
+            <section>
+                <h2>Actions</h2>
+                <div class="actions">
+                    <a
+                        href="#"
+                        class="action-primary"
+                        onclick="alert('Not implemented')"
+                        >Make Appointment</a
+                    >
+                    <a
+                        href="#"
+                        class="action-secondary"
+                        onclick="alert('Not implemented')"
+                        >Contact us</a
+                    >
+                </div>
             </section>
 
             <section class="faq">

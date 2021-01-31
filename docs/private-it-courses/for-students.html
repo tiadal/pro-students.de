@@ -43,18 +43,7 @@
 
         <script type="application/ld+json">
             [
-                {
-                    "@context": "http://schema.org",
-                    "@type": "Course",
-                    "name": "Your course here!",
-                    "description": "We support Bachelor and Master students with any issues related to your courses. We help you understand all your subjects and achieve great results. Simply contact us to arrange a meeting so we can discuss your curriculum!",
-                    "provider": {
-                        "@type": "Organization",
-                        "name": "Pro Students Cottbus",
-                        "sameAs": "https://pro-students.kiekbjul.de"
-                    }
-                },
-
+                {"@context":"http://schema.org","@type":"ItemList","itemListElement":[{"@type":"ListItem","position":1,"url":"/private-it-courses/for-students/your-course-here.html"}]}
                 {
                     "@context": "https://schema.org",
                     "@type": "BreadcrumbList",
@@ -269,20 +258,35 @@
                                 so we can discuss your curriculum!
                             </p>
 
-                            <h3 class="contents-heading hidden">Contents</h3>
-                            <ul class="contents hidden" data-course="contents">
-                                <li class="contents-entry">
-                                    <span class="contents-entry-content"></span>
-                                </li>
-                            </ul>
+                            <div>
+                                <h3 class="contents-heading hidden">
+                                    Contents
+                                </h3>
+                                <ul
+                                    class="contents hidden"
+                                    data-course="contents"
+                                >
+                                    <li class="contents-entry">
+                                        <span
+                                            class="contents-entry-content"
+                                        ></span>
+                                    </li>
+                                </ul>
+                            </div>
 
-                            <h3 class="lessons-heading hidden">Lessons</h3>
-                            <ol class="lessons hidden" data-course="lessons">
-                                <li class="lessons-entry">
-                                    <span class="lessons-entry-content"></span>
-                                </li>
-                            </ol>
-
+                            <div>
+                                <h3 class="lessons-heading hidden">Lessons</h3>
+                                <ol
+                                    class="lessons hidden"
+                                    data-course="lessons"
+                                >
+                                    <li class="lessons-entry">
+                                        <span
+                                            class="lessons-entry-content"
+                                        ></span>
+                                    </li>
+                                </ol>
+                            </div>
                             <div class="actions">
                                 <a
                                     href="#"
@@ -291,9 +295,9 @@
                                     >Make Appointment</a
                                 >
                                 <a
-                                    href="#"
+                                    href="/private-it-courses/for-students/your-course-here.html"
                                     class="action-secondary"
-                                    onclick="alert('Not implemented')"
+                                    data-course="preview"
                                     >Read more</a
                                 >
                             </div>
