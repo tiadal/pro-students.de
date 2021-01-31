@@ -1,6 +1,85 @@
 # Assignment 2 12316 Web Documents (WebDoc) | WS 2020/21
 
-## Business description
+
+# Developer Documentation (2c)
+
+## Division of Work
+
+* **Accessibility:** Fabian Mildner
+* **On-Site SEO:** Julius Kiekbusch
+
+## Decision rationale
+
+* The home page still has white on black letters despite possible accessibility concerns. However, this has been deemed alright for the following reasons:
+    * The amount of text is few and only consists of a handful of words
+    * The prominent heading text is styled relatively big
+    * The heading and navigational elements are meant to be skimmed, not read, which has been noted in the forums as an exception to the rule
+
+
+# Developer Documentation (2b)
+
+## Developers
+
+* Julius Kiekbusch
+* Fabian Mildner
+
+## Division of Work
+
+The following division of work should not be understood as a sign that one person worked entirely on a given task. Much rather, it should be interpreted as the person being the *main person in charge* for fulfilling the given tasks. Many tasks were subject to mutual corrections, adjustments and agreements that were performed by both developers. 
+
+### Julius Kiekbusch
+
+* General Website Design / Common Design for Webpages (MockUp, see the [design on Figma](https://www.figma.com/file/RHo9pFGFubbjlLqGLTjeOa/pro-students.de))
+* Individual Webpage design (MockUp, see the [design on Figma](https://www.figma.com/file/RHo9pFGFubbjlLqGLTjeOa/pro-students.de))
+* Mobile Adaptability of common page elements and the course lists, including navbar burger menu for mobile / tablet
+* HTML generation script and structures based on XML for the course lists
+* Pro Students Logo Design
+* HTML/CSS Implementation of the About Us page
+* Design and HTML/CSS Implementation of the PC Problems page
+* Design and HTML/CSS Implementation of a custom 404 page
+
+### Fabian Mildner
+
+* HTML/CSS Implementation of the general website design and the course lists
+* HTML/CSS Implementation of the Footer (Adaptable for Mobile, Tablet and Desktop)
+* HTML/CSS Implementation of the service lists (For Private, For Companies)
+* HTML/CSS Implementation of the legal pages
+* Breadcrumb adaptation for mobile (display with ...)
+* Implementation of the course lists based on the HTML generation script and structures and provision of suitable illustrations
+* Pro Students Logo Creation as SVG
+* HTML/CSS Implementation of the consulting page
+* HTML/CSS Implementation of the homepage
+
+### Both Equally
+
+* Creation of a suitable build script for generation of the web pages based on partial data
+* Design of the Homepage
+* (X)HTML Validity Testing and Tuning
+
+
+## Developing and Building the Website
+
+* Images and XML files as well as JavaScripts and Cascading Style Sheets can be saved directly in the docs folder and corresponding subfolders
+* Final HTML files contain elements that repeat across several webpages. As such, those repeating partials have been taken out of the development (source) HTML files and are only inserted through a build step
+* Development HTML files and insertible partials should be saved in the src folder (and corresponding sub-folder)
+
+* To build the website, you need to install NodeJS and the Node Package Manager (npm).
+* To install necessary packages for the build and watch steps, run `npm install` once from within the root of this repository
+* Afterwards, you can build webpages (i.e. assemble development html files with their partials) using `npm run build`
+* In addition, you can start browsersync for easier development and testing using `npm run watch`
+
+
+## Note regarding copyrights
+
+All illustrations, icons and images used on this website are sourced from undraw.co, unsplash.com and heroicons.com are licensed as free to use without attribution. As such, no credits are necessary on the webpages. See the corresponding licenses for more:
+* https://unsplash.com/license
+* https://undraw.co/license
+* https://github.com/tailwindlabs/heroicons ([MIT-Licensed](https://en.wikipedia.org/wiki/MIT_License))
+
+
+
+
+## Business Description (2a)
 
 ### WHO WE ARE
 We are pro-students, a group of 4 Students from BTU. We share the same passion for informatics and computers and thanks to our different and complementary backgrounds, we decided to join our forces in order to found a small consulting company.
@@ -73,65 +152,3 @@ Sections with darker background:  7EBDC2
 Main call to actions: BB4430
 ### XML Service page
 We need an XMl page whit a list of all our courses that we provide, the list of courses will be provided from us such as the element name such as: title, tutor, area, description.
-
-
-
-# Developer Documentation
-
-## Developers
-
-* Julius Kiekbusch
-* Fabian Mildner
-
-## Division of Work
-
-The following division of work should not be understood as a sign that one person worked entirely on a given task. Much rather, it should be interpreted as the person being the *main person in charge* for fulfilling the given tasks. Many tasks were subject to mutual corrections, adjustments and agreements that were performed by both developers. 
-
-### Julius Kiekbusch
-
-* General Website Design / Common Design for Webpages (MockUp, see the [design on Figma](https://www.figma.com/file/RHo9pFGFubbjlLqGLTjeOa/pro-students.de))
-* Individual Webpage design (MockUp, see the [design on Figma](https://www.figma.com/file/RHo9pFGFubbjlLqGLTjeOa/pro-students.de))
-* Mobile Adaptability of common page elements and the course lists, including navbar burger menu for mobile / tablet
-* HTML generation script and structures based on XML for the course lists
-* Pro Students Logo Design
-* HTML/CSS Implementation of the About Us page
-* Design and HTML/CSS Implementation of the PC Problems page
-* Design and HTML/CSS Implementation of a custom 404 page
-
-### Fabian Mildner
-
-* HTML/CSS Implementation of the general website design and the course lists
-* HTML/CSS Implementation of the Footer (Adaptable for Mobile, Tablet and Desktop)
-* HTML/CSS Implementation of the service lists (For Private, For Companies)
-* HTML/CSS Implementation of the legal pages
-* Breadcrumb adaptation for mobile (display with ...)
-* Implementation of the course lists based on the HTML generation script and structures and provision of suitable illustrations
-* Pro Students Logo Creation as SVG
-* HTML/CSS Implementation of the consulting page
-* HTML/CSS Implementation of the homepage
-
-### Both Equally
-
-* Creation of a suitable build script for generation of the web pages based on partial data
-* Design of the Homepage
-* (X)HTML Validity Testing and Tuning
-
-
-## Developing and Building the Website
-
-* Images and XML files as well as JavaScripts and Cascading Style Sheets can be saved directly in the docs folder and corresponding subfolders
-* Final HTML files contain elements that repeat across several webpages. As such, those repeating partials have been taken out of the development (source) HTML files and are only inserted through a build step
-* Development HTML files and insertible partials should be saved in the src folder (and corresponding sub-folder)
-
-* To build the website, you need to install NodeJS and the Node Package Manager (npm).
-* To install necessary packages for the build and watch steps, run `npm install` once from within the root of this repository
-* Afterwards, you can build webpages (i.e. assemble development html files with their partials) using `npm run build`
-* In addition, you can start browsersync for easier development and testing using `npm run watch`
-
-
-## Note regarding copyrights
-
-All illustrations, icons and images used on this website are sourced from undraw.co, unsplash.com and heroicons.com are licensed as free to use without attribution. As such, no credits are necessary on the webpages. See the corresponding licenses for more:
-* https://unsplash.com/license
-* https://undraw.co/license
-* https://github.com/tailwindlabs/heroicons ([MIT-Licensed](https://en.wikipedia.org/wiki/MIT_License))
