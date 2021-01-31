@@ -42,30 +42,55 @@
         <!-- Custom -->
 
         <script type="application/ld+json">
-            {
-                "@context": "https://schema.org",
-                "@type": "BreadcrumbList",
-                "itemListElement": [
-                    {
-                        "@type": "ListItem",
-                        "position": 1,
-                        "name": "Homepage",
-                        "item": "https://pro-students.kiekbjul.de/"
-                    },
-                    {
-                        "@type": "ListItem",
-                        "position": 2,
-                        "name": "Private IT Courses",
-                        "item": "https://pro-students.kiekbjul.de/it-courses-for-private.html"
-                    },
-                    {
-                        "@type": "ListItem",
-                        "position": 3,
-                        "name": "For Children",
-                        "item": "https://pro-students.kiekbjul.de/private-it-courses/for-children.html"
+            [
+                {
+                    "@context": "http://schema.org",
+                    "@type": "Course",
+                    "name": "Introduction to programming in Python",
+                    "description": "This course will teach your children how to program in Python",
+                    "provider": {
+                        "@type": "Organization",
+                        "name": "Pro Students Cottbus",
+                        "sameAs": "https://pro-students.kiekbjul.de"
                     }
-                ]
-            }
+                },
+                {
+                    "@context": "http://schema.org",
+                    "@type": "Course",
+                    "name": "Introduction to Photoshop",
+                    "description": "This course will teach your children how to edit photos with Photoshop.",
+                    "provider": {
+                        "@type": "Organization",
+                        "name": "Pro Students Cottbus",
+                        "sameAs": "https://pro-students.kiekbjul.de"
+                    }
+                },
+
+                {
+                    "@context": "https://schema.org",
+                    "@type": "BreadcrumbList",
+                    "itemListElement": [
+                        {
+                            "@type": "ListItem",
+                            "position": 1,
+                            "name": "Homepage",
+                            "item": "https://pro-students.kiekbjul.de/"
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 2,
+                            "name": "Private IT Courses",
+                            "item": "https://pro-students.kiekbjul.de/it-courses-for-private.html"
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 3,
+                            "name": "For Children",
+                            "item": "https://pro-students.kiekbjul.de/private-it-courses/for-children.html"
+                        }
+                    ]
+                }
+            ]
         </script>
     </head>
 

@@ -5,30 +5,33 @@
         <template data-name="description">We give Children a good start into the IT World with easy and understandable IT Courses like Programming with Python or Image editing with Photoshop.</template>
         <template data-name="custom">
             <script type="application/ld+json">
-                {
-                    "@context": "https://schema.org",
-                    "@type": "BreadcrumbList",
-                    "itemListElement": [
-                        {
-                            "@type": "ListItem",
-                            "position": 1,
-                            "name": "Homepage",
-                            "item": "https://pro-students.kiekbjul.de/"
-                        },
-                        {
-                            "@type": "ListItem",
-                            "position": 2,
-                            "name": "Private IT Courses",
-                            "item": "https://pro-students.kiekbjul.de/it-courses-for-private.html"
-                        },
-                        {
-                            "@type": "ListItem",
-                            "position": 3,
-                            "name": "For Children",
-                            "item": "https://pro-students.kiekbjul.de/private-it-courses/for-children.html"
-                        }
-                    ]
-                }
+                [
+                    %ldjson-courses%
+                    {
+                        "@context": "https://schema.org",
+                        "@type": "BreadcrumbList",
+                        "itemListElement": [
+                            {
+                                "@type": "ListItem",
+                                "position": 1,
+                                "name": "Homepage",
+                                "item": "https://pro-students.kiekbjul.de/"
+                            },
+                            {
+                                "@type": "ListItem",
+                                "position": 2,
+                                "name": "Private IT Courses",
+                                "item": "https://pro-students.kiekbjul.de/it-courses-for-private.html"
+                            },
+                            {
+                                "@type": "ListItem",
+                                "position": 3,
+                                "name": "For Children",
+                                "item": "https://pro-students.kiekbjul.de/private-it-courses/for-children.html"
+                            }
+                        ]
+                    }
+                ]
             </script>
         </template>
     </head>

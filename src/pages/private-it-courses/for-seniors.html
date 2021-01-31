@@ -5,30 +5,33 @@
         <template data-name="description">For Seniors we have different levels of knowledge. From the computer basics to more advanced topics.</template>
         <template data-name="custom">
             <script type="application/ld+json">
-                {
-                    "@context": "https://schema.org",
-                    "@type": "BreadcrumbList",
-                    "itemListElement": [
-                        {
-                            "@type": "ListItem",
-                            "position": 1,
-                            "name": "Homepage",
-                            "item": "https://pro-students.kiekbjul.de/"
-                        },
-                        {
-                            "@type": "ListItem",
-                            "position": 2,
-                            "name": "Private IT Courses",
-                            "item": "https://pro-students.kiekbjul.de/it-courses-for-private.html"
-                        },
-                        {
-                            "@type": "ListItem",
-                            "position": 3,
-                            "name": "For Seniors",
-                            "item": "https://pro-students.kiekbjul.de/private-it-courses/for-seniors.html"
-                        }
-                    ]
-                }
+                [
+                    %ldjson-courses%
+                    {
+                        "@context": "https://schema.org",
+                        "@type": "BreadcrumbList",
+                        "itemListElement": [
+                            {
+                                "@type": "ListItem",
+                                "position": 1,
+                                "name": "Homepage",
+                                "item": "https://pro-students.kiekbjul.de/"
+                            },
+                            {
+                                "@type": "ListItem",
+                                "position": 2,
+                                "name": "Private IT Courses",
+                                "item": "https://pro-students.kiekbjul.de/it-courses-for-private.html"
+                            },
+                            {
+                                "@type": "ListItem",
+                                "position": 3,
+                                "name": "For Seniors",
+                                "item": "https://pro-students.kiekbjul.de/private-it-courses/for-seniors.html"
+                            }
+                        ]
+                    }
+                ]
             </script>
         </template>
     </head>

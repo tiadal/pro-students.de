@@ -42,30 +42,44 @@
         <!-- Custom -->
 
         <script type="application/ld+json">
-            {
-                "@context": "https://schema.org",
-                "@type": "BreadcrumbList",
-                "itemListElement": [
-                    {
-                        "@type": "ListItem",
-                        "position": 1,
-                        "name": "Homepage",
-                        "item": "https://pro-students.kiekbjul.de/"
-                    },
-                    {
-                        "@type": "ListItem",
-                        "position": 2,
-                        "name": "Private IT Courses",
-                        "item": "https://pro-students.kiekbjul.de/it-courses-for-private.html"
-                    },
-                    {
-                        "@type": "ListItem",
-                        "position": 3,
-                        "name": "For Students",
-                        "item": "https://pro-students.kiekbjul.de/private-it-courses/for-students.html"
+            [
+                {
+                    "@context": "http://schema.org",
+                    "@type": "Course",
+                    "name": "Your course here!",
+                    "description": "We support Bachelor and Master students with any issues related to your courses. We help you understand all your subjects and achieve great results. Simply contact us to arrange a meeting so we can discuss your curriculum!",
+                    "provider": {
+                        "@type": "Organization",
+                        "name": "Pro Students Cottbus",
+                        "sameAs": "https://pro-students.kiekbjul.de"
                     }
-                ]
-            }
+                },
+
+                {
+                    "@context": "https://schema.org",
+                    "@type": "BreadcrumbList",
+                    "itemListElement": [
+                        {
+                            "@type": "ListItem",
+                            "position": 1,
+                            "name": "Homepage",
+                            "item": "https://pro-students.kiekbjul.de/"
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 2,
+                            "name": "Private IT Courses",
+                            "item": "https://pro-students.kiekbjul.de/it-courses-for-private.html"
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 3,
+                            "name": "For Students",
+                            "item": "https://pro-students.kiekbjul.de/private-it-courses/for-students.html"
+                        }
+                    ]
+                }
+            ]
         </script>
     </head>
 

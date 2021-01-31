@@ -5,30 +5,33 @@
         <template data-name="description">Bring your company to a new level with IT Skills for you employees. We introduce you to the Office Suite and enable you to work faster with your computers.</template>
         <template data-name="custom">
             <script type="application/ld+json">
-                {
-                    "@context": "https://schema.org",
-                    "@type": "BreadcrumbList",
-                    "itemListElement": [
-                        {
-                            "@type": "ListItem",
-                            "position": 1,
-                            "name": "Homepage",
-                            "item": "https://pro-students.kiekbjul.de/"
-                        },
-                        {
-                            "@type": "ListItem",
-                            "position": 2,
-                            "name": "Services For Companies",
-                            "item": "https://pro-students.kiekbjul.de/services-for-companies.html"
-                        },
-                        {
-                            "@type": "ListItem",
-                            "position": 3,
-                            "name": "IT Courses",
-                            "item": "https://pro-students.kiekbjul.de/services-for-companies/it-courses.html"
-                        }
-                    ]
-                }
+                [
+                    %ldjson-courses%
+                    {
+                        "@context": "https://schema.org",
+                        "@type": "BreadcrumbList",
+                        "itemListElement": [
+                            {
+                                "@type": "ListItem",
+                                "position": 1,
+                                "name": "Homepage",
+                                "item": "https://pro-students.kiekbjul.de/"
+                            },
+                            {
+                                "@type": "ListItem",
+                                "position": 2,
+                                "name": "Services For Companies",
+                                "item": "https://pro-students.kiekbjul.de/services-for-companies.html"
+                            },
+                            {
+                                "@type": "ListItem",
+                                "position": 3,
+                                "name": "IT Courses",
+                                "item": "https://pro-students.kiekbjul.de/services-for-companies/it-courses.html"
+                            }
+                        ]
+                    }
+                ]
             </script>
         </template>
     </head>

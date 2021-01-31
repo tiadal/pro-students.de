@@ -42,30 +42,55 @@
         <!-- Custom -->
 
         <script type="application/ld+json">
-            {
-                "@context": "https://schema.org",
-                "@type": "BreadcrumbList",
-                "itemListElement": [
-                    {
-                        "@type": "ListItem",
-                        "position": 1,
-                        "name": "Homepage",
-                        "item": "https://pro-students.kiekbjul.de/"
-                    },
-                    {
-                        "@type": "ListItem",
-                        "position": 2,
-                        "name": "Private IT Courses",
-                        "item": "https://pro-students.kiekbjul.de/it-courses-for-private.html"
-                    },
-                    {
-                        "@type": "ListItem",
-                        "position": 3,
-                        "name": "For Seniors",
-                        "item": "https://pro-students.kiekbjul.de/private-it-courses/for-seniors.html"
+            [
+                {
+                    "@context": "http://schema.org",
+                    "@type": "Course",
+                    "name": "How to use a Computer",
+                    "description": "This course will help you to start using your computer.",
+                    "provider": {
+                        "@type": "Organization",
+                        "name": "Pro Students Cottbus",
+                        "sameAs": "https://pro-students.kiekbjul.de"
                     }
-                ]
-            }
+                },
+                {
+                    "@context": "http://schema.org",
+                    "@type": "Course",
+                    "name": "Advanced Computer Usage",
+                    "description": "This course will teach you how to work with Photoshop as well as the Microsoft Office Suite.",
+                    "provider": {
+                        "@type": "Organization",
+                        "name": "Pro Students Cottbus",
+                        "sameAs": "https://pro-students.kiekbjul.de"
+                    }
+                },
+
+                {
+                    "@context": "https://schema.org",
+                    "@type": "BreadcrumbList",
+                    "itemListElement": [
+                        {
+                            "@type": "ListItem",
+                            "position": 1,
+                            "name": "Homepage",
+                            "item": "https://pro-students.kiekbjul.de/"
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 2,
+                            "name": "Private IT Courses",
+                            "item": "https://pro-students.kiekbjul.de/it-courses-for-private.html"
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 3,
+                            "name": "For Seniors",
+                            "item": "https://pro-students.kiekbjul.de/private-it-courses/for-seniors.html"
+                        }
+                    ]
+                }
+            ]
         </script>
     </head>
 
