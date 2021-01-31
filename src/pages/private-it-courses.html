@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
     <head data-partial="head">
-        <template data-name="title">IT Courses For Seniors</template>
-        <template data-name="description">For Seniors we have different levels of knowledge. From the computer basics to more advanced topics.</template>
+        <template data-name="title">IT Courses For Private</template>
+        <template data-name="description">We have different IT Courses for each age group (Children, Students and Seniors). You can also ask us for specific courses.</template>
         <template data-name="custom">
             <script type="application/ld+json">
                 {
@@ -19,13 +19,7 @@
                             "@type": "ListItem",
                             "position": 2,
                             "name": "For Private",
-                            "item": "https://pro-students.kiekbjul.de/it_courses_for_private.html"
-                        },
-                        {
-                            "@type": "ListItem",
-                            "position": 3,
-                            "name": "Senior Courses",
-                            "item": "https://pro-students.kiekbjul.de/courses_for_seniors.html"
+                            "item": "https://pro-students.kiekbjul.de/it-courses-for-private.html"
                         }
                     ]
                 }
@@ -45,28 +39,46 @@
                     <span class="breadcrumb-sep">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
                     </span>
-                    <span class="breadcrumb-dots"></span>
-                    <a href="/it_courses_for_private.html">Courses For Private</a>
-                    <span class="breadcrumb-sep">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>
-                    </span>
-                    <a href="#">For Seniors</a>
+                    <a href="#">Courses For Private</a>
                 </div>
             </nav>
 
             <section class="page-heading" data-partial="header">
 
-                <template data-name="illustration">img/for-seniors-illustration.svg</template>
+                <template data-name="illustration">img/computer-desktop.svg</template>
                 <template data-name="title">IT Courses</template>
-                <template data-name="subtitle">For Seniors</template>
+                <template data-name="subtitle">For Private Persons</template>
 
             </section>
         </header>
         
         <main class="content">
-            <section class="course-list" data-courses="courses_for_seniors">
-                <template data-partial="course"></template>
-                <div data-partial="noscript-warn"></div>
+            <section class="service-listing">
+                <div class="container">
+                    <a href="/private-it-courses/for-children.html" class="service">
+                        <img src="/img/for-children-illustration.svg" alt="" />
+                        <h2>IT Courses for Children</h2>
+                        <p class="description">
+                            We can teach children the basics of programming, Photoshop and other interesting things. Your child will be excited!
+                        </p>
+                    </a>
+                    
+                    <a href="/private-it-courses/for-students.html" class="service">
+                        <img src="/img/for-students-illustration.svg" alt="" />
+                        <h2>IT Courses for Students</h2>
+                        <p class="description">
+                            We support all bachelor and master students with any issue related to your courses. We want to help you understand all your subjects and achieve great results!
+                        </p>
+                    </a>
+                    
+                    <a href="/private-it-courses/for-seniors.html" class="service">
+                        <img src="/img/for-seniors-illustration.svg" alt="" />
+                        <h2>IT Courses for Seniors</h2>
+                        <p class="description">
+                            We provide basic and advanced courses of how to use a computer for senior citizens. With our course you will start to use computers for your own goals!
+                        </p>
+                    </a>
+                </div>
             </section>
             
             <section class="faq" data-partial="faq"></section>

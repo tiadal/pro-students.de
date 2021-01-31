@@ -1,30 +1,10 @@
-var fs = require("fs")
+const fs = require("fs")
+const glob = require('glob')
 const jsdom = require("jsdom");
+const { exit } = require("process");
 const { JSDOM } = jsdom;
 
-
-// fs.readdir(__dirname + "/docs", deleteOldFiles);
-
-
-function deleteOldFiles(err, fileList) {
-    if (err) {
-        return console.error(err);
-    }
-
-    fileList.forEach(htmlDoc => {
-        if (!htmlDoc.endsWith('.html')) {
-            return; // This isn't an html document
-        }
-
-        try {
-          fs.unlinkSync(__dirname + "/docs/" + htmlDoc)
-        } catch(err) {
-          console.error(err)
-        }
-    })
-}
-
-fs.readdir(__dirname + "/src", assembleFiles);
+glob("src/pages/**/*.html", {}, assembleFiles);
 
 LEGAL_ACTIVITY_DATA_NAMES = ["terms-active", "privacy-active", "imprint-active"];
 function assembleFiles(err, fileList) {
@@ -34,10 +14,10 @@ function assembleFiles(err, fileList) {
     
     fileList.forEach(htmlDoc => {
         if (!htmlDoc.endsWith('.html')) {
-            return; // This isn't an html document
+            return;
         }
 
-        var dom = new JSDOM(fs.readFileSync("src/" + htmlDoc).toString());
+        var dom = new JSDOM(fs.readFileSync(htmlDoc).toString());
         
         var partials = dom.window.document.querySelectorAll("[data-partial]"); // Find elements that are partial markers
         partials.forEach(partial => {
@@ -85,8 +65,15 @@ function assembleFiles(err, fileList) {
         
         var out = dom.serialize().replace("<body></body>", "");
 
+        var htmlDocOut = htmlDoc.replace("src/pages/", "docs/")
+        var htmlDocOutPath = htmlDocOut.substring(0, htmlDocOut.lastIndexOf('/'))
+
+        try {
+            fs.mkdirSync(htmlDocOutPath)
+        } catch(ex) {}
+
         // Save the assembled file
-        fs.writeFile('docs/' + htmlDoc, out, err => { if (err) { console.log("Couldn't write " + htmlDoc + " because of " + err) } })
+        fs.writeFile(htmlDocOut, out, err => { if (err) { console.log("Couldn't write " + htmlDocOut + " because of " + err) } })
     })
 }
 
@@ -115,7 +102,7 @@ function assembleXml(dom) {
                 var data = course.getAttribute("illustration")  // Get the data to fill in from the XML
                 if(illustration) {
                     if(data) {
-                        illustration.src = data
+                        illustration.src = "/" + data
                     } else {
                         illustration.classList.add('hidden')
                     }
