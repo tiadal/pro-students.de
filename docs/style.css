@@ -11,7 +11,7 @@
 }
 
 :root {
-    --primary: #BB4430;             /* Color for calls to action (dark red) */
+    --primary: #B32F26;             /* Color for calls to action (dark red) */
     --primary-light: #F2D4CE;       /* Lighter variant of primary color for non-focused calls to action */
     --primary-highlighted: #CD5642; /* Added 0x12 = 18 to every color value. */
     --primary-light-highlighted: #FEE0DB;      /* Added 0xC = 12 to every color value */
