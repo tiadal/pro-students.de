@@ -88,7 +88,7 @@ h3 {
     text-align: center;
     transition: var(--transition);
 }
-.action-primary:hover {
+.action-primary:hover, .action-primary:focus-within {
     background-color: var(--primary-highlighted);
 }
 
@@ -100,7 +100,7 @@ h3 {
     text-align: center;
     transition: var(--transition);
 }
-.action-secondary:hover {
+.action-secondary:hover, .action-secondary:focus-within {
     background-color: var(--primary-light-highlighted);
 }
 
@@ -198,7 +198,7 @@ h3 {
     padding: 1.5rem 1rem;
 }
 
-.navbar-links > a:hover, .navbar-links > .dropdown-link:hover > a {
+.navbar-links > a:hover, .navbar-links > .dropdown-link:hover > a, .navbar-links > a:focus, .navbar-links > .dropdown-link > a:focus {
     color: var(--primary);
     transition: var(--transition);
 }
@@ -239,10 +239,10 @@ h3 {
     transition: var(--transition);
 }
 
-.navbar .navbar-links .dropdown-link .dropdown-link-content a:hover {
+.navbar .navbar-links .dropdown-link .dropdown-link-content a:hover, .navbar .navbar-links .dropdown-link .dropdown-link-content a:focus {
     background-color: var(--light-dark-accent);
 }
-.home-page-navbar .navbar-links .dropdown-link .dropdown-link-content a:hover {
+.home-page-navbar .navbar-links .dropdown-link .dropdown-link-content a:hover, .home-page-navbar .navbar-links .dropdown-link .dropdown-link-content a:focus {
     background-color: var(--black-hover);
 }
 
@@ -290,7 +290,7 @@ h3 {
         color: var(--light);
     }
 
-    .navbar .navbar-menu-button-icon:hover {
+    .navbar .navbar-menu-button-icon:hover { /* TODO highlight on selected? But enter doesnt do anything */
         background-color: var(--light);
     }
     .home-page-navbar .navbar-menu-button-icon:hover {
@@ -349,10 +349,10 @@ h3 {
         padding: 0.5rem 3rem;
     }
     
-    .navbar-links .dropdown-link .dropdown-link-content a:hover {
+    .navbar-links .dropdown-link .dropdown-link-content a:hover, .navbar-links .dropdown-link .dropdown-link-content a:focus {
         color: var(--primary);
     }   
-    .home-page-navbar .navbar-links .dropdown-link .dropdown-link-content a:hover {
+    .home-page-navbar .navbar-links .dropdown-link .dropdown-link-content a:hover, .home-page-navbar .navbar-links .dropdown-link .dropdown-link-content a:focus {
         background-color: inherit;
     }
 }
@@ -599,7 +599,7 @@ nav.breadcrumb > .container {
     background-color: white;
 }
 
-.service:hover {
+.service:hover, .service:focus-within {
     transform: scale(1.1);
 }
 
@@ -1207,7 +1207,7 @@ h2.legal-compact {
     text-align: center;
     transition: var(--transition);
 }
-.contact-action > a:hover {
+.contact-action > a:hover, .contact-action > a:focus {
     background-color: white;
 }
 
@@ -1239,12 +1239,13 @@ h2.legal-compact {
     FOOTER
 ############################
 */
-footer a:hover, .page-heading-legal-links a:hover, nav.breadcrumb a:hover, a:hover #home-icon {
+footer a:hover, .page-heading-legal-links a:hover, nav.breadcrumb a:hover, a:hover #home-icon,
+footer a:focus, .page-heading-legal-links a:focus, nav.breadcrumb a:focus, a:focus #home-icon {
     color: var(--dark);
     transition: var(--transition);
 }
 
-.unclickable:hover {
+.unclickable:hover, .unclickable:focus {
     color: inherit;
 }
 
@@ -1497,7 +1498,7 @@ footer > .container {
     background-color: white;
 }
 
-#main-services .service:hover {
+#main-services .service:hover, #main-services .service:focus-within {
     transform: scale(1.1);
 }
 
