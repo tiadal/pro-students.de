@@ -733,11 +733,15 @@ main .container {
     flex-direction: row;
 }
 
+
+.actions .action-primary {
+    margin-right: 20px;
+}
+
 .actions .action-primary,
 .actions .action-secondary {
     display: block;
     padding: 15px 20px;
-    margin-right: 20px;
 }
 
 .course:nth-child(odd) {
