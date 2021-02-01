@@ -536,6 +536,7 @@ nav.breadcrumb > .container {
 .home-page-heading .page-heading-illustration > img {
     max-width: 110%;
     max-height: 80vh;
+    width: 100%;
     height: auto;
     display: block;
 }
