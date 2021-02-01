@@ -1112,8 +1112,6 @@ main .container {
 
 #video-content iframe {
     display: block;
-    max-width: 80%;
-    max-height: 80%;
 }
 
 #video-close {
