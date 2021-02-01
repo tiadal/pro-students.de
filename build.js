@@ -7,6 +7,8 @@ const { JSDOM } = jsdom;
 glob("src/pages/**/*.html", {}, assembleFiles);
 
 var sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n\n'
+const date = new Date
+const lastmodDate = date.getFullYear() + "-" + ('0' + date.getMonth()).slice(-2) + "-" + ('0' + date.getDay()).slice(-2)
 
 LEGAL_ACTIVITY_DATA_NAMES = ["terms-active", "privacy-active", "imprint-active"];
 function assembleFiles(err, fileList) {
@@ -34,6 +36,7 @@ function assembleFiles(err, fileList) {
 
         sitemap += "    <url>\n"
         sitemap += "        <loc>" + htmlDocOut.replace('docs/', 'https://pro-students.kiekbjul.de/').replace('index.html', '') + "</loc>\n"
+        sitemap += "        <lastmod>" + lastmodDate + "</lastmod>\n"
         sitemap += "    </url>\n\n"
 
         try {
@@ -169,6 +172,7 @@ function assembleXml(dom, file) {
 
             sitemap += "    <url>\n"
             sitemap += "        <loc>" + htmlDocOut.replace('docs/', 'https://pro-students.kiekbjul.de/').replace('index.html', '') + "</loc>\n"
+            sitemap += "        <lastmod>" + lastmodDate + "</lastmod>\n"
             sitemap += "    </url>\n\n"
 
             // Accessibility addition: add descriptive aria-labels to buttons
