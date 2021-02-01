@@ -687,6 +687,8 @@ main .container {
 
 .course-illustration > img {
     max-width: 90%;
+    width: 100%;
+    height: auto;
     max-height: 18rem;
 }
 
