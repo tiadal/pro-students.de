@@ -82,26 +82,24 @@ h3 {
 }
 
 .action-primary {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+    display: inline-block;
     color: var(--light);
     background-color: var(--primary);
     border-radius: var(--rounded-edges);
     transition: var(--transition);
+    text-align: center;
 }
 .action-primary:hover, .action-primary:focus-within {
     transform: scale(1.05);
 }
 
 .action-secondary {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+    display: inline-block;
     color: var(--primary);
     background-color: var(--primary-light);
     border-radius: var(--rounded-edges);
     transition: var(--transition);
+    text-align: center;
 }
 .action-secondary:hover, .action-secondary:focus-within {
     transform: scale(1.05);
