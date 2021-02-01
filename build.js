@@ -82,7 +82,7 @@ function pipeHtml(dom, file) {
                     default:
                 }
             } else {
-                partialFramework = partialFramework.replace("%" + child.getAttribute("data-name") + "%", child.innerHTML)
+                partialFramework = partialFramework.replaceAll("%" + child.getAttribute("data-name") + "%", child.innerHTML)
             }
         })
         
@@ -90,9 +90,9 @@ function pipeHtml(dom, file) {
         for (var i in termsPrivacyImprintActive) {
             var dataName = LEGAL_ACTIVITY_DATA_NAMES[i]
             if (termsPrivacyImprintActive[i]) {
-                partialFramework = partialFramework.replace("%" + dataName + "%", "active")
+                partialFramework = partialFramework.replaceAll("%" + dataName + "%", "active")
             } else {
-                partialFramework = partialFramework.replace("%" + dataName + "%", "")
+                partialFramework = partialFramework.replaceAll("%" + dataName + "%", "")
             }
         }
     
@@ -102,7 +102,7 @@ function pipeHtml(dom, file) {
 
     var ldjsonCourses = assembleXml(dom, file);
     
-    return dom.serialize().replace("<body></body>", "").replace('%ldjson-courses%', ldjsonCourses);
+    return dom.serialize().replaceAll("<body></body>", "").replaceAll('%ldjson-courses%', ldjsonCourses);
 }
 
 function assembleXml(dom, file) {
