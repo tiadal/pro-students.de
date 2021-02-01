@@ -1230,6 +1230,10 @@ h2.legal-compact {
     margin-top: 0;
 }
 
+.homepage-content .actions {
+    justify-content: center;
+}
+
 .faq-heading-container > img {
     width: 80%;
 }
