@@ -10,6 +10,8 @@ var sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www
 const date = new Date
 const lastmodDate = date.getFullYear() + "-" + ('0' + date.getMonth()).slice(-2) + "-" + ('0' + date.getDay()).slice(-2)
 
+var svgDimensions = []
+
 LEGAL_ACTIVITY_DATA_NAMES = ["terms-active", "privacy-active", "imprint-active"];
 function assembleFiles(err, fileList) {
     if (err) {
@@ -101,8 +103,53 @@ function pipeHtml(dom, file) {
     })
 
     var ldjsonCourses = assembleXml(dom, file);
+
+    var images = dom.window.document.querySelectorAll('img')
+
+    Array.from(images).forEach((img) => {
+
+        if(img.src.endsWith('.svg')) {
+
+            const dimensions = getSvgDimensions(dom, img.src)
+
+            img.width = dimensions.width
+            img.height = dimensions.height
+        }
+    })
     
     return dom.serialize().replace("<body></body>", "").replace('%ldjson-courses%', ldjsonCourses);
+}
+
+function getSvgDimensions(dom, file) {
+
+    for(svgDimension in svgDimensions) {
+
+        if(svgDimension.name == file) {
+            return svgDimension;
+        }
+
+    }
+
+    const DOMParser = dom.window.DOMParser
+    const xmlParser = new DOMParser
+
+    var xmlString = fs.readFileSync("docs" + file).toString();
+
+    const xmlDoc = xmlParser.parseFromString(xmlString, "text/xml")
+
+    const dimensions = {
+        name: file,
+        width: xmlDoc.documentElement.getAttribute('width'),
+        height: xmlDoc.documentElement.getAttribute('height'),
+    }
+    
+    if(dimensions.width == null || dimensions.height == null) {
+        console.log("WARNING: width or height undefined for '" + file + "'")
+    }
+
+    svgDimensions.push(dimensions)
+
+    return dimensions
 }
 
 function assembleXml(dom, file) {
