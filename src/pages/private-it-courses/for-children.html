@@ -5,20 +5,10 @@
         <template data-name="description">We give Children a good start into the IT World with easy and understandable IT Courses like Programming with Python or Image editing with Photoshop.</template>
         <template data-name="custom">
             <script type="application/ld+json">
-
-                {
-                    "@context": "https://schema.org",
-                    "@type": "WebPage",
-                    "name": "Homepage",
-                    "description": "Help small/medium business and private citizens understanding and developing digital solutions, offering competitive prices and an effective service.",
-                    "url": "https://pro-students.kiekbjul.de",
-                    "publisher": {
-                        "@type": "Organization",
-                        "name": "Pro Students Cottbus",
-                        "logo": "https://pro-students.kiekbjul.de/img/logo.svg"
-                    },
-                    "mainContentOfPage": %ldjson-courses%
-                    "breadcrumb": {
+                [
+                    %ldjson-courses%
+                    {
+                        "@context": "https://schema.org",
                         "@type": "BreadcrumbList",
                         "itemListElement": [
                             {
@@ -41,7 +31,7 @@
                             }
                         ]
                     }
-                }
+                ]
             </script>
         </template>
     </head>

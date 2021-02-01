@@ -45,18 +45,9 @@
         <!-- Custom -->
 
         <script type="application/ld+json">
-            {
-                "@context": "https://schema.org",
-                "@type": "WebPage",
-                "name": "Homepage",
-                "description": "Help small/medium business and private citizens understanding and developing digital solutions, offering competitive prices and an effective service.",
-                "url": "https://pro-students.kiekbjul.de",
-                "publisher": {
-                    "@type": "Organization",
-                    "name": "Pro Students Cottbus",
-                    "logo": "https://pro-students.kiekbjul.de/img/logo.svg"
-                },
-                "mainContentOfPage": {
+            [
+                {
+                    "@context": "http://schema.org",
                     "@type": "ItemList",
                     "itemListElement": [
                         {
@@ -71,7 +62,8 @@
                         }
                     ]
                 },
-                "breadcrumb": {
+                {
+                    "@context": "https://schema.org",
                     "@type": "BreadcrumbList",
                     "itemListElement": [
                         {
@@ -94,7 +86,7 @@
                         }
                     ]
                 }
-            }
+            ]
         </script>
     </head>
 
