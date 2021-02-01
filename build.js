@@ -141,7 +141,7 @@ function assembleXml(dom, file) {
             htmlDocOut = htmlDocOut.substring(0, htmlDocOut.lastIndexOf('.html')) + "/" + toKebabCase(data) + "/index.html"
             var htmlDocOutPath = htmlDocOut.substring(0, htmlDocOut.lastIndexOf('/'))
             ldjsonCourse = ldjsonCourse.replace('%title%', data)
-            var ldjsonCourseItem = '{"@type":"ListItem","position":' + pos + ',"url":"https://pro-students.kiekbjul.de' + htmlDocOut.replace("docs/", '/') + '"},'
+            var ldjsonCourseItem = '{"@type":"ListItem","position":' + pos + ',"url":"https://pro-students.kiekbjul.de' + htmlDocOut.replace("docs/", '/').replace('/index.html', '') + '"},'
             pos++;
             if(title) {
                 if(data) {
@@ -154,7 +154,7 @@ function assembleXml(dom, file) {
 
             var previewAction = htmlCourse.querySelector("[data-course='preview']")
             if(previewAction) {
-                previewAction.href = htmlDocOut.replace("docs/", '/');
+                previewAction.href = htmlDocOut.replace("docs/", '/').replace('/index.html', '');
             }
 
             // Accessibility addition: add descriptive aria-labels to buttons
