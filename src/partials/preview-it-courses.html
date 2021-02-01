@@ -78,17 +78,17 @@
         
         <main class="content">
 
-            <section>
-                <h2>Description</h2>
+            <section aria-labeledby="description-heading">
+                <h2 id="description-heading">Description</h2>
                 <p>%description%</p>
+
+                %contents%
+    
+                %lessons%
             </section>
 
-            %contents%
-
-            %lessons%
-
-            <section>
-                <h2>Actions</h2>
+            <section aria-labeledby="actions-heading">
+                <h2 id="actions-heading">Actions</h2>
                 <div class="actions">
                     <a href="#" class="action-primary" onclick="alert('Not implemented')">Make Appointment</a>
                     <a href="#" class="action-secondary" onclick="alert('Not implemented')">Contact us</a>
