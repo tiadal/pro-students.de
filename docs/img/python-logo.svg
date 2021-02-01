@@ -8,8 +8,8 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.0"
-   width="187.5pt"
-   height="54.418976pt"
+   width="250"
+   height="72.558632"
    id="svg2"
    sodipodi:version="0.32"
    inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07, custom)"
@@ -22,11 +22,12 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </svg:metadata>
   <sodipodi:namedview
-     inkscape:window-height="1058"
+     inkscape:window-height="1034"
      inkscape:window-width="1920"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0.0"
@@ -34,9 +35,9 @@
      bordercolor="#666666"
      pagecolor="#ffffff"
      id="base"
-     inkscape:zoom="1.4340089"
-     inkscape:cx="43.195611"
-     inkscape:cy="-44.963609"
+     inkscape:zoom="2.0279948"
+     inkscape:cx="-13.790332"
+     inkscape:cy="-29.312863"
      inkscape:window-x="0"
      inkscape:window-y="22"
      inkscape:current-layer="svg2"
@@ -267,7 +268,7 @@
          id="path1894"
          style="opacity:0.44382;fill:url(#radialGradient1480);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:20;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          transform="matrix(0.73406,0,0,0.809524,16.24958,27.00935)"
-         d="m 110.46717,132.28575 a 48.948285,8.6066778 0 1 1 -97.896571,0 48.948285,8.6066778 0 1 1 97.896571,0 z" />
+         d="m 110.46717,132.28575 a 48.948285,8.606678 0 1 1 -97.896571,0 48.948285,8.606678 0 1 1 97.896571,0 z" />
     </svg:g>
   </svg:g>
   <style
