@@ -263,8 +263,7 @@ function assembleXml(dom, file) {
                     previewHtml = previewHtml.replace('%lessons%', lessons.parentElement.outerHTML)
 
                 } else {
-                    htmlCourse.querySelector("h3.lessons-heading").classList.add('hidden')
-                    lessons.classList.add('hidden')
+                    lessons.parentElement.outerHTML = ''
                     previewHtml = previewHtml.replace('%lessons%', '')
                 }
             }
@@ -287,8 +286,7 @@ function assembleXml(dom, file) {
 
                     previewHtml = previewHtml.replace('%contents%', contents.parentElement.outerHTML)
                 } else {
-                    htmlCourse.querySelector("h3.contents-heading").classList.add('hidden')
-                    contents.classList.add('hidden')
+                    contents.parentElement.outerHTML = ''
                     previewHtml = previewHtml.replace('%contents%', '')
                 }
             }
