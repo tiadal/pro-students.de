@@ -15,7 +15,10 @@ function assembleFiles(err, fileList) {
     if (err) {
         return console.error(err);
     }
-    
+    sitemap += "    <url>\n"
+    sitemap += "        <loc>https://pro-students.kiekbjul.de/</loc>\n"
+    sitemap += "        <lastmod>" + lastmodDate + "</lastmod>\n"
+    sitemap += "    </url>\n\n"
     
     fileList.forEach(htmlDoc => {
         if (!htmlDoc.endsWith('.html')) {
@@ -24,20 +27,19 @@ function assembleFiles(err, fileList) {
 
         var dom = new JSDOM(fs.readFileSync(htmlDoc).toString());
 
-        var out = pipeHtml(dom, htmlDoc)
-
         var htmlDocOut = htmlDoc.replace("src/pages/", "docs/")
 
         if(htmlDocOut.indexOf('index.html') < 0 && htmlDocOut.indexOf('404.html') < 0) {
             htmlDocOut = htmlDocOut.replace('.html', '/index.html')
+            sitemap += "    <url>\n"
+            sitemap += "        <loc>" + htmlDocOut.replace('docs/', 'https://pro-students.kiekbjul.de/').replace('index.html', '') + "</loc>\n"
+            sitemap += "        <lastmod>" + lastmodDate + "</lastmod>\n"
+            sitemap += "    </url>\n\n"
         }
 
         var htmlDocOutPath = htmlDocOut.substring(0, htmlDocOut.lastIndexOf('/'))
 
-        sitemap += "    <url>\n"
-        sitemap += "        <loc>" + htmlDocOut.replace('docs/', 'https://pro-students.kiekbjul.de/').replace('index.html', '') + "</loc>\n"
-        sitemap += "        <lastmod>" + lastmodDate + "</lastmod>\n"
-        sitemap += "    </url>\n\n"
+        var out = pipeHtml(dom, htmlDoc)
 
         try {
             fs.mkdirSync(htmlDocOutPath, {

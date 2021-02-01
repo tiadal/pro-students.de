@@ -2,17 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     <url>
-        <loc>https://pro-students.kiekbjul.de/404.html</loc>
+        <loc>https://pro-students.kiekbjul.de/</loc>
         <lastmod>2021-01-01</lastmod>
     </url>
 
     <url>
         <loc>https://pro-students.kiekbjul.de/about-us/</loc>
-        <lastmod>2021-01-01</lastmod>
-    </url>
-
-    <url>
-        <loc>https://pro-students.kiekbjul.de/</loc>
         <lastmod>2021-01-01</lastmod>
     </url>
 
@@ -42,6 +37,11 @@
     </url>
 
     <url>
+        <loc>https://pro-students.kiekbjul.de/private-it-courses/for-children/</loc>
+        <lastmod>2021-01-01</lastmod>
+    </url>
+
+    <url>
         <loc>https://pro-students.kiekbjul.de/private-it-courses/for-children/introduction-to-programming-in-python/</loc>
         <lastmod>2021-01-01</lastmod>
     </url>
@@ -52,7 +52,7 @@
     </url>
 
     <url>
-        <loc>https://pro-students.kiekbjul.de/private-it-courses/for-children/</loc>
+        <loc>https://pro-students.kiekbjul.de/private-it-courses/for-seniors/</loc>
         <lastmod>2021-01-01</lastmod>
     </url>
 
@@ -67,17 +67,12 @@
     </url>
 
     <url>
-        <loc>https://pro-students.kiekbjul.de/private-it-courses/for-seniors/</loc>
+        <loc>https://pro-students.kiekbjul.de/private-it-courses/for-students/</loc>
         <lastmod>2021-01-01</lastmod>
     </url>
 
     <url>
         <loc>https://pro-students.kiekbjul.de/private-it-courses/for-students/your-course-here/</loc>
-        <lastmod>2021-01-01</lastmod>
-    </url>
-
-    <url>
-        <loc>https://pro-students.kiekbjul.de/private-it-courses/for-students/</loc>
         <lastmod>2021-01-01</lastmod>
     </url>
 
@@ -92,17 +87,17 @@
     </url>
 
     <url>
+        <loc>https://pro-students.kiekbjul.de/services-for-companies/it-courses/</loc>
+        <lastmod>2021-01-01</lastmod>
+    </url>
+
+    <url>
         <loc>https://pro-students.kiekbjul.de/services-for-companies/it-courses/introduction-to-excel/</loc>
         <lastmod>2021-01-01</lastmod>
     </url>
 
     <url>
         <loc>https://pro-students.kiekbjul.de/services-for-companies/it-courses/introduction-to-power-point/</loc>
-        <lastmod>2021-01-01</lastmod>
-    </url>
-
-    <url>
-        <loc>https://pro-students.kiekbjul.de/services-for-companies/it-courses/</loc>
         <lastmod>2021-01-01</lastmod>
     </url>
 
