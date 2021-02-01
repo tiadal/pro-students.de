@@ -16,9 +16,10 @@
     * The heading and navigational elements are meant to be skimmed, not read, which has been noted in the forums as an exception to the rule
 * Wave reports "Read More" links as being unclear when read out of context
     * It is true that the "Read More" text itself wouldn't make sense in a list of links
-    * Solving this problem would require changes both in the build system and in the website design
+    * Solving this problem such that wave recognizes it would require changes both in the build system and in the website design
     * Nevertheless, we deem the [relevant success criterion as stated by the W3C](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-refs.html) to be fulfilled
-    * Context of the links is given by the preceding text and can be reached by screen readers using an additional command (see e.g. "News article summaries" in the W3C document)
+        1. Context of the links is given by the preceding text and can be reached by screen readers using an additional command (see e.g. "News article summaries" in the W3C document)
+        2. An aria-label is given that further explains the link's purpose (see Sufficient Techniques 8. in the W3C document)
 
 
 # Developer Documentation (2b)

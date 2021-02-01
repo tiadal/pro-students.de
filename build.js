@@ -149,6 +149,15 @@ function assembleXml(dom, file) {
             if(previewAction) {
                 previewAction.href = htmlDocOut.replace("docs/", '/');
             }
+
+            // Accessibility addition: add descriptive aria-labels to buttons
+            let dataTitle = data
+            let readMoreButton = previewAction
+            let makeAppButton = htmlCourse.querySelector(".action-primary")
+            
+            readMoreButton.setAttribute("aria-label", "Read more about the course: &quot;" + dataTitle + "&quot;")
+            makeAppButton.setAttribute("aria-label", "Make an appointment for the course: &quot;" + dataTitle + "&quot;")
+            //
     
             var description = htmlCourse.querySelector("[data-course='description']")
             data = course.getElementsByTagName("description")[0].innerHTML
