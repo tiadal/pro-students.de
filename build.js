@@ -6,6 +6,8 @@ const { JSDOM } = jsdom;
 
 glob("src/pages/**/*.html", {}, assembleFiles);
 
+var sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n\n'
+
 LEGAL_ACTIVITY_DATA_NAMES = ["terms-active", "privacy-active", "imprint-active"];
 function assembleFiles(err, fileList) {
     if (err) {
@@ -30,6 +32,10 @@ function assembleFiles(err, fileList) {
 
         var htmlDocOutPath = htmlDocOut.substring(0, htmlDocOut.lastIndexOf('/'))
 
+        sitemap += "    <url>\n"
+        sitemap += "        <loc>" + htmlDocOut.replace('docs/', 'https://pro-students.kiekbjul.de/').replace('index.html', '') + "</loc>\n"
+        sitemap += "    </url>\n\n"
+
         try {
             fs.mkdirSync(htmlDocOutPath, {
                 recursive: true
@@ -39,6 +45,10 @@ function assembleFiles(err, fileList) {
         // Save the assembled file
         fs.writeFile(htmlDocOut, out, err => { if (err) { console.log("Couldn't write " + htmlDocOut + " because of " + err) } })
     })
+
+    sitemap += "</urlset>\n"
+
+    fs.writeFile('docs/sitemap.xml', sitemap, err => { if (err) { console.log("Couldn't write sitemap.xml because of " + err) } })
 }
 
 function pipeHtml(dom, file) {
@@ -156,6 +166,10 @@ function assembleXml(dom, file) {
             if(previewAction) {
                 previewAction.href = htmlDocOut.replace("docs/", '/').replace('/index.html', '');
             }
+
+            sitemap += "    <url>\n"
+            sitemap += "        <loc>" + htmlDocOut.replace('docs/', 'https://pro-students.kiekbjul.de/').replace('index.html', '') + "</loc>\n"
+            sitemap += "    </url>\n\n"
 
             // Accessibility addition: add descriptive aria-labels to buttons
             let dataTitle = data
