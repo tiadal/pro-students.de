@@ -383,7 +383,6 @@ nav.breadcrumb > .container {
     padding-top: 2rem;
     padding-bottom: 0rem;
     color: var(--light-darker-accent);
-    line-height: 0;
 }
     
 .breadcrumb-sep {
@@ -424,7 +423,7 @@ nav.breadcrumb > .container {
     .breadcrumb-sep:first-of-type, .breadcrumb-sep:last-of-type,
     .breadcrumb-dots
     {
-        display: inline;
+        display: block;
     }
     
     .breadcrumb-dots::after {
