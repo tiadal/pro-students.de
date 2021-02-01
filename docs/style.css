@@ -91,7 +91,7 @@ h3 {
     transition: var(--transition);
 }
 .action-primary:hover, .action-primary:focus-within {
-    background-color: var(--primary-highlighted);
+    transform: scale(1.05);
 }
 
 .action-secondary {
@@ -104,7 +104,7 @@ h3 {
     transition: var(--transition);
 }
 .action-secondary:hover, .action-secondary:focus-within {
-    background-color: var(--primary-light-highlighted);
+    transform: scale(1.05);
 }
 
 .inline-link {
@@ -1335,8 +1335,7 @@ h2.legal-compact {
     transition: var(--transition);
 }
 .contact-action > a:hover, .contact-action > a:focus {
-    color: var(--secondary-dark-light-variation);
-    background-color: white;
+    transform: scale(1.05);
 }
 
 @media (max-width: 640px) {
