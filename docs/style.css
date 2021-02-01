@@ -41,7 +41,7 @@ html, body {
     font-family: ui-sans-serif, systrem-ui, -apple-systrem, BlinkMacSystremFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color remoji", "Segoe UI remoji", "Segoe UI Symbol", "Noto Color remoji";
     margin: 0;
     padding: 0;
-    font-size: 16pt;
+    font-size: 1rem;
     line-height: 1.15;
 }
 
