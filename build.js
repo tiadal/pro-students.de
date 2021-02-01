@@ -23,10 +23,17 @@ function assembleFiles(err, fileList) {
         var out = pipeHtml(dom, htmlDoc)
 
         var htmlDocOut = htmlDoc.replace("src/pages/", "docs/")
+
+        if(htmlDocOut.indexOf('index.html') < 0 && htmlDocOut.indexOf('404.html') < 0) {
+            htmlDocOut = htmlDocOut.replace('.html', '/index.html')
+        }
+
         var htmlDocOutPath = htmlDocOut.substring(0, htmlDocOut.lastIndexOf('/'))
 
         try {
-            fs.mkdirSync(htmlDocOutPath)
+            fs.mkdirSync(htmlDocOutPath, {
+                recursive: true
+            })
         } catch(ex) {}
 
         // Save the assembled file
@@ -131,7 +138,7 @@ function assembleXml(dom, file) {
             previewHtml = previewHtml.replaceAll('%title%', data)
             previewHtml = previewHtml.replaceAll('%title-kebab%', toKebabCase(data))
             var htmlDocOut = file.replace("src/pages/", "docs/")
-            htmlDocOut = htmlDocOut.substring(0, htmlDocOut.lastIndexOf('.html')) + "/" + toKebabCase(data) + ".html"
+            htmlDocOut = htmlDocOut.substring(0, htmlDocOut.lastIndexOf('.html')) + "/" + toKebabCase(data) + "/index.html"
             var htmlDocOutPath = htmlDocOut.substring(0, htmlDocOut.lastIndexOf('/'))
             ldjsonCourse = ldjsonCourse.replace('%title%', data)
             var ldjsonCourseItem = '{"@type":"ListItem","position":' + pos + ',"url":"https://pro-students.kiekbjul.de' + htmlDocOut.replace("docs/", '/') + '"},'
@@ -228,7 +235,9 @@ function assembleXml(dom, file) {
             var previewOut = pipeHtml(previewDom, '')
 
             try {
-                fs.mkdirSync(htmlDocOutPath)
+                fs.mkdirSync(htmlDocOutPath, {
+                    recursive: true
+                })
             } catch(ex) {}
     
             // Save the assembled file
