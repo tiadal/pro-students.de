@@ -82,11 +82,12 @@ h3 {
 }
 
 .action-primary {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     color: var(--light);
     background-color: var(--primary);
     border-radius: var(--rounded-edges);
-    text-align: center;
     transition: var(--transition);
 }
 .action-primary:hover, .action-primary:focus-within {
@@ -94,11 +95,12 @@ h3 {
 }
 
 .action-secondary {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     color: var(--primary);
     background-color: var(--primary-light);
     border-radius: var(--rounded-edges);
-    text-align: center;
     transition: var(--transition);
 }
 .action-secondary:hover, .action-secondary:focus-within {
@@ -437,11 +439,17 @@ nav.breadcrumb > .container {
     PAGE HEADING (Header)
 ############################
 */
-.page-heading > .container, .home-page-heading > .container {
+.page-heading > .container,
+.home-page-heading > .container,
+.page-heading-course > .container {
     display: flex;
     flex-direction: row;
     padding-top: 2rem;
     margin-bottom: 5rem;
+}
+
+.page-heading-course > .container {
+    flex-direction: column;
 }
 
 .home-page-heading {
@@ -458,10 +466,19 @@ nav.breadcrumb > .container {
     flex-direction: column;
 }
 
+.page-heading-course .page-heading-text {
+    margin-left: 0;
+    width: 100%;
+}
+
 .page-heading-text .main-title {
     display: block;
     color: var(--primary);
     font-size: 3.5rem;
+}
+
+.page-heading-course .page-heading-text .main-title {
+    font-size: 2.5rem;
 }
 
 .page-heading .page-heading-text .sub-title {
@@ -477,7 +494,9 @@ nav.breadcrumb > .container {
 }
 
 
-.page-heading .actions, .home-page-heading .actions {
+.page-heading .actions,
+.home-page-heading .actions,
+.page-heading-course .actions {
     margin-top: 25px;
     width: 100%;
     display: flex;
@@ -487,7 +506,10 @@ nav.breadcrumb > .container {
 
 .page-heading .actions .action-primary,
 .home-page-heading .actions .action-primary,
-.page-heading .actions .action-secondary {
+.page-heading-course .actions .action-primary,
+.page-heading .actions .action-secondary,
+.home-page-heading .actions .action-secondary,
+.page-heading-course .actions .action-secondary {
     display: block;
     padding: 25px 35px;
     margin-right: 25px;
@@ -500,12 +522,14 @@ nav.breadcrumb > .container {
     width: 50%;
 }
 
-.home-page-heading .page-heading-illustration {
+.home-page-heading .page-heading-illustration,
+.page-heading-course .page-heading-illustration {
     margin-top: 3rem;
     display: block;
 }
 
-.page-heading .page-heading-illustration > img {
+.page-heading .page-heading-illustration > img,
+.page-heading-course .page-heading-illustration > img {
     width: 100%;
     max-height: 50vh;
     height: 100%;
@@ -561,18 +585,22 @@ nav.breadcrumb > .container {
         font-size: 1.5rem;
     }
 
-    .page-heading .actions, .home-page-heading .actions {
+    .page-heading .actions,
+    .home-page-heading .actions,
+    .page-heading-course .actions {
         flex-direction: column;
     }
-    .page-heading .actions .action-primary, .page-heading .actions .action-secondary {
-        margin-right: 0;
-    }
 
-    .page-heading .actions .action-primary, .page-heading .actions .action-secondary {
+    .page-heading .actions .action-primary,
+    .page-heading .actions .action-secondary,
+    .page-heading-course .actions .action-primary,
+    .page-heading-course .actions .action-secondary {
+        margin-right: 0;
         padding: 18px;
     }
 
-    .page-heading .actions .action-secondary {
+    .page-heading .actions .action-secondary,
+    .page-heading-course .actions .action-secondary {
         margin-top: 0.5rem;
     }
 }
@@ -697,15 +725,15 @@ main .container {
     border: none;
 }
 
-.course-information .actions {
+.actions {
     margin-top: 25px;
     width: 100%;
     display: flex;
     flex-direction: row;
 }
 
-.course-information .actions .action-primary,
-.course-information .actions .action-secondary {
+.actions .action-primary,
+.actions .action-secondary {
     display: block;
     padding: 15px 20px;
     margin-right: 20px;
@@ -771,15 +799,15 @@ main .container {
         width: 100%;
     }
 
-    .course-information .actions {
+    .actions {
         flex-direction: column;
     }
 
-    .course-information .actions .action-primary {
+    .actions .action-primary {
         margin-right: 0;
     }
     
-    .course-information .actions .action-secondary {
+    .actions .action-secondary {
         margin-top: 10px;
     }
 
