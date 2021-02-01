@@ -181,6 +181,7 @@ h3 {
 
 .navbar-logo > img {
     height: 2rem;
+    width: auto;
 }
 
 .navbar-links {
@@ -1401,6 +1402,7 @@ footer > .container {
 .footer-logo {
     height: 2.5rem;
     margin-bottom: 1rem;
+    width:auto;
 }
 
 .footer-vision {
